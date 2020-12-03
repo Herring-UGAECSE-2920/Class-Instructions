@@ -56,9 +56,152 @@ After Rasbian is installed, the Pi should reboot into initial setup for the Oper
 
 After setup, Rasbian will prompt a restart, go ahead and do this.
 
-### Networking and SSH through an Ethernet Bridge
+### Rasbian Configuration
 
+While you have the Pi still connected to a monitor, keyboard, and mouse, we need to do a bit of configuration to enable all of the settings we need.
 
+On the Pi desktop, open a terminal window from the task bar, it should look something like this:
 
-### Python Environment and Dependancies
+![raspi terminal image](resources/raspiconf0.png)
 
+Then, run the `raspi-config` command to configure some settings on the Pi:
+
+```
+sudo raspi-config
+```
+
+It should bring up a dialgue window that looks similar to this:
+
+![raspi-config window](resources/raspiconf1.png)
+
+From here, we need to change a few settings: 
+
+1. Go into Boot Options -> Desktop / CLI and select the last option, `Desktop Autologin`
+2. Go into Interfacing Options and enable: `SSH`, `VNC`, `SPI`, and `I2C`
+3. Finally, go into Advanced Options -> Resolution and select the highest possible resolution (1920x1080 @ 60Hz 16:9)
+
+After changing these settings, go ahead and reboot the Pi. You can do this from the command line with:
+
+```
+sudo reboot
+```
+
+Now you *should* be ready to move on!
+
+### Networking through an Ethernet Bridge
+
+To successfully connect the Raspberry Pi to the internet we have a few options. We could connect it directly to a network with the built-in ethernet and WiFi adapters, however if your network is configured incorrectly (accidentally or on purpose, thanks Spectrum) or if you try to connect to the PAWS-Secure network on campus you'll quickly run into issues. 
+
+To remedy this, we suggest setting up an Ethernet Bridge between your computer (prefereably one with WiFi capability) and the Raspberry Pi, which will share your computer's internet connection with it! Setting these up is fairly straight forward, and we've provided guides for a few Operating Systems below.
+
+#### [Windows](https://communities.efi.com/s/article/How-to-bridge-WiFi-with-Ethernet-in-Windows-10?language=en_US)
+
+#### [MacOS](https://support.apple.com/guide/mac-help/bridge-virtual-network-interfaces-on-mac-mh43557/mac)
+
+#### [Linux](https://www.raspberrypi.org/forums/viewtopic.php?t=13211) (If you use something other than Ubuntu, you're on your own)
+
+### SSH and VNC Viewer
+
+Now that you've got your Pi connected to the internet through your computer, we can use and access it without a monitor using a couple of tools: SSH and VNC Viewer. 
+
+SSH is protocol used to connect to and use remote devices using a Command-Line Interface. It is secure, and an industry standard in remote work, server administration, and much more.
+
+VNC is also a protocol used to connect to and control remote devices, however instead of using the command-line, VNC allows the user to view the desktop of the remote device, and control it graphically.
+
+To use these two technologies, you'll need a compatible client for you computer. For VNC, you'll be using the popular [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/). To use SSH on Windows you'll need an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/), while for MacOS and Linux you can simply use your system's terminal with using the `ssh` command as follows:
+
+```
+ssh pi@[IP Address of Pi]
+```
+
+To use either of these tools, you'll need the IP address of the Raspberry Pi on the network (presumably over the ethernet bridge we set up earlier). Luckily, the [Raspberry Pi Foundation has compiled a guide](https://www.raspberrypi.org/documentation/remote-access/ip-address.md) for how to do this.
+
+Note: No matter which option you choose, we will be using the Command-Line frequently in setup and some of our other tutorials, so its worth the effort to get familiar with the interface. A great guide for learning Linux Command-Line can be found [here](https://linuxcommand.org/lc3_learning_the_shell.php).
+
+### System Dependencies
+
+After we have the Pi connected to the internet, we can start installing some of the system dependancies we'll need for this project. System dependancies are simply programs or piece of code we need to be able to write and run our software.
+
+First, we'll make sure we have an up-to-date system by running these two command consecutively:
+```
+sudo apt update
+sudo apt upgrade
+```
+
+Then we need to install the dependancies using these commands:
+```
+sudo apt install pigpio python-pigpio python3-pigpio git
+```
+
+### Python Environment and Dependencies
+
+Now that we have the Pi connected to the internet, and can connect with/interact with it without having to have perihperals connected, we can start setting up our programming environment for this project. You'll be using Python to program your XY Plotter as its easy to pick up and has very good packages for using the hardware we have.
+
+To make dealing with dependancies less of a headache, we'll be using a [Python Virtual Environment](https://realpython.com/python-virtual-environments-a-primer/), which confines all packages installed to that environment, making it easier to work on multiple projects (which may need different versions of the same package) on the same computer.
+
+With that being said, let's jump right into it by opening up a terminal on the Pi in your preferred way (SSH/VNC or keyboard/mouse/monitor).
+
+First, we'll need to install `pip`, the Python package manager, which will allow us to install the Python modules we need for this project.
+```
+sudo apt install python3-pip
+```
+
+When the installation completes, check that it installed correctly by running:
+```
+pip3 --version
+```
+
+After that, we'll use `pip` to install `virtualenv` and `virtualenvwrapper`:
+```
+sudo pip3 install virtualenv virtualenvwrapper
+```
+
+Then we'll set up our terminal environment to use `virtualenv` with these commands:
+```
+echo -e "\n# virtualenv and virtualenvwrapper" >> ~/.bashrc
+echo "export WORKON_HOME=$HOME/.virtualenvs" >> ~/.bashrc
+echo "export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3" >> ~/.bashrc
+echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
+```
+and Finally:
+```
+source ~/.bashrc
+```
+
+Now we can create our new virtual environment, you can name it whatever you like, just make sure you can remember it, we'll use the name 'plotter':
+```
+mkvirtualenv plotter -p python3
+```
+
+Then we can use the `workon` command to change into our newly create virtual environment:
+```
+workon plotter
+```
+
+Now that we're in our virtual environment, you should see `(plotter)` on the left of your terminal prompt. Install the follow Python dependencies with `pip`:
+```
+pip3 install RPI.GPIO
+pip3 install adafruit-blinka
+pip3 install adafruit-circuitpython-motorkit
+pip3 install wiringpi
+pip3 install pigpio_encoder
+```
+
+Now that we have our Python dependencies in order, we can leave the virtual enviroment using the command:
+```
+deactivate
+```
+
+### Setting up Git
+
+Git is an industry standard version control system, which is extremely useful for managing and working on software projects. Here is a [great guide for setting up git with a Github account](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/set-up-git). You should use SSH to clone and commit to repositories, and only ONE team member should connect their Github account with the Raspberry Pi git configuration.
+
+Note: You'll have to install and setup git on every device you intend to work on, this includes generating SSH Keys, and adding them to the account.
+
+Congratulations! Your Pi should have everything it needs to run your project!
+
+## Next Steps
+
+[//]: # (TODO: link this properly)
+
+Now that you have your Pi set up, you can move on to the next checkpoint [Working on the Pi](working_on_pi.md).
