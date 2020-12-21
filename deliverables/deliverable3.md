@@ -14,9 +14,9 @@ You're free to make your State Machine diagram in whatever way you choose, howev
 
 Next, you'll need to demostrate that you can access and use a GPIO as both input and output. Your Raspberry Pi should have come with a breadboard, some jumper wires, and some resistors, LEDs, and buttons for this deliverable.
 
-To demonstrate output, create a program to blink an LED, either with user control or on a set interval.
+To demonstrate output, create a Python script to blink an LED, either with user control or on a set interval.
 
-To demonstrate input, use the guides below to print a statement on the screen whenever a button in the real world is pressed.
+To demonstrate input, use the guides below to create a Python scipt to print a statement once on the screen whenever a button in the real world is pressed.
 
 For both of these you'll need to use the `RPi.GPIO` Python library, with its API [Reference](https://learn.sparkfun.com/tutorials/raspberry-gpio/python-rpigpio-api) and some [example code](https://learn.sparkfun.com/tutorials/raspberry-gpio/python-rpigpio-example). The [hardware setup](https://learn.sparkfun.com/tutorials/raspberry-gpio/hardware-setup) guides also have some useful information (Note: This guide contains a setup for the Raspberry Pi 2, make sure to use the `pinout` command in a terminal to check wiring and pin numbers).
 

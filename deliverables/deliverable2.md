@@ -19,4 +19,4 @@ Right now would also be a good time to read through the rules for the project ou
 
 ## Raspberry Pi Setup
 
-Finally, you'll need to go through the Raspberry Pi setup documentation found [here](../setup/initial_setup.md). It will guide you on setting up the Pi with an Operating System, and getting all of the Python dependancies and environment set up. It will also link to helpful documentation for how to work on the Pi.
+Finally, you'll need to go through the Raspberry Pi setup documentation found [here](../setup/initial_setup.md). It will guide you through setting up the Pi and getting all of the Python dependancies and environment set up. It will also link to helpful documentation for how to work on the Raspberry Pi, remotely or otherwise.

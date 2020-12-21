@@ -108,7 +108,7 @@ SSH is protocol used to connect to and use remote devices using a Command-Line I
 
 VNC is also a protocol used to connect to and control remote devices, however instead of using the command-line, VNC allows the user to view the desktop of the remote device, and control it graphically.
 
-To use these two technologies, you'll need a compatible client for you computer. For VNC, you'll be using the popular [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/). To use SSH on Windows you'll need an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/), while for MacOS and Linux you can simply use your system's terminal with using the `ssh` command as follows:
+To use these two technologies, you'll need a compatible client for you computer. For VNC, you'll be using the popular [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/). To use SSH on Windows you'll need an SSH client such as [MobaXterm](https://mobaxterm.mobatek.net/), while for MacOS and Linux you can simply use your system's terminal with `ssh` command as follows:
 
 ```
 ssh pi@[IP Address of Pi]
@@ -202,6 +202,4 @@ Congratulations! Your Pi should have everything it needs to run your project!
 
 ## Next Steps
 
-[//]: # (TODO: link this properly)
-
-Now that you have your Pi set up, you can move on to the next checkpoint [Working on the Pi](working_on_pi.md).
+Now that you have your Pi set up, you can move on to [Working on the Pi](working_on_pi.md).
