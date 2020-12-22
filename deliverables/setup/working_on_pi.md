@@ -47,7 +47,7 @@ To use VNC Viewer, just make sure your computer is connected on the same network
 
 ### Setting up Thonny with Your Python Virtual Environment
 
-If you're using VNC Viewer, and you want to use the built-in Python IDE Thonny, this section will cover how to use it with our previously configured (see [initial setup](./initial_setup.md)) Python virtual environment.
+If you're using VNC Viewer, and you want to use the built-in Python IDE Thonny, this section will cover how to use it with our previously configured (see [initial setup](./pi_setup.md)) Python virtual environment.
 
 First open up Thonny on your Raspberry Pi and navigate to **Tools** -> **Options** and go to the **Interpreter** tab. If you can't see the **Tools** option, click on `switch to regular mode` and reboot Thonny:
 
@@ -69,6 +69,6 @@ Working directly on the Raspberry Pi is not always possible, especially when wor
 
 While you should have already set up Git on your Raspberry Pi, you should take some time now to set it up in your personal computer if you have not already. As linked previously [here is a guide](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/set-up-git) for setting up Git on your computer.
 
-When you are done with that, you'll need to learn how to use Git properly, so that you can collaborate effectively with your peers. Knowing things like how to create branchs, merge changes, and rebase repositories is key to effectively collaborating with each other while avoiding common mistakes and frustrations (which only slow you down). [Github has compiled a fantastic set of guides](https://try.github.io/) for you all to follow.
+When you are done with that, you'll need to learn how to use Git properly, so that you can collaborate effectively with your peers. Knowing things like how to create branchs, merge changes, and rebase repositories is key to effectively collaborating with each other while avoiding common mistakes and frustrations (which only slow you down). [Github has compiled a fantastic set of guides](https://guides.github.com/) for you all to follow.
 
 In general if your team is working remotely with one member of your team in possession of the Pi/Plotter, you'll contribute code through Git (usually on your own branch to keep things tidy; one per team member), and the team member with the Pi will pull those changes and provide feedback/debugging information if necessary.

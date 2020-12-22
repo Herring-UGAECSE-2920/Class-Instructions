@@ -6,7 +6,7 @@ For this week's deliverable, you'll be creating a simple initial state machine t
 
 First, you'll need to create a simple initial State Machine for your XY-Plotter. Think about all of the things it should be able to do, and how you would accomplish that. In order to keep from getting overwhelmed by details at this stage, keep the states broad in scope without implementation details (communication protocols, code, etc.). Things like "move the motor for the desired amount of time" and "Update the LCD display" are good examples of this.
 
-If you need a refresh on State Machines, [this](http://people.cs.vt.edu/~kafura/ComputationalThinking/Class-Notes/FSM.pdf) document should be a good starting point. 
+If you need a refresher on State Machines, [this](http://people.cs.vt.edu/~kafura/ComputationalThinking/Class-Notes/FSM.pdf) document should be a good starting point. 
 
 You're free to make your State Machine diagram in whatever way you choose, however a good tool to do this digitally is [creately](https://creately.com/lp/state-machine-diagram-tool/), which can be used collaboratively much like Google docs.
 
@@ -36,7 +36,7 @@ To demonstrate control over the stepper motor, create a Python script to move th
 
 For this portion, you'll be using the already installed Adafruit Python Library made for this kit/hat. [Here is great walkthrough](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/using-stepper-motors) for how to use the motor hat with the accompanying library, this goes through software and hardware setup. 
 
-You should note that we have already soldered the `A0` jumper on the Motor Hat, which sets the `I2C` (the communication protocol used by the board) address to `0x61`, such that it won't conflict the the address used by the LCD display (`0x60` by default for both). This means that when you instantiate `MotorKit` your object(s), you need to add the `address` option as below:
+You should note that we have already soldered the `A0` jumper on the Motor Hat, which sets the `I2C` (the communication protocol used by the board) address to `0x61`, such that it won't conflict the the address used by the LCD display (`0x60` by default for both). This means that when you instantiate your `MotorKit` object(s), you need to add the `address` option as below:
 
 ```python
 kit = MotorKit(i2c=board.I2C(),address=0x61)
@@ -49,6 +49,10 @@ Next, you'll need to demonstrate that you understand and can use the SN754410 H-
 To demonstrate control over the 'Z' axis motor using the H-Bridge chip, create a Python script to move the motor clockwise for 1 second, and then counter-clockwise for 1 second, continuing this until the program is halted (Ctrl+C on the command-line).
 
 For this section, you'll need to understand the Texas Instruments SN754410 H-Bridge chip and how it operates using [it's datasheet](https://www.ti.com/lit/ds/symlink/sn754410.pdf), then develop a method for controlling the chip using GPIO outputs. [Here's a quick guide](https://itp.nyu.edu/physcomp/labs/motors-and-transistors/lab-controlling-a-stepper-motor-with-an-h-bridge/) detailing some of the aspects of controlling the chip using an Arduino.
+
+[//]: # (TODO: LCD Deliverable Task)
+
+[//]: # (TODO: Digital Encoder Deliverable Task)
 
 ## Creating a Circuit Diagram
 
