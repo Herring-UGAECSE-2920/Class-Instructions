@@ -1,6 +1,10 @@
 # Motor Hat and Stepper Motors
 
-## Hardware Setup
+## X & Y Axis Stepper Motors
+
+The supplied motors for the XY Plotter draw too much current for our Motor Hat. We will replace them with lighter-weight motors.
+
+### Hardware Setup
 
 First determine which wires are connected to each coil in the stepper motor. There are two coils each with a pair of wires. To find the pairs, first spin the motor shaft by hand to get a feel for the resistance. Then pick a pair of wires and touch their leads together and spin the motor shaft. If there is a slight increase in resistance, then those two wires are a pair. If no change, test another pair of wires until your find the sets. Attach one pair to the `M1` terminals, leave the middle terminal open, and attach the second pair to `M2`.
 
@@ -8,7 +12,7 @@ To power the motor hat, we will use the provided 12V power supply. A female barr
 
 ![Stepper Connections](./resources/stepper_connections.jpg)
 
-## Software Setup
+### Software Setup
 
 The controller (in this case, Raspberry Pi) must tick each of the coils in order to make the motor move. Each two 'ticks' is a step. By alternating the coils, the stepper motor will spin all the way around. If the coils are fired in the opposite order, it will spin the other way around.
 
@@ -51,3 +55,17 @@ Try to run your code
 
     $python stepper_test.py
 
+## Z Axis Stepper and H-Driver
+To control the stepper for the Z-axis (pen holder), we will use a SN754410 Quadruple Half-H Driver. This IC can provide drive currents up to 1 A at voltages betweetn 4.5 V to 36 V. [Datasheet](https://www.ti.com/lit/ds/symlink/sn754410.pdf)
+
+![H-Driver Pinout](./resources/driver_pinout.JPG)
+
+The Z-axis stepper is a 5-volt motor but our power supply provides 12 volts. To step down the voltage we will use a voltage regulator. This device is simple to use with only 3 pins. 
+
+Pin 1 : Input  
+Pin 2 : Ground  
+Pin 3 : Output
+
+![Voltage Regulator Pinout](./resources/voltage_regulator_pinout.JPG)
+
+ 
