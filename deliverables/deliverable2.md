@@ -11,7 +11,7 @@ Right now would also be a good time to read through the rules for the project ou
 
 ## Documenting Exsisting Behavior and Modifying the Plotter
 
-
+For this section of the deliverable, you'll be following [this guide](./setup/plotter_setup.md) to assemble and modify your plotter. Instructions and deliverable submission requirements are listed in the guide.
 
 ## Raspberry Pi Setup
 

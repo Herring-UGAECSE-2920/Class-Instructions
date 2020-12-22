@@ -12,19 +12,19 @@ You're free to make your State Machine diagram in whatever way you choose, howev
 
 ## Accessing and Using A GPIO
 
+>***Warning: while connecting up simple components to the GPIO pins is perfectly safe, it's important to be careful how you wire things up. LEDs should have resistors to limit the current passing through them. Do not use 5V for 3V3 components. Do not connect motors directly to the GPIO pins, instead use an H-bridge circuit or a motor controller board.***
+
 Next, you'll need to demostrate that you can access and use a GPIO as both input and output. Your Raspberry Pi should have come with a breadboard, some jumper wires, and some resistors, LEDs, and buttons for this deliverable.
 
 To demonstrate output, create a Python script to blink an LED, either with user control or on a set interval.
 
 To demonstrate input, use the guides below to create a Python scipt to print a statement once on the screen whenever a button in the real world is pressed.
 
-For both of these you'll need to use the `RPi.GPIO` Python library, with its API [Reference](https://learn.sparkfun.com/tutorials/raspberry-gpio/python-rpigpio-api) and some [example code](https://learn.sparkfun.com/tutorials/raspberry-gpio/python-rpigpio-example). The [hardware setup](https://learn.sparkfun.com/tutorials/raspberry-gpio/hardware-setup) guides also have some useful information (Note: This guide contains a setup for the Raspberry Pi 2, make sure to use the `pinout` command in a terminal to check wiring and pin numbers).
-
->***Warning: while connecting up simple components to the GPIO pins is perfectly safe, it's important to be careful how you wire things up. LEDs should have resistors to limit the current passing through them. Do not use 5V for 3V3 components. Do not connect motors directly to the GPIO pins, instead use an H-bridge circuit or a motor controller board.***
+For both of these you'll need to use the [`pigpio` Python library](http://abyz.me.uk/rpi/pigpio/index.html#Type_3), with its API [Reference](http://abyz.me.uk/rpi/pigpio/python.html) and some [example code](http://abyz.me.uk/rpi/pigpio/examples.html#Python%20code). Again, make sure to use a current-limiting resistor when using the GPIO as output, and enable the [Pull-Up or Pull-Down](https://en.wikipedia.org/wiki/Pull-up_resistor) feature on the pin when using it as input. (Note: Make sure to use the `pinout` command in a terminal to check wiring and pin numbers).
 
 ### Tips on using Using GPIO as input
 
-While you're creating your GPIO input script, you'll notice that a simple polling method of using the GPIO may not give the results desired. To remedy this, we suggesting looking into setting up [interrupts](https://roboticsbackend.com/raspberry-pi-gpio-interrupts-tutorial/) with the GPIO pins, or using [software debounce](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Debounce).
+While you're creating your GPIO input script, you'll notice that a simple polling method of using the GPIO may not give the results desired. To remedy this, we suggesting looking into setting up [interrupts/callbacks](http://abyz.me.uk/rpi/pigpio/python.html#callback) with the GPIO pins, or using [software debounce](https://www.arduino.cc/en/Tutorial/BuiltInExamples/Debounce).
 
 ## Using the Adafruit Motor Hat to Control a Stepper
 
@@ -48,11 +48,19 @@ Next, you'll need to demonstrate that you understand and can use the SN754410 H-
 
 To demonstrate control over the 'Z' axis motor using the H-Bridge chip, create a Python script to move the motor clockwise for 1 second, and then counter-clockwise for 1 second, continuing this until the program is halted (Ctrl+C on the command-line).
 
-For this section, you'll need to understand the Texas Instruments SN754410 H-Bridge chip and how it operates using [it's datasheet](https://www.ti.com/lit/ds/symlink/sn754410.pdf), then develop a method for controlling the chip using GPIO outputs. [Here's a quick guide](https://itp.nyu.edu/physcomp/labs/motors-and-transistors/lab-controlling-a-stepper-motor-with-an-h-bridge/) detailing some of the aspects of controlling the chip using an Arduino.
+For this section, you'll need to understand the Texas Instruments SN754410 H-Bridge chip and how it operates using [it's datasheet](https://www.ti.com/lit/ds/symlink/sn754410.pdf), then develop a method for controlling the chip using GPIO outputs.
 
-[//]: # (TODO: LCD Deliverable Task)
+## Using the DFRobot LCD Interface
 
-[//]: # (TODO: Digital Encoder Deliverable Task)
+Next, you'll need to demonstrate that you can take advantage of some of the basic features of the DFRobot LCD necessary for creating a useful user interface. Before attempting to use the LCD, make sure the Adafruit motor hat is either off of the Pi, or its `I2C` address has been changed by creating a solder bridge on the `A0` jumper, otherwise the LCD will not be able to communicate with the Pi.
+
+To demonstrate grasp of how to set up and use the LCD and its buttons, create a program which displays an integer starting at 0 on the LCD. Whenever the top LCD button is pressed, the number increments by 1 and whenever the botton LCD button is pressed, the number decrements by 1.
+
+To accomplish this, you'll need to read through the [DFRobot LCD documentation](https://wiki.dfrobot.com/I_O_Expansion_HAT_for_Pi_zero_V1_0_SKU_DFR0604IIC_16X2_RGB_LCD_KeyPad_HAT_1_0_SKU_DFR0514_DFR0603). We've included the library needed to use the LCD (`rgb1602.py`) in your starter repository on the class Github, and you should look through it to get an idea of how to use the LCD. It should also be helpful to look through the [DFRobot provided examples on Github](https://github.com/DFRobot/DFRobot_RGB1602_RaspberryPi).
+
+## Using the KY-40 Rotary Encoder
+
+
 
 ## Creating a Circuit Diagram
 
@@ -64,6 +72,6 @@ Finally, you'll need to create a comprehensive circuit diagram detailing how eve
 - Digital Encoders
 - Stepper Motors
 
-and any other eletrical componments needed for the project such as resistors, capacitors, or any Integrated Circuits used.
+and any other eletrical components needed for the project such as resistors, capacitors, or any Integrated Circuits used.
 
 To create this you can use any tool you wish, however we recommend using the [Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) schematic creator (free for students) or [circuit-diagram.org](https://www.circuit-diagram.org/), as they are both extensible, meaning you can import or create custom blocks such as one for the Raspberry Pi 4 GPIO. 

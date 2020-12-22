@@ -1,6 +1,6 @@
 # Initial Setup
 
-This section goes through the one-time setup student will need to perform upon recieving their kits.
+This section goes through the one-time setup students will need to perform upon recieving their kits.
 
 ## Hardware
 

@@ -92,3 +92,51 @@ Your code should follow the commonly accepted code style conventions outlined in
 ### Maintaining your Group Github Repository
 
 In order to encourage you to learn the useful skill of managing and using a Git/Github repository, we ask to keep your group repository up to date, follow the [Github Flow](https://guides.github.com/introduction/flow/) and to use Git/Github's features like [issues](https://guides.github.com/features/issues/) to your advantage! More information on Git/Github and how to learn it will be provided in the deliverable instructions.
+
+### Collaboration Policy (policy attribution: from ECE4750 Cornell)
+
+The work you submit in this course is expected to be the result of your individual effort only, or in the case of weekly deliverables, the result of you and your group’s effort only. Your work should accurately demonstrate your understanding of the material.
+
+You are encouraged to study together and to discuss information and concepts covered in lecture
+with other students. You can give “consulting” help to or receive “consulting” help from other students. Students can also freely discuss basic computing skills or the course infrastructure. However, this permissible cooperation should never involve one student (or group) having possession of or observing in detail a copy of all or part of work done by someone else, in the form of an email, an email attachment file, a flash drive, a hard copy, on a computer screen, or in any other manner. Students are not allowed to seek consulting help from online forums outside of UGA (i.e. having someone on reddit do your project for you).
+
+Students are encouraged to seek consulting help from their peers and from the course staff via office hours and various discussion forums (Groupme, ELC, Github, etc…) . If a student receives consulting help from anyone outside of the course staff, then the student must acknowledge this help on the submitted assignment.
+
+**Examples of acceptable collaboration:**
+
+- Bob is struggling on a problem set about processor pipelining, so he seeks consulting help from
+Alice, a fellow student in the course. Alice goes through various examples from the lecture and
+reading materials to help Bob understand the concepts, and they sketch a few pipeline diagrams
+related to the problem solution together on a whiteboard. Bob and Alice work independently to
+flesh out the details of the problem solution and they each write up their work independently.
+Bob acknowledges the help he received from Alice on his submission.
+
+- Bob, Ben, and Beth are struggling to complete a lab assignment which requires implementing
+a direct-mapped cache. They talk with Alice, Amy, and Adam and learn that both groups are
+really struggling. So the six students get together for a brainstorming session. They review the
+lecture and reading materials and then sketch on a whiteboard some ideas on how to implement
+a direct-mapped cache. They might also sketch out some code snippets to try and understand
+the best way to describe some of the hardware. Then each group independently writes the code
+for the assignment and includes an acknowledgment of the help they received from the other
+group. At no time do the groups actually share code.
+
+- Bob, Ben, and Beth are having difficulty figuring out difficult test cases for their pipelined processor. They make a post on Groupme to see if anyone has some general ideas for tricky corner cases. Alice, Amy, and Adam figured out an interesting test case that ensures their pipelined processor correctly forwards the address to a store instruction, so Alice, Amy, and Adam post a qualitative description of this test case. Bob, Ben, and Beth independently write the code for this test case and then include an acknowledgment of the help they received from the other group. At no time do the groups actually share test code.
+
+**Examples of unacceptable collaboration:**
+
+- Bob is struggling on a problem set about processor pipelining, so he seeks consulting help from
+Alice, a fellow student in the course. Alice shows Bob her completed problem set solutions and walks him through the various steps required to solve the problem. Bob takes some notes during their discussion, and then independently writes up his solutions. Bob acknowledges the help he received from Alice on his submission, but it doesn’t matter since Alice explicitly shared her solutions with Bob.
+
+- Bob, Ben, and Beth are struggling to complete a lab assignment which requires implementing
+a direct-mapped cache. They talk with Alice, Amy, and Adam and learn that both groups are
+really struggling. So the six students get together for a joint coding session. Each student works
+on one module in the cache, then they combine the modules together to create the final working
+direct-mapped cache. The six students share and copy each others code often in order to finish the assignment. Each group submits the final code independently. Each group acknowledges the
+help it received from the other group, but it doesn’t matter since they explicitly shared code.
+
+- Bob, Ben, and Beth are having difficulty figuring out difficult test cases for their pipelined processor. They make a post on ELC to see if anyone has some general ideas for tricky corner
+cases. Alice, Amy, and Adam figured out an interesting test case that ensures their pipelined
+processor correctly forwards the address to a store instruction, so Alice, Amy, and Adam send their test code to Bob, Ben, and Beth via email. Bob, Ben, and Beth modify this test code and then include it in their submission. Bob, Ben, and Beth include an acknowledgment of the help they received from the other group, but it doesn’t matter since they explicitly shared code.
+
+Notice that the key is that students should not share the actual solutions or code with each other.
+Consulting with your fellow students is fine and is an important part of succeeding in this course.
