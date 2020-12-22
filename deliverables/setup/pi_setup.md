@@ -132,6 +132,11 @@ Then we need to install the dependancies using these commands:
 ```
 sudo apt install pigpio python-pigpio python3-pigpio git
 ```
+It will be helpful to start the `pigpio` daemon at start up. To do this, run the following command.
+
+```
+sudo systemctl enable pigpiod
+```
 
 ### Python Environment and Dependencies
 
