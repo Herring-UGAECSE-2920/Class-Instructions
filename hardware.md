@@ -12,7 +12,7 @@ A 12V 5A power supply is provided to power the stepper motors via the Motor Hat.
 
 ## Stepper Motors
 
-The supplied motors for the X and Y axis of the Plotter draw too much current for our Motor Hat. We will replace them with lighter-duty motors ([Documentation](https://www.adafruit.com/product/324)). A walkthrough of removing the steppers from the plotter and replacing them with the lighter-duty ones is provided here. 
+The supplied motors for the X and Y axis of the Plotter draw too much current for our Motor Hat. We will replace them with lighter-duty motors ([Documentation](https://www.adafruit.com/product/324)). A walkthrough of removing the steppers from the plotter and replacing them with the lighter-duty ones is provided [here](https://github.com/Herring-UGAECSE-2920/Class-Instructions/blob/main/deliverables/setup/plotter_setup.md). 
 
 ## H-Driver
 To control the stepper for the Z-axis (pen holder), we will use a SN754410 Quadruple Half-H Driver ([Datasheet](https://www.ti.com/lit/ds/symlink/sn754410.pdf)). You will need to write a Python library to control the Z-axis stepper. Read the documentation. 
