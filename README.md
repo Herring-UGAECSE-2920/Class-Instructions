@@ -14,21 +14,21 @@ In addition to recreating the functionality of the original XY Plotter (X, Y, Z 
 
 For the Equation Plotter mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axises will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing here (link).
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axises will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing here [here](./resources/equation_plotter_graph_paper.pdf).
 
 You will be expected to graph the following functions:
 
-![eq1](http://www.sciweavers.org/tex2img.php?eq=y%3Dmx%2Bb&bc=White&fc=Black&im=jpg&fs=12&ff=modern&edit=0)
+![eq1](./resources/render1.png)
 
-![eq2](http://www.sciweavers.org/tex2img.php?eq=y%3Dsin%28x%29&bc=White&fc=Black&im=jpg&fs=12&ff=modern&edit=0)
+![eq2](./resources/render2.png)
 
-![eq3](http://www.sciweavers.org/tex2img.php?eq=y%3Dax%5E2%2Bbx%2Bc&bc=White&fc=Black&im=jpg&fs=12&ff=modern&edit=0)
+![eq3](./resources/render3.png)
 
-![eq4](http://www.sciweavers.org/tex2img.php?eq=x%5E2%20%2B%20y%5E2%20%3D%20r%5E2&bc=White&fc=Black&im=jpg&fs=12&ff=modern&edit=0)
+![eq4](./resources/render4.png)
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given. 
 
-[img]http://www.sciweavers.org/tex2img.php?eq=x%5E2%20%2B%20y%5E2%20%3D%20r%5E2&bc=White&fc=Black&im=jpg&fs=12&ff=modern&edit=0[/img]
+
 <!---
 TODO:
 
