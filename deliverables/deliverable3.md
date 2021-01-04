@@ -60,6 +60,16 @@ To accomplish this, you'll need to read through the [DFRobot LCD documentation](
 
 ## Using the KY-40 Rotary Encoder
 
+To provide user input to the plotter, two rotary encoders will be used. To simplify the development of this project for you, you will be using the following Pigpio Encoder Python library: ([Link](https://github.com/vash3d/pigpio_encoder))
+
+To use the library first clone the repository to your Plotter directory:
+
+```$ git clone https://github.com/vash3d/pigpio_encoder.git```
+
+The Github page gives a through explanation of how to use the library. 
+
+> Pitfall: If you install the pigpio encoder library with pip , ie pip install pigpio_encoder, it will install an older version of the library that does not include some of the functions like up_callback()
+and down_callback().
 
 
 ## Creating a Circuit Diagram
