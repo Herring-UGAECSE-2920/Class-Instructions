@@ -10,11 +10,11 @@ As covered later, you'll be using Python to program, and two Raspberry Pi "Hats"
 
 In addition to recreating the functionality of the original XY Plotter (X, Y, Z axis control) you will also be implementing three "Operating Modes" and an interactive menu system on the LCD display to select them as well as other operations such as calibration, homing, etc. These "Operating Modes" include an Equation Drawer, an Etch-A-Sketch mode, and a G-Code mode, parameter for which exist below.
 
-### Equation Drawer (TODO)
+### Equation Drawer
 
 For the Equation Plotter mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axises will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing here [here](./resources/equation_plotter_graph_paper.pdf).
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axes will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing here [here](./resources/equation_plotter_graph_paper.pdf).
 
 You will be expected to graph the following functions:
 
@@ -27,7 +27,6 @@ You will be expected to graph the following functions:
 ![eq4](./resources/render4.png)
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given. 
-
 
 <!---
 TODO:
