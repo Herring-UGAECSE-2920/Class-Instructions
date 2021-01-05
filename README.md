@@ -88,12 +88,12 @@ When wiring up components with a breadboard it is crucial that your wires stay o
 
 ### Cases/Housings
 
-To encourage a more 'clean' look and feel to your final plotter, we are giving extra credit for teams who design and manifacture a custom case for their Raspberry Pi and other hardware. The case can be manufactured using anything found in the Fabrication Lab (Remember, there are other ways to rapidly manufacture than 3D printing!) such as the wood/acrylic laser cutter, waterjet cutter, 3D printers, and much more. Some additional parameters for the case are given below. These parameters must be met to earn extra credit:
+To encourage a more 'clean' look and feel to your final plotter, we are giving extra credit for teams who design and manufacture a custom case for their Raspberry Pi and other hardware. The case can be manufactured using anything found in the Fabrication Lab (Remember, there are other ways to rapidly manufacture than 3D printing!) such as the wood/acrylic laser cutter, waterjet cutter, 3D printers, and much more. Some additional parameters for the case are given below. These parameters must be met to earn extra credit:
 
 - The case must hold the Raspberry Pi as well as the additional hardware used (hats, encoders, breadboards, etc.) with the only hardware outside of the case being the Plotter itself, the power supply, and wiring.
 - You should aim to make the case compact, with a maximum size of 8" on each side.
 - Your wiring out of the case should be clean, meaning nearly all wires exit the case in only 1-2 spots.
-- You must take cooling for the Raspberry Pi, Adafruit Motor Hat, and H-Bridge chip into consideration as ventillation holes are mandatory and use of fans and heatsinks are strongly suggested (This could also give you a performance advantage).
+- You must take cooling for the Raspberry Pi, Adafruit Motor Hat, and H-Bridge chip into consideration as ventilation holes are mandatory and use of fans and heat sinks are strongly suggested (This could also give you a performance advantage).
 - User Interface devices (encoders, LCD, etc.) for your plotter should be clearly visible and easy to use.
 - In general, the custom case should be an improvement on the provided one in terms of cleanliness, easy of use, and protection/support of your sensitive components.
 
@@ -105,7 +105,7 @@ Your code should follow the commonly accepted code style conventions outlined in
 
 ### Maintaining your Group Github Repository
 
-In order to encourage you to learn the useful skill of managing and using a Git/Github repository, we ask to keep your group repository up to date, follow the [Github Flow](https://guides.github.com/introduction/flow/) and to use Git/Github's features like [issues](https://guides.github.com/features/issues/) to your advantage! More information on Git/Github and how to learn it will be provided in the deliverable instructions.
+In order to encourage you to learn the useful skill of managing and using a Git/Github repository, we ask to keep your group repository up to date, follow the [Github Flow](https://guides.github.com/introduction/flow/) and to use Git/Github features like [issues](https://guides.github.com/features/issues/) to your advantage! More information on Git/Github and how to learn it will be provided in the deliverable instructions.
 
 ### Collaboration Policy (policy attribution: from ECE4750 Cornell)
 
