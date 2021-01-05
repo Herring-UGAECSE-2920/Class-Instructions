@@ -10,11 +10,23 @@ As covered later, you'll be using Python to program, and two Raspberry Pi "Hats"
 
 In addition to recreating the functionality of the original XY Plotter (X, Y, Z axis control) you will also be implementing three "Operating Modes" and an interactive menu system on the LCD display to select them as well as other operations such as calibration, homing, etc. These "Operating Modes" include an Equation Drawer, an Etch-A-Sketch mode, and a G-Code mode, parameter for which exist below.
 
+### Etch-A-Sketch
+
+For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionality of the popular kids toy! You'll use the two digital encoders provided to control the X and Y axis to create a "manual" drawing mode.
+
+- When spinning the encoder knobs clockwise, the X-axis should move "right" relative to its home position and the Y-axis should move "up" relative to its home position. Conversely, when spinning the encoder knobs counter-clockwise, the X-axis should move "left" relative to its home, and the Y-axis should move "down" relative to its home.
+
+- The mode should include the ability to adjust any necessary parameters such as motor step size, speed, etc. The LCD display has 5 GPIO buttons that can be used for this purpose.
+
+- The mode should also include the ability to toggle the Z-axis (the pen holder) in an "up" and "down" position.The digital encoders come with extra GPIO output for a "short" and "long" press that could be used here.
+
+- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
+
 ### Equation Drawer
 
 For the Equation Plotter mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axes will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing here [here](./resources/equation_plotter_graph_paper.pdf).
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axes will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing [here](./resources/equation_plotter_graph_paper.pdf).
 
 You will be expected to graph the following functions:
 
@@ -26,36 +38,7 @@ You will be expected to graph the following functions:
 
 ![eq4](./resources/render4.png)
 
-where the constants: `m`, `b`, `a`, `c`, and `r` will be given. 
-
-<!---
-TODO:
-
-Collect and finalize tight specification around the functionality of the equation drawing mode such as:
-
-    * What kinds of functions/equations need to be supported? (polynomials, quadratics, etc.)
-
-    * What are the parameters around scaling on the plotter? Fix scale? Parameters around a dynamic        scaling system?
-    
-    * What are the accuracy requirements?
-
-    * How would they give their code equations to draw?
-
-    * Should they essentially make a G-Code generator for equations, and use the G-Code mode? 
-
---->
-
-### Etch-A-Sketch
-
-For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionality of the popular kids toy! You'll use the two digital encoders provided to control the X and Y axis to create a "manual" drawing mode.
-
-When spinning the encoder knobs clockwise, the X-axis should move "right" relative to its home position and the Y-axis should move "up" relative to its home position. Conversely, when spinning the encoder knobs counter-clockwise, the X-axis should move "left" relative to its home, and the Y-axis should move "down" relative to its home.
-
-The mode should include the ability to adjust any necessary parameters such as motor step size, speed, etc. The LCD display has 5 GPIO buttons that can be used for this purpose.
-
-The mode should also include the ability to toggle the Z-axis (the pen holder) in an "up" and "down" position.The digital encoders come with extra GPIO output for a "short" and "long" press that could be used here.
-
-For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
+where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.
 
 ### G-Code (TODO)
 
@@ -73,7 +56,11 @@ Finally, you should create a User Interface using the provided 2x16 LCD display 
 
 Use the [interface on the Prusa i3 3D printer](https://help.prusa3d.com/en/article/lcd-menu-original-prusa-i3_142322) as inspiration.
 
-## Rules (TODO)
+### Documentation Expectations
+
+Throughout the project, you will need to thoroughly document what you did, how you did it, and how someone with no prior knowledge of the project could recreate it (you can assume this hypothetical person has the same knowledge you had at the beginning of the course). Essentially you are documenting what your plotter does, and then how you specifically and uniquely implemented the required functionality. This documentation should require thorough explanations as well as any diagrams, pictures, code, or other data you created or used for that deliverable. To create/collect this documentation, you are free to use whatever tools you and your team desire, but to earn extra credit you can create a [Github Pages](https://pages.github.com/) website in your team repository and keep/update your documentation from there! While not required upon submission of your deliverables each week, you should update/add to this documentation as you work on it, as you'll be collecting, formatting, and submitting it at the end of the semester as part of your final deliverable.
+
+## Project Rules
 
 Below is a set of rules to follow while working on this project in addition to any established on the syllabus. These are generally best practices for keeping your project organized and on track.
 
@@ -99,7 +86,18 @@ When wiring up components with a breadboard it is crucial that your wires stay o
 
     Besides organization, this will really help you spot mis-wirings before you apply power and potentially damage your hardware. Keep a careful lookout for RED and BLACK wires connecting to the same terminal strip, as this could indicate a short.
 
-### Cases/Housings (TODO)
+### Cases/Housings
+
+To encourage a more 'clean' look and feel to your final plotter, we are giving extra credit for teams who design and manifacture a custom case for their Raspberry Pi and other hardware. The case can be manufactured using anything found in the Fabrication Lab (Remember, there are other ways to rapidly manufacture than 3D printing!) such as the wood/acrylic laser cutter, waterjet cutter, 3D printers, and much more. Some additional parameters for the case are given below. These parameters must be met to earn extra credit:
+
+- The case must hold the Raspberry Pi as well as the additional hardware used (hats, encoders, breadboards, etc.) with the only hardware outside of the case being the Plotter itself, the power supply, and wiring.
+- You should aim to make the case compact, with a maximum size of 8" on each side.
+- Your wiring out of the case should be clean, meaning nearly all wires exit the case in only 1-2 spots.
+- You must take cooling for the Raspberry Pi, Adafruit Motor Hat, and H-Bridge chip into consideration as ventillation holes are mandatory and use of fans and heatsinks are strongly suggested (This could also give you a performance advantage).
+- User Interface devices (encoders, LCD, etc.) for your plotter should be clearly visible and easy to use.
+- In general, the custom case should be an improvement on the provided one in terms of cleanliness, easy of use, and protection/support of your sensitive components.
+
+To get you started, here are some existing designs for Raspberry Pi cases on [Thingiverse](https://www.thingiverse.com/search?q=raspberry+pi+4+case&type=things&sort=relevant).
 
 ### Code Style/Conventions
 

@@ -2,7 +2,7 @@
 
 ## Motor Hat
 
-You will need to command and control 3 seperate stepper motors for this project. The X and Y axis motors will be controlled using the Adafruit DC and Stepper Motor HAT for Raspberry Pi ([Documentation](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi)). The documentation at the previous link will give you all of the basic knowledge you will need to get started. The library provided by Adafruit can be used to control the stepper motors. 
+You will need to command and control 3 separate stepper motors for this project. The X and Y axis motors will be controlled using the Adafruit DC and Stepper Motor HAT for Raspberry Pi ([Documentation](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi)). The documentation at the previous link will give you all of the basic knowledge you will need to get started. The library provided by Adafruit can be used to control the stepper motors. 
 
 A 12V 5A power supply is provided to power the stepper motors via the Motor Hat. To connect the supply to the hat, a 2.1mm Female DC Power barrel jack is provided ([Link](https://www.adafruit.com/product/368)).
 
