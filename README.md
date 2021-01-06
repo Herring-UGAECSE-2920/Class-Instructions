@@ -42,13 +42,22 @@ where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your 
 
 ### G-Code (TODO)
 
-<!---
-TODO:
+The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.
 
-Identify subset of G-Code needed for the XY Plotter:
+You will need to implement the following commands:
 
-    * Complexity of the instruction set should be dictated by the needs of the equation drawer and the instructions needed for our sample G-Code input.
---->
+#### G01 – Linear Interpolation
+
+![G01](./resources/g01.JPG)
+
+#### G02 – Circular Interpolation Clockwise
+
+![G01](./resources/g02.JPG)
+
+#### G28 – Return Home
+
+You can assume absolute positioning and units of cm for all commands.
+
 
 ### LCD/Encoder Interface
 
