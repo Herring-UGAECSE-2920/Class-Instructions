@@ -4,7 +4,7 @@ Instructions for each checkpoint/deliverable in this class, as well as helpful s
 
 ## Project Specifications
 
-Your objective this semester is to take an existing XY Plotter, deconstruct it, and reimplement it (along with some additional functionality) using a Raspberry Pi 4 and it's necessary accompanying hardware. 
+Your objective this semester is to take an existing XY Plotter, deconstruct it, and implement it (along with some additional functionality) using a Raspberry Pi 4 and it's necessary accompanying hardware. 
 
 As covered later, you'll be using Python to program, and two Raspberry Pi "Hats" which add Stepper Motor control for the X and Y stepper motors, and an LCD display. In addition to the hats, you'll also be using two digital encoders for input/controls and an H-Bridge chip to drive the Z axis stepper motor.
 
@@ -40,24 +40,58 @@ You will be expected to graph the following functions:
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.
 
-### G-Code
+### G-Code (Images courtesy of howtomechatronics.com)
 
 The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.
 
 You will need to implement the following commands:
 
-#### G01 – Linear Interpolation
+- **G00 - Rapid Positioning**
 
-![G01](./resources/g01.JPG)
+    The G00 instruction rapidly moves the pen head linearly from the current position to the end position provided, inherently using the maximum "feedrate" (mm/minute) or stepper speed.
 
-#### G02 – Circular Interpolation Clockwise
+    ![G01](./resources/G00.png)
 
-![G01](./resources/g02.JPG)
+- **G01 – Linear Interpolation**
 
-#### G28 – Return Home
+    The G01 instruction moves the pen head linearly from the current position to a target position, utilizing a linear interpolation algorithm. As shown below, a feedrate (mm/minute) is also specified.
+    
+    ![G01](./resources/G01.png)
 
-You can assume absolute positioning and units of cm for all commands.
+- **G02 – Circular Interpolation Clockwise**
 
+    The G02 instruction moves the pen head in a clockwise circular direction from the current position to a target position along a circle whose center point is specific as an offset of the current position as shown and explained below:
+
+    ![G02](./resources/G02.png)
+
+- **G03 - Circular Interpolation Counter-Clockwise**
+
+    The G03 instruction operates exactly as the G02 instruction does, except moving in a counter-clockwise direction along the circle.
+    
+    ![G02](./resources/G03.png)
+
+- **G28 – Return Home**
+
+    The G28 command tells the machine to move the tool to its reference point or home position. Since we have convenient X and Y axis endstops already on the plotter, we can use these to establish a good home position.
+
+- **M02 - End of Program**
+
+    The M02 command signifies the end of a G-Code program. We will use this command to tell your plotter to execute a 'stop' or 'end of program' function which will raise the pen and send the plotter to its home position.
+
+- **M03 - Pen Down**
+
+    We'll use the M03 command to tell the parser to plotter the pen in the down position until otherwise interrupted or raised.
+
+- **M04 - Pen Up**
+
+    We'll use the M04 command to tell the plotter to raise the pen.
+
+You can assume absolute positioning and units of mm for all commands. For more reference of G-Code and it's commands, use these links as reference:
+
+- [How to Mechatronics](https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands/)
+- [The RepRap Project](https://www.google.com/url?q=https://reprap.org/wiki/G-code%23G0_.26_G1:_Move&sa=D&ust=1610085714236000&usg=AOvVaw3nXp1xe-aT25ToL30w2h9N)
+
+Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
 
 ### LCD/Encoder Interface
 
@@ -67,7 +101,7 @@ Use the [interface on the Prusa i3 3D printer](https://help.prusa3d.com/en/artic
 
 ### Documentation Expectations
 
-Throughout the project, you will need to thoroughly document what you did, how you did it, and how someone with no prior knowledge of the project could recreate it (you can assume this hypothetical person has the same knowledge you had at the beginning of the course). Essentially you are documenting what your plotter does, and then how you specifically and uniquely implemented the required functionality. This documentation should require thorough explanations as well as any diagrams, pictures, code, or other data you created or used for that deliverable. To create/collect this documentation, you are free to use whatever tools you and your team desire, but to earn extra credit you can create a [Github Pages](https://pages.github.com/) website in your team repository and keep/update your documentation from there! While not required upon submission of your deliverables each week, you should update/add to this documentation as you work on it, as you'll be collecting, formatting, and submitting it at the end of the semester as part of your final deliverable.
+Throughout the project, you will need to thoroughly document what you did, how you did it, and how someone with no prior knowledge of the project could recreate it (you can assume this hypothetical person has the same knowledge you had at the beginning of the course). Essentially you are documenting what your plotter does, and then how you specifically and uniquely implemented the required functionality. This documentation should require thorough explanations as well as any diagrams, pictures, code, or other data you created or used for that deliverable. To create/collect this documentation, you are free to use whatever tools you and your team desire such as Google Docs, Microsoft Word, etc. However if you'd like to keep all of your work in one place on the Github, we've provided a primer for writing documentation using Markdown and Github in the "docs" folder of your group repository.
 
 ## Project Rules
 
@@ -97,12 +131,12 @@ When wiring up components with a breadboard it is crucial that your wires stay o
 
 ### Cases/Housings
 
-To encourage a more 'clean' look and feel to your final plotter, we are giving extra credit for teams who design and manufacture a custom case for their Raspberry Pi and other hardware. The case can be manufactured using anything found in the Fabrication Lab (Remember, there are other ways to rapidly manufacture than 3D printing!) such as the wood/acrylic laser cutter, waterjet cutter, 3D printers, and much more. Some additional parameters for the case are given below. These parameters must be met to earn extra credit:
+To facilitate a more 'clean' look and feel to your final plotter, we suggest that teams design and manufacture a custom case for their Raspberry Pi and other hardware. The case can be manufactured using anything found in the Fabrication Lab (Remember, there are other ways to rapidly manufacture than 3D printing!) such as the wood/acrylic laser cutter, waterjet cutter, 3D printers, and much more. Some additional guidelines for the case/housing are given below. While adherence to these are not required, they are generally good practice:
 
 - The case must hold the Raspberry Pi as well as the additional hardware used (hats, encoders, breadboards, etc.) with the only hardware outside of the case being the Plotter itself, the power supply, and wiring.
 - You should aim to make the case compact, with a maximum size of 8" on each side.
 - Your wiring out of the case should be clean, meaning nearly all wires exit the case in only 1-2 spots.
-- You must take cooling for the Raspberry Pi, Adafruit Motor Hat, and H-Bridge chip into consideration as ventilation holes are mandatory and use of fans and heat sinks are strongly suggested (This could also give you a performance advantage).
+- You should take cooling for the Raspberry Pi, Adafruit Motor Hat, and H-Bridge chip into consideration as ventilation holes are mandatory and use of fans and heat sinks are strongly suggested (This could also give you a performance advantage).
 - User Interface devices (encoders, LCD, etc.) for your plotter should be clearly visible and easy to use.
 - In general, the custom case should be an improvement on the provided one in terms of cleanliness, easy of use, and protection/support of your sensitive components.
 

@@ -1,6 +1,6 @@
 # Deliverable 1
 
-For this deliverable you all will be doing two things: Filling out and submitting your CATME profile so we can effectively get you organized into groups, and taking the Syllabus Quiz.
+For this first deliverable y'all will be doing three things: Filling out and submitting your CATME profile so we can effectively get you organized into groups, taking the Syllabus Quiz, and finally doing a "Hello World" exercise with Python/Github once you've been assigned a group.
 
 ## CATME Submission
 
@@ -8,4 +8,26 @@ Please fill out and submit this CATME form: [link to form]
 
 ## Syllabus Quiz
 
-Please go to ELC and complete the Syllabus Quiz it should be under [insert ELC path here]
+Please go to ELC and complete the Syllabus Quiz under [insert ELC path here]
+
+## Github Exercise
+
+After you've been assigned to a group, make sure you have set up your Github account and submitted your username to [insert form here]. Once you've done that, we will have an organization group invite sent to you shortly. To view and accept the organization group invite, go to the "Notifications" section on your Github home page. The icon should be in the upper right hand corner of the page, near your profile picture, and should look something like this:
+
+![notifications](resources/notification.png)
+
+Once you've accepted the group invite, you'll have access to your group's repository on the "Herring-UGAECSE-2920" Github organization. From here, you'll need to set up [Git](https://docs.github.com/en/free-pro-team@latest/github/getting-started-with-github/set-up-git) and [Python](https://realpython.com/installing-python/) on your personal computer to complete this assignment (assuming they are not already installed).
+
+When you've got Git and Python set up, clone your group Git repository somewhere on your personal computer. From GitBash on Windows or a regular terminal on MacOS/Linux, run the following command, replacing [SSH Address] with the SSH address for your group's Git repository, found under the 'code' button on the repository home page, pictured below:
+
+```
+git clone [SSH Address]
+```
+
+![Code Button](resources/clone.png)
+
+When you have the repository cloned, create a Python script under a directory named `HelloWorldScripts` with the file name being `firstname_lastname.py` replacing `firstname` with your first name and `lastname` with your last name.
+
+In the script, simply print your full name and exit. When done, make sure to save your changes and 'push' them to Github by following [this](https://docs.github.com/en/free-pro-team@latest/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line) guide.
+
+After that, you're finished.

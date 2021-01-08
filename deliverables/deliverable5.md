@@ -1,23 +1,21 @@
 # Deliverable 5
 
-Through deliverables 5 and 6, you'll be designing the Etch-A-Sketch mode outlined in the [README](../README.md) of this repository. Essentially you'll be recreating the functionality of the [famous toy](https://en.wikipedia.org/wiki/Etch_A_Sketch) with your XY Plotter and Raspberry Pi.
+For deliverable 5, you'll be wiring up your H-Bridge chip for use with the Z axis stepper on the Plotter. However, before you test control over the motor using software, you'll need to pass the wiring safety checkpoint as described below.
 
-## Design Proposal
+## Wiring Safety Checkpoint for H-Bridge IC
 
-To start, create a rough design proposal outlining what you and your team think would be the correct way to implement this functionality. It is not necessary to stick completely to the design proposal as you get into the weeds, but you should take it seriously as a planning exercise for this portion of the project. In your proposal, document how you would implement the individual points of functionality outlined below:
+Before demonstrating control over the Z axis motor with the [H-Bridge chip](https://www.ti.com/lit/ds/symlink/sn754410.pdf), you'll need to ensure that it, along with the [5V linear regulator](https://www.mouser.com/datasheet/2/308/MC7800_D-1773680.pdf) we'll use to power it, are connected up correctly. After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 5V linear regulator for use with H-Bridge Chip.
 
-- When spinning the encoder knobs clockwise, the X-axis should move "right" relative to its home position and the Y-axis should move "up" relative to its home position. Conversely, when spinning the encoder knobs counter-clockwise, the X-axis should move "left" relative to its home, and the Y-axis should move "down" relative to its home.
+TODO: Add details about meeting times/places for wiring checkpoint
 
-- The mode should include the ability to adjust any necessary parameters such as motor step size, speed, etc.
+## Using the Texas Instruments SN754410 H-Bridge and GPIO to Control a Stepper
 
-- The mode should also include the ability to toggle the Z-axis (the pen holder) in an "up" and "down" position.
+Now, you'll need to demonstrate that you understand and can use the SN754410 H-Bridge chip from Texas Instruments to drive a stepper motor. You'll be using the 'Z' axis motor on the plotter, which really just controls a mechanism to raise or lower the plotting pen/marker. This motor runs at 5V and pulls around 800mA concurrently. As before, make sure there are no mechanical problems with the 'Z' axis motor or its mounting before driving the motor.
 
-- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
+To demonstrate control over the 'Z' axis motor using the H-Bridge chip, create a Python script to hold the plotter pen down for 1 second, and then up for 1 second, continuing this until the program is halted (Ctrl+C on the command-line).
 
-The design proposal should be relatively short, approximately 1.5 pages with 1.15 line spacing, Times New Roman, and 12 pt font.
+For this section, you'll need to understand the Texas Instruments SN754410 H-Bridge chip and how it operates using [it's datasheet](https://www.ti.com/lit/ds/symlink/sn754410.pdf), then develop a method for controlling the chip using GPIO outputs.
 
-## Begin Designing, Building, Testing, and Documenting
+## Write-Up
 
-When you have completed your design proposal, you are free to start experimenting with getting the Etch-A-Sketch mode working. As a goal for this deliverable, simply get the encoders to move a motor (X or Y axis) to the right when turned clockwise, and to the left when turned counter-clockwise.
-
-When you have achieved this functionality, take a video of it for submission proof. 
+For Deliverables 3, 4, and 5 a short write-up is required explaining how to use each each of the listed components. For this deliverable, include details on how you wired up your Z axis stepper to the H-Bridge IC and how you completed the control task using the GPIO outputs. The document should be no longer than 2 pages, 1.15 line spacing, 12pt Times New Roman font.

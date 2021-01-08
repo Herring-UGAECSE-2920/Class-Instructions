@@ -6,7 +6,7 @@ For this week's deliverable, you'll be creating testing some of the functionalit
 
 First, you'll need to demonstrate that you can take advantage of some of the basic features of the DFRobot LCD necessary for creating a useful user interface. Before attempting to use the LCD, make sure the Adafruit motor hat is either off of the Pi, or its `I2C` address has been changed by creating a solder bridge on the `A0` jumper, otherwise the LCD will not be able to communicate with the Pi.
 
-To demonstrate grasp of how to set up and use the LCD and its buttons, create a program which displays an integer starting at 0 on the LCD. Whenever the top LCD button is pressed, the number increments by 1 and whenever the botton LCD button is pressed, the number decrements by 1.
+To demonstrate grasp of how to set up and use the LCD and its buttons, create a program which displays an integer starting at 0 on the LCD. Whenever the top LCD button is pressed, the number increments by 1 and whenever the bottom LCD button is pressed, the number decrements by 1.
 
 To accomplish this, you'll need to read through the [DFRobot LCD documentation](https://wiki.dfrobot.com/I_O_Expansion_HAT_for_Pi_zero_V1_0_SKU_DFR0604IIC_16X2_RGB_LCD_KeyPad_HAT_1_0_SKU_DFR0514_DFR0603). We've included the library needed to use the LCD (`rgb1602.py`) under the `lib` directory in your starter repository on the class Github, and you should look through it to get an idea of how to use the LCD. It should also be helpful to look through the [DFRobot provided examples on Github](https://github.com/DFRobot/DFRobot_RGB1602_RaspberryPi).
 
@@ -25,11 +25,11 @@ and down_callback().
 
 >***Warning: while connecting up simple components to the GPIO pins is perfectly safe, it's important to be careful how you wire things up. LEDs should have resistors to limit the current passing through them. Do not use 5V for 3V3 components. Do not connect motors directly to the GPIO pins, instead use an H-bridge circuit or a motor controller board.***
 
-Next, you'll need to demostrate that you can access and use a GPIO as both input and output. Your Raspberry Pi should have come with a breadboard, some jumper wires, and some resistors, LEDs, and buttons for this deliverable.
+Next, you'll need to demonstrate that you can access and use a GPIO as both input and output. Your Raspberry Pi should have come with a breadboard, some jumper wires, and some resistors, LEDs, and buttons for this deliverable.
 
 To demonstrate output, create a Python script to blink an LED, either with user control or on a set interval.
 
-To demonstrate input, use the guides below to create a Python scipt to print a statement once on the screen whenever a button in the real world is pressed.
+To demonstrate input, use the guides below to create a Python script to print a statement once on the screen whenever a button in the real world is pressed.
 
 For both of these you'll need to use the [`pigpio` Python library](http://abyz.me.uk/rpi/pigpio/index.html#Type_3), with its API [Reference](http://abyz.me.uk/rpi/pigpio/python.html) and some [example code](http://abyz.me.uk/rpi/pigpio/examples.html#Python%20code). Again, make sure to use a current-limiting resistor when using the GPIO as output, and enable the [Pull-Up or Pull-Down](https://en.wikipedia.org/wiki/Pull-up_resistor) feature on the pin when using it as input. (Note: Make sure to use the `pinout` command in a terminal to check wiring and pin numbers).
 
@@ -44,9 +44,14 @@ Finally, you'll need to create a comprehensive circuit diagram detailing how eve
 - [LCD Hat](https://wiki.dfrobot.com/I_O_Expansion_HAT_for_Pi_zero_V1_0_SKU_DFR0604IIC_16X2_RGB_LCD_KeyPad_HAT_1_0_SKU_DFR0514_DFR0603)
 - [Motor Hat](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/downloads)
 - [H-Bridge Chip](https://www.ti.com/lit/ds/symlink/sn754410.pdf)
+- [12V to 5V Linear Regulator for H-Bridge Chip](https://www.mouser.com/datasheet/2/308/MC7800_D-1773680.pdf)
 - [Rotary Encoders](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjXwtXS2oPuAhWPjFkKHYodBB4QFjAAegQIBBAC&url=https%3A%2F%2Fwww.handsontec.com%2Fdataspecs%2Fmodule%2FRotary%2520Encoder.pdf&usg=AOvVaw3gHhCyMKuvA0829x1elFn4)
 - [Stepper Motors](https://cdn-shop.adafruit.com/product-files/324/C140-A+datasheet.jpg)
 
-and any other eletrical components needed for the project such as power supplies, resistors, capacitors, or any Integrated Circuits used.
+and any other electrical components needed for the project such as power supplies (12V), resistors, capacitors, or any integrated circuits used.
 
 To create this you can use any tool you wish, however we recommend using the [Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) schematic creator (free for students) or [circuit-diagram.org](https://www.circuit-diagram.org/), as they are both extensible, meaning you can import or create custom blocks such as one for the Raspberry Pi 4 GPIO.
+
+## Write-Up
+
+For Deliverables 3, 4, and 5 a short write-up is required explaining how to use each each of the listed components. For this deliverable, include details on how to use the DFRobot LCD Interface, KY40 Rotary Encoder, and Raspberry Pi GPIO. Also be sure to include a copy and explanation of your Circuit Diagram. The document should be no longer than 3 pages, 1.15 line spacing, 12pt Times New Roman font.
