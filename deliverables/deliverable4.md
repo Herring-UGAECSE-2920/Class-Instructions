@@ -24,6 +24,5 @@ You should solder the `A0` jumper on the Motor Hat, which sets the `I2C` (the co
 kit = MotorKit(i2c=board.I2C(),address=0x61)
 ```
 
-## Write-Up
-
+## Project Management Report
 For Deliverables 3, 4, and 5 a short write-up is required explaining how to use each each of the listed components. For this deliverable, include details on how you wired up your X and Y steppers to the motor hat and how you completed the control task. The document should be no longer than 2 pages, 1.15 line spacing, 12pt Times New Roman font.

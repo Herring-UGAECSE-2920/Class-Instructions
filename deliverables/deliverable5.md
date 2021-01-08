@@ -16,6 +16,6 @@ To demonstrate control over the 'Z' axis motor using the H-Bridge chip, create a
 
 For this section, you'll need to understand the Texas Instruments SN754410 H-Bridge chip and how it operates using [it's datasheet](https://www.ti.com/lit/ds/symlink/sn754410.pdf), then develop a method for controlling the chip using GPIO outputs.
 
-## Write-Up
+## Project Management Report
 
 For Deliverables 3, 4, and 5 a short write-up is required explaining how to use each each of the listed components. For this deliverable, include details on how you wired up your Z axis stepper to the H-Bridge IC and how you completed the control task using the GPIO outputs. The document should be no longer than 2 pages, 1.15 line spacing, 12pt Times New Roman font.

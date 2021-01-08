@@ -52,6 +52,6 @@ and any other electrical components needed for the project such as power supplie
 
 To create this you can use any tool you wish, however we recommend using the [Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) schematic creator (free for students) or [circuit-diagram.org](https://www.circuit-diagram.org/), as they are both extensible, meaning you can import or create custom blocks such as one for the Raspberry Pi 4 GPIO.
 
-## Write-Up
+## Project Management Report
 
 For Deliverables 3, 4, and 5 a short write-up is required explaining how to use each each of the listed components. For this deliverable, include details on how to use the DFRobot LCD Interface, KY40 Rotary Encoder, and Raspberry Pi GPIO. Also be sure to include a copy and explanation of your Circuit Diagram. The document should be no longer than 3 pages, 1.15 line spacing, 12pt Times New Roman font.
