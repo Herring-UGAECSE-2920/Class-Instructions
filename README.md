@@ -24,11 +24,15 @@ For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionali
 
 ### Equation Drawer
 
-For the Equation Plotter mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
+For the Math Mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
 A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axes will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing [here](./resources/equation_plotter_graph_paper.pdf).
 
-You will be expected to graph the following functions:
+To calculate the center of the page, you will assume 25mm margins on each side of the page. The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
+
+![paper placement](resources/paperplacement.jpg)
+
+You will be expected to graph the following functions, in units of mm:
 
 ![eq1](./resources/render1.png)
 
@@ -40,9 +44,13 @@ You will be expected to graph the following functions:
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.
 
+If the function (or one period of the function, in the case of sin(x)) is not able to fit within the standard actual-size bounds of the axes, you are required to implement a scaling algorithm which will scale the axes and the function to be able to fit within the 6 cm x 6 cm bounds.
+
 ### G-Code (Images courtesy of howtomechatronics.com)
 
 The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.
+
+As with the Equation Drawer feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower left hand corner of the page/margins.
 
 You will need to implement the following commands:
 
@@ -72,7 +80,7 @@ You will need to implement the following commands:
 
 - **G28 – Return Home**
 
-    The G28 command tells the machine to move the tool to its reference point or home position. Since we have convenient X and Y axis endstops already on the plotter, we can use these to establish a good home position.
+    The G28 command tells the machine to move the tool to its reference point or home position. Since we have convenient X and Y axis endstops already on the plotter, we can use these to establish a good home position, given we know where the endstops put us on the paper and where our desired home position is.
 
 - **M02 - End of Program**
 
@@ -145,6 +153,8 @@ To get you started, here are some existing designs for Raspberry Pi cases on [Th
 ### Code Style/Conventions
 
 Your code should follow the commonly accepted code style conventions outlined in [PEP 8](https://www.python.org/dev/peps/pep-0008/) on the official Python website. In addition to the practices outlined in PEP 8, you should follow [Object-Oriented Programming](https://en.wikipedia.org/wiki/Object-oriented_programming) principles when necessary (we'll generally let you know if something needs to be a class) and avoid creating [monolithic](https://en.wikipedia.org/wiki/Monolithic_application) software; instead opt to break your software into smaller, more manageable and maintainable pieces.
+
+While mildly outlined in the PEP 8 document above, we'd like to reiterate that commenting your code is crucial to both the development and grading process. A good rule of thumb to follow is that a comment should *only* be added to answer a question that the code can't. In essence, if you follow the PEP 8 naming conventions and give your variables/objects meaningful names, it won't take very long to understand most code; in some ways, the code *becomes* the documentation. However, if you use a little optimization trick here, or implement a complicated operation/algorithm there, you should add a comment explaining your implementation or methodology.
 
 ### Maintaining your Group Github Repository
 
