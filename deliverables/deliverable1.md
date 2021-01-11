@@ -1,18 +1,22 @@
 # Deliverable 1
 
-For this first deliverable y'all will be doing three things: Filling out and submitting your CATME profile so we can effectively get you organized into groups, taking the Syllabus Quiz, and finally doing a "Hello World" exercise with Python/Github once you've been assigned a group.
+For this first deliverable y'all will be doing three things: completing your CATME form, setting up a Github account and submitting your username, and doing a "Hello World" exercise with Python/Github once you've been assigned a group.
 
 ## CATME Submission
 
-Please fill out and submit this CATME form: [link to form]
+Please fill out and submit the CATME form sent to your email! Do this by Wednesday 1/13/2021, otherwise we will assign you to a group at our discretion!
 
-## Syllabus Quiz
+## Github Account Setup
 
-Please go to ELC and complete the Syllabus Quiz under [insert ELC path here]
+Before we assign you to a group on the class Github organization, we'll need you to create a Github account (free) and submit your username or github email so that we can invite you. If you already have an account you don't need to make a new one, just submit it to the ELC assignment. Otherwise, Github account setup is fairly straight forward, simply go to [Github](https://github.com/login) and follow the instructions there! 
+
+Once you've done that, go to ELC and submit your username/email in text to the 'Github Username Submission' assignment.
+
+Do this as soon as you can, so that you can start on the next section!
 
 ## Github Exercise
 
-After you've been assigned to a group, make sure you have set up your Github account and submitted your username to [insert form here]. Once you've done that, we will have an organization group invite sent to you shortly. To view and accept the organization group invite, go to the "Notifications" section on your Github home page. The icon should be in the upper right hand corner of the page, near your profile picture, and should look something like this:
+After you've been assigned to a group, make sure you have set up your Github account and submitted your username to the assignment on ELC. Once you've done that, we will have an organization group invite sent to you shortly. To view and accept the organization group invite, go to the "Notifications" section on your Github home page. The icon should be in the upper right hand corner of the page, near your profile picture, and should look something like this:
 
 ![notifications](resources/notification.png)
 
