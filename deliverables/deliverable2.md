@@ -1,13 +1,53 @@
 # Deliverable 2
 
-For this week, you'll be documenting the behavior of the existing XY-Plotter provided, modifying it for use with the new Raspberry Pi hardware, and going through the preliminary setup for the Raspberry Pi hardware.
+For this week, you'll be creating a team attendance sheet, documenting the behavior of the existing XY-Plotter provided and going through the preliminary setup for the Raspberry Pi hardware. Finally, You'll need to return your unused hardware to Dr.Herring, Dr.Trudgen, or the TAs by class on Friday.
 
 Right now would also be a good time to read through the rules for the project outlined [in the README](../README.md) for this repository.
 
-## Documenting Existing Behavior and Modifying the Plotter
+## Team Attendance Sheet (P)
 
-For this section of the deliverable, you'll be following [this guide](./setup/plotter_setup.md) to assemble and modify your plotter.
+Each class period, circumstances withstanding, at least two members of your team should be in attendance to ask questions, participate in class discussion, do activities, etc. However, due to the limited capacity of our classroom (~half of the class size at 40 people) you all will need to get with your group mates and create a schedule such that ***all*** of you can come to class during the semester. 
 
-## Raspberry Pi Setup
+**P**: Since most teams will have 4-5 people, you will have to create some form of attendance rotation. Create this schedule and include it in your submission for this deliverable.
+
+## Documenting Existing Behavior (P)
+
+For this section of the deliverable, you'll be following [this guide](./setup/plotter_setup.md) to assemble and use your plotter as well as make some small modifications to it. When you finish, make sure to set aside the following parts to return to Dr.Herring, Dr.Trudgen, or the TAs:
+
+1. Control Board
+    
+    ![Control Board](resources/controlboard.jpg)
+
+2. Control Board Plexiglass
+    
+    ![Control Board Plexiglass](resources/controlboardplex.jpg)
+
+3. Control Board Mounting Screws and Long Brass Standoffs (x4 each)
+
+    ![Control Board Mounting Screws and Long Brass Standoffs (x4 each)](resources/screwsandstandoffs.jpg)
+
+4. 12V 5A Power Supply
+
+    ![12V 5A Power Supply](resources/psu.jpg)
+
+You should hang on to the rest of the hardware that came with the plotter, as you'll be needing the shorter brass standoffs and the allen wrenches for deliverable 4. We also recommend keeping the existing wiring harness intact, as it's already well organized/laid out.
+
+## Raspberry Pi Setup (P)
 
 Finally, you'll need to go through the Raspberry Pi setup documentation found [here](setup/pi_setup.md). It will guide you through setting up the Pi and getting all of the Python dependencies and environment set up. It will also link to helpful documentation for how to work on the Raspberry Pi, remotely or otherwise.
+
+# Summary
+
+In summary, for this week you need to:
+
+1. Make sure you have acquired all of the hardware for your team.
+
+2. Create your team attendance sheet and upload it to the Deliverable 1 assignment folder on ELC.
+
+3. Document the existing behavior of the plotter by taking notes/pictures/videos (add these to your Weekly Project Management Report).
+
+4. Go though the Raspberry Pi setup, and acquaint yourself with working on the Pi/Github/etc.
+
+5. Update your User Manual and Technical Documentation with your findings.
+
+6. Submit your Weekly Project Management Report to the Deliverable 1 assignment folder.
