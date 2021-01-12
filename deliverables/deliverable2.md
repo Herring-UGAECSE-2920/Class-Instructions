@@ -1,12 +1,12 @@
 # Deliverable 2
 
-For this week, you'll be acquiring your hardware for your group, documenting the behavior of the existing XY-Plotter provided, modifying it for use with the new Raspberry Pi hardware, and going through the preliminary setup for your Raspberry Pi hardware. 
+For this week, you'll be documenting the behavior of the existing XY-Plotter provided, modifying it for use with the new Raspberry Pi hardware, and going through the preliminary setup for the Raspberry Pi hardware.
 
 Right now would also be a good time to read through the rules for the project outlined [in the README](../README.md) for this repository.
 
 ## Documenting Existing Behavior and Modifying the Plotter
 
-For this section of the deliverable, you'll be following [this guide](./setup/plotter_setup.md) to assemble and modify your plotter. Instructions and deliverable submission requirements are listed in the guide.
+For this section of the deliverable, you'll be following [this guide](./setup/plotter_setup.md) to assemble and modify your plotter.
 
 ## Raspberry Pi Setup
 

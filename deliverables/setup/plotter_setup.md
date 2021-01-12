@@ -1,6 +1,6 @@
 # Plotter Setup
 
-In this section, students will assemble and use the exsisting XY Plotter provided, and modify it for use with the Raspberry Pi and its hardware.
+In this section, students will assemble and use the existing XY Plotter provided, and modify it for use with the Raspberry Pi and its hardware.
 
 ## Assembling The Plotter
 
@@ -16,7 +16,7 @@ Save this box and the styrofoam inserts, as it keeps the plotter organized and s
 
 With everything out of the package, simply follow the included instructions in the user guide to set it up. You'll need to install a Windows utility to use the plotter, so make sure to do that.
 
-When you have the plotter assembled and the Windows Utility up and running, simply take a video of each axis moving, and use that for your submission. After you finish, uninstall the utility from your computer.
+When you have the plotter assembled and the Windows Utility up and running, simply take a video of each axis moving, and use that for your submissions. After you finish, uninstall the utility from your computer.
 
 ## Modifying the Plotter for use with the Pi
 
@@ -28,7 +28,7 @@ Before we get to replacing the motors though, we need to disconnect the existing
 
 ![Plotter 3](./resources/plotter3.jpg)
 
-First, disconnect the wiring harness from all of the hardware including the motors, making sure to leave the limit switches intact. Then remove the plexi-glass using the second largest allen wrench in the kit, and use the pliers to remove the standoffs and the board (save the smaller standoffs for later, we'll need them). In order to save the power switch, snip the wires as close to the board as possible. When you're done, the bottom of the plotter should look like this:
+First, disconnect the wiring harness from all of the hardware including the motors, making sure to leave the limit switches intact. Then remove the plexiglass using the second largest allen wrench in the kit, and use the pliers to remove the standoffs and the board (save the smaller standoffs for later, we'll need them). In order to save the power switch, snip the wires as close to the board as possible. When you're done, the bottom of the plotter should look like this:
 
 ![Plotter 4](./resources/plotter4.jpg)
 
@@ -40,19 +40,19 @@ When you've got it removed, take note of how the X-axis motor is mounted, we'll 
 
 ![Plotter 6](./resources/plotter6.jpg)
 
-Begin disassembly be loosening the toothed belt pully and the mounting screws for the motor, when you have the motor seperated from the belt pully and the gantry, position the belt pully loosely onto the new motor as below, paying careful attention to the orientation:
+Begin disassembly be loosening the toothed belt pulley and the mounting screws for the motor, when you have the motor separated from the belt pulley and the gantry, position the belt pulley loosely onto the new motor as below, paying careful attention to the orientation:
 
 ![Plotter 8](./resources/plotter8.jpg)
 
-Next, take the smaller brass standoffs from the board mount, and screw them into the mounts on the new motor, this will solve a mounting problem caused by the new motors. After that, mount the new motor in the same way as the old, making sure to loop the belt around the pully before securing the new motor. When you have the first two screws set, adjust the position of the belt pully so that no snag or other friction occurs. When done, it should look something like this:
+Next, take the smaller brass standoffs from the board mount, and screw them into the mounts on the new motor, this will solve a mounting problem caused by the new motors. After that, mount the new motor in the same way as the old, making sure to loop the belt around the pulley before securing the new motor. When you have the first two screws set, adjust the position of the belt pulley so that no snag or other friction occurs. When done, it should look something like this:
 
 ![Plotter 9](./resources/plotter9.jpg)
 
-Now we'll replace the Y-axis motor in a simpler process. Loosen the belt pully and the mounting screws, making sure the keep the cable sleeve intact. Again, take note of the orientation and the position of the belt pully on the motor shaft:
+Now we'll replace the Y-axis motor in a simpler process. Loosen the belt pulley and the mounting screws, making sure the keep the cable sleeve intact. Again, take note of the orientation and the position of the belt pulley on the motor shaft:
 
 ![Plotter 10](./resources/plotter10.jpg)
 
-Similarly to how we mounted X-axis motor, make sure to wrap the belt around the pully, secure the first two mounting screws, and adjust the pully height such that the belt is level with the guide pullies. Also make sure to replace the cable sleeve as it was before:
+Similarly to how we mounted X-axis motor, make sure to wrap the belt around the pulley, secure the first two mounting screws, and adjust the pulley height such that the belt is level with the guide pulleys. Also make sure to replace the cable sleeve as it was before:
 
 ![Plotter 11](./resources/plotter11.jpg)
 

@@ -26,7 +26,7 @@ For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionali
 
 For the Math Mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axes will extend 8 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing [here](./resources/equation_plotter_graph_paper.pdf).
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axes will extend 6 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing [here](./resources/equation_plotter_graph_paper.pdf).
 
 To calculate the center of the page, you will assume 25mm margins on each side of the page. The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
 
@@ -97,7 +97,7 @@ You will need to implement the following commands:
 You can assume absolute positioning and units of mm for all commands. For more reference of G-Code and it's commands, use these links as reference:
 
 - [How to Mechatronics](https://howtomechatronics.com/tutorials/g-code-explained-list-of-most-important-g-code-commands/)
-- [The RepRap Project](https://www.google.com/url?q=https://reprap.org/wiki/G-code%23G0_.26_G1:_Move&sa=D&ust=1610085714236000&usg=AOvVaw3nXp1xe-aT25ToL30w2h9N)
+- [The RepRap Project](https://reprap.org/wiki/G-code#G0_.26_G1:_Move)
 
 Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
 
@@ -109,7 +109,35 @@ Use the [interface on the Prusa i3 3D printer](https://help.prusa3d.com/en/artic
 
 ### Documentation Expectations
 
-Throughout the project, you will need to thoroughly document what you did, how you did it, and how someone with no prior knowledge of the project could recreate it (you can assume this hypothetical person has the same knowledge you had at the beginning of the course). Essentially you are documenting what your plotter does, and then how you specifically and uniquely implemented the required functionality. This documentation should require thorough explanations as well as any diagrams, pictures, code, or other data you created or used for that deliverable. To create/collect this documentation, you are free to use whatever tools you and your team desire such as Google Docs, Microsoft Word, etc. However if you'd like to keep all of your work in one place on the Github, we've provided a primer for writing documentation using Markdown and Github in the "docs" folder of your group repository.
+Your project will have three required documents: 
+
+1. A User’s Manual
+    
+    - Write a complete step-by-step document instructing a novice user how to use your plotter. Think about your plotter as a product bought by the user. The manual will instruct the user on all of the functions of your plotter. 
+    - From your own experience, pictures, drawings, diagrams, etc… make a user’s manual much more beneficial. 
+    - Don’t forget to think about a section on errors or what might go wrong, faqs, clarification, etc. 
+    - User Manuals also contain safety information for the user.
+
+2. A full Technical Description of the Design
+
+    - Write a complete technical design guide for your plotter. It should describe every facet of the design (hardware and software). It should allow a person skilled in the art to recreate your design. It should provide appropriate technical reasoning for design decisions including simulation, circuit schematics and design tradeoffs.
+    - Multisim, photos of oscilloscope simulations, photos of circuits, Logic.ly simulation, Code examples for key parts of algorithms (the full code will be uploaded on GitHub), and paper worked out notes are all examples. Some of these can also be part of and come from the project management document (see below).
+    - At a minimum, each progress deliverable and design deliverable should be ***WELL*** documented and occupy a chapter in the document.
+    - Because every group will have different approaches to the solution, we can not give a complete requirement that every document must contain. In short, if there is something that makes your plotter work, you must document it.
+    - What if your group did not design it? One example is the mechanical structure of the plotter itself. In this case, like in any technical document, you must reference the source. You should also describe the function but do not need to get into the design details (structural stress of the aluminum, for example).
+    - What about your software? Each primary function probably has code written for it. Therefore, your document should include a chapter on the structure of your software.  Think about this as the table of contents and flow control for your software. Each of the plotter’s features/functions that includes software and hardware is most likely a progress or design deliverable and will have a chapter in the document. Use the deliverable chapter to more fully describe the software and hardware.  
+    - If you used pre-written libraries, you must reference them and briefly describe the function. Any code that you wrote from scratch should be well documented (and commented in the code).
+    - Neatest, precision, and completeness will be assessed. Professionalism in content and in the presentation will also be assessed.
+
+3. A Weekly Project Management Report
+
+    - This is a weekly progress of your group’s design trajectory. It should document decision discussions, roles/responsibilities for each group member, work done, tracking of schedules for the project, etc.
+    - In general, it will be equivalent to a “lab notebook” for the project. It is not to be a structured, edited document. It should mirror your group’s successes and failures working on the project.    
+    - At the end of the semester, each team member will submit a reflection on the semester project as part of the project management report.
+    - You will be submitting a weekly project management report on ELC.
+
+
+To create and collect this documentation, you are free to use whatever tools you and your team desire such as Google Docs, Microsoft Word, etc. However if you'd like to keep all of your work in one place on the Github, we've provided a primer for writing documentation using Markdown and Github in the "docs" folder of your group repository.
 
 ## Project Rules
 
@@ -159,51 +187,3 @@ While mildly outlined in the PEP 8 document above, we'd like to reiterate that c
 ### Maintaining your Group Github Repository
 
 In order to encourage you to learn the useful skill of managing and using a Git/Github repository, we ask to keep your group repository up to date, follow the [Github Flow](https://guides.github.com/introduction/flow/) and to use Git/Github features like [issues](https://guides.github.com/features/issues/) to your advantage! More information on Git/Github and how to learn it will be provided in the deliverable instructions.
-
-### Collaboration Policy (policy attribution: from ECE4750 Cornell)
-
-The work you submit in this course is expected to be the result of your individual effort only, or in the case of weekly deliverables, the result of you and your group’s effort only. Your work should accurately demonstrate your understanding of the material.
-
-You are encouraged to study together and to discuss information and concepts covered in lecture
-with other students. You can give “consulting” help to or receive “consulting” help from other students. Students can also freely discuss basic computing skills or the course infrastructure. However, this permissible cooperation should never involve one student (or group) having possession of or observing in detail a copy of all or part of work done by someone else, in the form of an email, an email attachment file, a flash drive, a hard copy, on a computer screen, or in any other manner. Students are not allowed to seek consulting help from online forums outside of UGA (i.e. having someone on reddit do your project for you).
-
-Students are encouraged to seek consulting help from their peers and from the course staff via office hours and various discussion forums (Groupme, ELC, Github, etc…) . If a student receives consulting help from anyone outside of the course staff, then the student must acknowledge this help on the submitted assignment.
-
-**Examples of acceptable collaboration:**
-
-- Bob is struggling on a problem set about processor pipelining, so he seeks consulting help from
-Alice, a fellow student in the course. Alice goes through various examples from the lecture and
-reading materials to help Bob understand the concepts, and they sketch a few pipeline diagrams
-related to the problem solution together on a whiteboard. Bob and Alice work independently to
-flesh out the details of the problem solution and they each write up their work independently.
-Bob acknowledges the help he received from Alice on his submission.
-
-- Bob, Ben, and Beth are struggling to complete a lab assignment which requires implementing
-a direct-mapped cache. They talk with Alice, Amy, and Adam and learn that both groups are
-really struggling. So the six students get together for a brainstorming session. They review the
-lecture and reading materials and then sketch on a whiteboard some ideas on how to implement
-a direct-mapped cache. They might also sketch out some code snippets to try and understand
-the best way to describe some of the hardware. Then each group independently writes the code
-for the assignment and includes an acknowledgment of the help they received from the other
-group. At no time do the groups actually share code.
-
-- Bob, Ben, and Beth are having difficulty figuring out difficult test cases for their pipelined processor. They make a post on Groupme to see if anyone has some general ideas for tricky corner cases. Alice, Amy, and Adam figured out an interesting test case that ensures their pipelined processor correctly forwards the address to a store instruction, so Alice, Amy, and Adam post a qualitative description of this test case. Bob, Ben, and Beth independently write the code for this test case and then include an acknowledgment of the help they received from the other group. At no time do the groups actually share test code.
-
-**Examples of unacceptable collaboration:**
-
-- Bob is struggling on a problem set about processor pipelining, so he seeks consulting help from
-Alice, a fellow student in the course. Alice shows Bob her completed problem set solutions and walks him through the various steps required to solve the problem. Bob takes some notes during their discussion, and then independently writes up his solutions. Bob acknowledges the help he received from Alice on his submission, but it doesn’t matter since Alice explicitly shared her solutions with Bob.
-
-- Bob, Ben, and Beth are struggling to complete a lab assignment which requires implementing
-a direct-mapped cache. They talk with Alice, Amy, and Adam and learn that both groups are
-really struggling. So the six students get together for a joint coding session. Each student works
-on one module in the cache, then they combine the modules together to create the final working
-direct-mapped cache. The six students share and copy each others code often in order to finish the assignment. Each group submits the final code independently. Each group acknowledges the
-help it received from the other group, but it doesn’t matter since they explicitly shared code.
-
-- Bob, Ben, and Beth are having difficulty figuring out difficult test cases for their pipelined processor. They make a post on ELC to see if anyone has some general ideas for tricky corner
-cases. Alice, Amy, and Adam figured out an interesting test case that ensures their pipelined
-processor correctly forwards the address to a store instruction, so Alice, Amy, and Adam send their test code to Bob, Ben, and Beth via email. Bob, Ben, and Beth modify this test code and then include it in their submission. Bob, Ben, and Beth include an acknowledgment of the help they received from the other group, but it doesn’t matter since they explicitly shared code.
-
-Notice that the key is that students should not share the actual solutions or code with each other.
-Consulting with your fellow students is fine and is an important part of succeeding in this course.
