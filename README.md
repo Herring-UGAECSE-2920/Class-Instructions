@@ -139,6 +139,14 @@ Your project will have three required documents:
 
 To create and collect this documentation, you are free to use whatever tools you and your team desire such as Google Docs, Microsoft Word, etc. However if you'd like to keep all of your work in one place on the Github, we've provided a primer for writing documentation using Markdown and Github in the "docs" folder of your group repository.
 
+### Submitting Work
+
+When submitting work for this class, it will go in the deliverable assignment folder for that week. This includes any work needed for **P** and **D** deliverables, your Weekly Project Management Report, etc. Any code for your group should remain on your group GitHub repository, and you should make sure to update this with your latest work before deliverables are due.
+
+When submitting pictures or videos as part of your deliverable, be sure to have your subject in focus and easily seen. Make your videos short and to the point, and make sure you don't have shaky hands while you're filming.
+
+When submitting writing of any kind, make sure it's clear, concise, and overall decent to read. When formatting is necessary, you can assume 1.15 line spacing, and 12 pt Times New Roman or Calibri font.
+
 ## Project Rules
 
 Below is a set of rules to follow while working on this project in addition to any established on the syllabus. These are generally best practices for keeping your project organized and on track.
