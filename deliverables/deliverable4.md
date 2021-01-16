@@ -35,6 +35,11 @@ You should solder the `A0` jumper on the Motor Hat, which sets the `I2C` (the co
 ```python
 kit = MotorKit(i2c=board.I2C(),address=0x61)
 ```
+## Connecting the Motor Hat and LCD Hat to the Pi
+
+To relieve strain on the board and pins of the Hat's and Pi, we will be using the metal standoffs and nuts that were included in your kit. The spacers are not the exact length but they will do the job for this project. The spacing between the Pi and Motor Hat will use a spacer with a nut. The spacing between the Motor Hat and LCD Hat will use two spacers stacked on each other. See the below image as a reference.
+
+![Standoffs](resources/standoffs.JPG)
 
 # Summary
 
