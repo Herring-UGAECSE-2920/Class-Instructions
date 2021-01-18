@@ -47,10 +47,12 @@ In summary, for this week you need to:
 
 1. Before attempting to start the design deliverable, please complete the wiring safety and plotter modification checkpoints as outlined above. When you have completed the wiring checkpoint, we will give you the 12V 350mA stepper motors needed for the motor hat, and when you have the new motors mounted correctly to the plotter, you can begin the design deliverable.
 
-2. Submit evidence in the form of pictures/videos for your plotter modification checkpoint to the Deliverable 4 assignment folder on ELC.
+2. Submit evidence in the form of pictures/videos for your plotter modification checkpoint to the Deliverable 4 assignment folder on ELC.  These are **short** videos (no more than 30 seconds).
 
 3. Submit evidence in the form of pictures/videos for your **D** deliverable item to the Deliverable 4 assignment folder on ELC. You do not need to submit code to ELC, simply ensure your group GitHub repository is up to date and contains the needed scripts.
 
 4. Update your User Manual and Technical Documentation with your findings.
 
 5. Submit your Weekly Project Management Report to the Deliverable 4 assignment folder on ELC.
+
+6. Turn in the original X and Y stepper motors that came with the plotter.
