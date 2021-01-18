@@ -16,7 +16,7 @@ Save this box and the styrofoam inserts, as it keeps the plotter organized and s
 
 With everything out of the package, simply follow the included instructions in the user guide to set it up. You'll need to install a Windows utility to use the plotter, so make sure to do that.
 
-When you have the plotter assembled and the Windows Utility up and running, simply take a video of each axis moving, and use that for your submissions. After you finish, uninstall the utility from your computer.
+When you have the plotter assembled and the Windows Utility up and running, simply take a video of each axis moving, and use that for your submissions. You may want to keep adequate video footage for your team's reference.  Post a short (30 seconds or less) video or link on ELC assignment. After you finish, uninstall the utility from your computer.
 
 ## Modifying the Plotter for use with the Pi
 
