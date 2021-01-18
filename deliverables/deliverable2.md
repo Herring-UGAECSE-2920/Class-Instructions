@@ -52,4 +52,4 @@ In summary, for this week you need to:
 
 6. Submit your Weekly Project Management Report to the assignment folder.  Note, do this every week.  It will not be here to remind you each week!
 
-7. Do not attempt to use the motor hats or stepper motors with your raspberry PI until instructed to do so.  In fact, the stepper motors that are installed on the plotter out of the box ![**WILL**] blow the motor hat driver.  If this happens, your team will need to replace the motor hat. So, don't do it.
+7. Do not attempt to use the motor hats or stepper motors with your raspberry PI until instructed to do so.  In fact, the stepper motors that are installed on the plotter out of the box **[WILL]** blow the motor hat driver.  If this happens, your team will need to replace the motor hat. So, don't do it.
