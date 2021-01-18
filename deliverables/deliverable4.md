@@ -4,13 +4,13 @@ For deliverable 4, you'll be modifying the plotter for use with the new hardware
 
 ## Wiring Safety Checkpoint for Motor Hat (P)
 
-Before demonstrating control over two of the stepper motors on the plotter, you'll need to correctly wire the X and Y axis steppers to the Adafruit Motor Hat. This is a wiring diagram on paper mapping the appropriate motor hat pins to the appropriate X and Y motor stepper wiring.  **Do not wire up the motor hat to the Stepper motors that came with the plotter.  You will be removing them and attaching new stepper motors!** After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 12V 5A power supply and breadboard adapter, as well as the 350mA stepper motors meant for use with the motor hat.
+Before demonstrating control over two of the stepper motors on the plotter, you'll need to correctly wire the X and Y axis steppers to the Adafruit Motor Hat. This is a wiring diagram on paper mapping the appropriate motor hat pins to the appropriate X and Y motor stepper wiring.  **Do not wire up the motor hat to the Stepper motors that came with the plotter!** After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 12V 5A power supply and breadboard adapter, as well as the 350mA stepper motors.
 
 TODO: Add details about meeting times/places for wiring checkpoint.
 
-## Modifying the Plotter for Use With the New Hardware (P)
+## Replacing the Steppers (P)
 
-Once you've completed the wiring safety checkpoint, you'll need to go though [this document](setup/plotter_modification.md) outlining how to modify your existing XY Plotter to be used with the Raspberry Pi and it's accompanying hardware. When you finish, take pictures of the modified sections as proof of completion. Also, make sure to set aside the following parts to return to Dr.Herring, Dr.Trudgen, or the TAs:
+Once you've completed the wiring safety checkpoint, you'll need to go though [this document](setup/plotter_steppers.md) outlining how to replace the X and Y steppers with the new, lower current steppers. When you finish, take pictures of the modified sections as proof of completion. Also, make sure to set aside the following parts to return to Dr.Herring, Dr.Trudgen, or the TAs:
 
 1. X Axis Stepper Motor
 

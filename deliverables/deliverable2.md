@@ -30,7 +30,9 @@ For this section of the deliverable, you'll be following [this guide](./setup/pl
 
     ![12V 5A Power Supply](resources/psu.jpg)
 
-You should hang on to the rest of the hardware that came with the plotter, as you'll be needing the shorter brass standoffs and the allen wrenches for deliverable 4. We also recommend keeping the existing wiring harness intact, as it's already well organized/laid out.
+You should hang on to the rest of the hardware that came with the plotter, as you'll be needing the shorter brass standoffs and the allen wrenches for putting the new 350mA stepper motors on (you'll receive those in the coming weeks). We also recommend keeping the existing wiring harness intact, as it's already well organized/laid out.  
+
+Do not attempt to use the motor hats or stepper motors with your raspberry Pi until instructed to do so.  In fact, the stepper motors that are installed on the plotter out of the box **WILL blow the motor hat driver**.  If this happens, your team will need to replace the motor hat. So, don't do it.
 
 ## Raspberry Pi Setup (P)
 
@@ -44,12 +46,10 @@ In summary, for this week you need to:
 
 2. Create your team attendance sheet and upload it to the Deliverable 2 assignment folder on ELC.
 
-3. Document the existing behavior of the plotter by taking notes/pictures/videos (add these to your Weekly Project Management Report).  Upload a short (30 seconds or less) to ELC assignment.  You can also attach a link to your short video.
+3. Document the existing behavior of the plotter by taking notes/pictures/videos (add these to your Weekly Project Management Report).  Upload a short video (30 seconds or less) to ELC assignment.  You can also attach a link to your short video.
 
 4. Go though the Raspberry Pi setup, and acquaint yourself with working on the Pi/Github/etc.
 
 5. Update your User Manual and Technical Documentation with your findings.
 
 6. Submit your Weekly Project Management Report to the assignment folder.  Note, do this every week.  It will not be here to remind you each week!
-
-7. Do not attempt to use the motor hats or stepper motors with your raspberry PI until instructed to do so.  In fact, the stepper motors that are installed on the plotter out of the box **WILL blow the motor hat driver**.  If this happens, your team will need to replace the motor hat. So, don't do it.

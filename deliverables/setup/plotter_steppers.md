@@ -1,4 +1,4 @@
-# Modifying the Plotter for use with the Pi
+# Replacing the X and Y Stepper Motors
 
 In this document, we'll replace the X and Y axis stepper motors with the new 12V 350mA stepper motors needed to use the Adafruit Motor Hat.h Te stepper motors that come with the plotter draw 1.6A concurrently at 12V, which the drivers on the Adafruit Hat ***cannot*** supply. Therefore, we have also provided you with two new 12V stepper motors that draw up to 350mA concurrently which you'll need to affix to the plotter chassis.
 
