@@ -8,7 +8,7 @@ Right now would also be a good time to read through the rules for the project ou
 
 Each class period, circumstances withstanding, at least two members of your team should be in attendance to ask questions, participate in class discussion, do activities, etc. However, due to the limited capacity of our classroom (~half of the class size at 40 people) you all will need to get with your group mates and create a schedule such that ***all*** of you can come to class during the semester. 
 
-**P**: Since most teams will have 4-5 people, you will have to create some form of attendance rotation. Create this schedule and include it in your submission for this deliverable.
+**P**: Since most teams will have 5 or 6 people, you will have to create some form of attendance rotation. Create this schedule and include it in your submission for this deliverable.  Note, at least 2 members must be present for each class (3 team members for 6 person teams) and all other team members are on ZOOM.  The rotation cannot change.  Each student is either attending on Monday or Friday.  We will allow a day change after midterm.  Note, all teams can send 3 member each day if they want.  On days with presentations, all team members must be present.  
 
 ## Documenting Existing Behavior (P)
 
