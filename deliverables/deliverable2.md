@@ -50,4 +50,4 @@ In summary, for this week you need to:
 
 5. Update your User Manual and Technical Documentation with your findings.
 
-6. Submit your Weekly Project Management Report to the Deliverable 1 assignment folder.
+6. Submit your Weekly Project Management Report to the assignment folder.  Note, do this every week.  It will not be here to remind you each week!
