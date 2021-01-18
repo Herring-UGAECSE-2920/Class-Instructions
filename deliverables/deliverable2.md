@@ -1,6 +1,6 @@
 # Deliverable 2
 
-For this week, you'll be creating a team attendance sheet, documenting the behavior of the existing XY-Plotter provided and going through the preliminary setup for the Raspberry Pi hardware. Finally, You'll need to return your unused hardware to Dr.Herring, Dr.Trudgen, or the TAs by class on Friday.
+For this week, completing a syllabus quiz, you'll be creating a team attendance sheet, documenting the behavior of the existing XY-Plotter provided and going through the preliminary setup for the Raspberry Pi hardware. Finally, You'll need to return your unused hardware to Dr.Herring, Dr.Trudgen, or the TAs by class on Friday.
 
 Right now would also be a good time to read through the rules for the project outlined [in the README](../README.md) for this repository.
 
