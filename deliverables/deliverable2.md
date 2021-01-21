@@ -44,9 +44,9 @@ In summary, for this week you need to:
 
 1. Make sure you have acquired all of the hardware for your team.
 
-2. Create your team attendance sheet and upload it to the Deliverable 2 assignment folder on ELC.
+2. Create your team attendance sheet and upload it to the Progress Deliverable 2 assignment folder on ELC.
 
-3. Document the existing behavior of the plotter by taking notes/pictures/videos (add these to your Weekly Project Management Report).  Upload a short video (30 seconds or less) to the Progress Deliverables folder on ELC.  You can also attach a link to your short video.
+3. Document the existing behavior of the plotter by taking notes/pictures/videos (talk about these in your Weekly Project Management Report). Also Upload your short video (30 seconds or less) to the Progress Deliverables folder on ELC.  You can also attach a link to your short video.
 
 4. Go though the Raspberry Pi setup, and acquaint yourself with working on the Pi/Github/etc.
 
