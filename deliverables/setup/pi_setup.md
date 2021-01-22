@@ -48,15 +48,37 @@ To begin, insert the microSD card into the included USB adapter by simply slidin
 
 Then, insert it into on of your computers USB ports.
 
-From here, you'll need to follow the directions for your operating system under the 'Using other Tools' section of [this guide by the Raspberry Pi foundation](https://www.raspberrypi.org/documentation/installation/installing-images/). 
+From here, you'll need to follow the directions for your operating system under the 'Using other Tools' section of [this guide by the Raspberry Pi foundation](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
 > Note: DO NOT USE the Raspberry Pi Imager software at the top of the page. In our experience it is not as reliable as the individual solutions for each operating system.
+> Also Note: When choosing the Raspbian version to download [here](https://www.raspberrypi.org/software/operating-systems/), ***make sure to download Raspberry Pi OS Lite***, as this ensure you'll be able to configure Networking and SSH before booting the Pi itself.
 
-When your SD card is done imaging, open up the `boot` partition of the SD card and create an empty file named `ssh` with no file extension. This will enable SSH on boot for the Raspberry Pi.
+When your SD card is done imaging, open up the `boot` partition of the SD card and create an empty file named `ssh` with no file extension. This will enable SSH on boot for the Raspberry Pi. Also, You'll need to set up some networking settings by creating a file named `wpa_supplicant.conf` in the same directory and pasting the following into it:
+
+```
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+country=US
+```
+
+If you want to use a home WiFi network to work on the Pi (Not PAWS-Secure, or any other community internet), you'll also need to add the following lines at the bottom of the file:
+```
+network={
+     ssid="«your_SSID»"
+     psk="«your_PSK»"
+     key_mgmt=WPA-PSK
+}
+```
+
+With «your_SSID» replaced by your home network name, and «your_PSK» replaced by the password.
+
+If you don't have access to a home WiFi network, you'll need to use an ethernet bridge to share your WiFi connection from your computer to the Pi. To set one up, go through the [Networking](#networking) section below.
 
 When you've done that, you're good to insert the microSD card into its slot on the Pi and power it with the USB-C adapter! The Pi will boot right into Raspbian with SSH enabled so that you can continue doing the setup without a keyboard/mouse/monitor. 
 
-To continue setup, first go through the [Networking](#networking) section to set up your connection with the raspberry pi through an ethernet bridge, then connect to it via SSH by following the [SSH section below](#ssh-and-vnc-viewer). After that, you can continue following along with the rest of the setup instructions starting at [Raspbian Configuration](#raspbian-configuration).
+To continue setup, connect to the Pi via SSH by following the [SSH section below](#ssh-and-vnc-viewer).
+
+If you think you would like to use VNC Viewer to work on the Pi, or if you plan on being able to use the Pi with a monitor in the future, you'll need to install the Raspbian Desktop Environment now. To do so, you can [follow this guide](https://raspberrytips.com/upgrade-raspbian-lite-to-desktop/), making sure to use the PIXEL desktop environment, as it's the most optimized for the Raspberry Pi, reducing the performance impacts felt by your plotter program!
 
 #### Desktop setup
 
