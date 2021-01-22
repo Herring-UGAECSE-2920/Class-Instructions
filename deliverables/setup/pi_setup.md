@@ -40,7 +40,7 @@ To install Raspbian, we'll need to boot up the Pi for first-time setup. If you d
 
 #### Headless Setup
 
-When doing a headless installation, you'll need to manually install Raspbian on the SD card that came with the Pi. When installing Raspbian directly on the SD card, SSH comes pre-enabled with no additional setup required. This ensures that you can access with Pi without ever having to connect it to a keyboard/mouse/monitor.
+When doing a headless installation, you'll need to manually install Raspbian on the SD card that came with the Pi. When installing Raspbian directly on the SD card, you'll need to do a simple step to enable SSH before booting up your Pi and logging in. This ensures that you can access with Pi without ever having to connect it to a keyboard/mouse/monitor.
 
 To begin, insert the microSD card into the included USB adapter by simply sliding it all the way into the upper portion of the adapter as shown below:
 
@@ -52,7 +52,9 @@ From here, you'll need to follow the directions for your operating system under 
 
 > Note: DO NOT USE the Raspberry Pi Imager software at the top of the page. In our experience it is not as reliable as the individual solutions for each operating system.
 
-When your SD card is done imaging, you're good to insert the microSD card into its slot on the Pi and power it with the USB-C adapter! The Pi will boot right into Raspbian with SSH enabled so that you can continue doing the setup without a keyboard/mouse/monitor. 
+When your SD card is done imaging, open up the `boot` partition of the SD card and create an empty file named `ssh` with no file extension. This will enable SSH on boot for the Raspberry Pi.
+
+When you've done that, you're good to insert the microSD card into its slot on the Pi and power it with the USB-C adapter! The Pi will boot right into Raspbian with SSH enabled so that you can continue doing the setup without a keyboard/mouse/monitor. 
 
 To continue setup, first go through the [Networking](#networking) section to set up your connection with the raspberry pi through an ethernet bridge, then connect to it via SSH by following the [SSH section below](#ssh-and-vnc-viewer). After that, you can continue following along with the rest of the setup instructions starting at [Raspbian Configuration](#raspbian-configuration).
 

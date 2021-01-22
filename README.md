@@ -22,7 +22,7 @@ For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionali
 
 - For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
 
-### Equation Drawer
+### Math Mode
 
 For the Math Mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
@@ -34,13 +34,13 @@ To calculate the center of the page, you will assume 25mm margins on each side o
 
 You will be expected to graph the following functions, in units of mm:
 
-![eq1](./resources/render1.png)
+![eq1](https://latex.codecogs.com/gif.latex?y%20%3D%20mx%20&plus;%20b)
 
-![eq2](./resources/render2.png)
+![eq2](https://latex.codecogs.com/gif.latex?y%20%3D%20asin%28%5Comega%20x%29)
 
-![eq3](./resources/render3.png)
+![eq3](https://latex.codecogs.com/gif.latex?y%20%3D%20ax%5E2%20&plus;%20bx%20&plus;%20c)
 
-![eq4](./resources/render4.png)
+![eq4](https://latex.codecogs.com/gif.latex?x%5E2%20&plus;%20y%5E2%20%3D%20r%5E2)
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.
 
