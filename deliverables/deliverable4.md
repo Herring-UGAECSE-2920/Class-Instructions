@@ -30,11 +30,21 @@ Next, you'll need to demonstrate that you can use the Adafruit Motor Hat to cont
 
 For this portion, you'll be using the already installed Adafruit Python Library made for this kit/hat. [Here is great walkthrough](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/using-stepper-motors) for how to use the motor hat with the accompanying library, this goes through software and hardware setup. 
 
-You should solder the `A0` jumper on the Motor Hat, which sets the `I2C` (the communication protocol used by the board) address to `0x61`, such that it won't conflict the the address used by the LCD display (`0x60` by default for both). This means that when you instantiate your `MotorKit` object(s), you need to add the `address` option as below:
+Before you begin, you should solder the `A0` jumper on the Adafruit Motor Hat, which sets the `I2C` (the communication protocol used by the board) address to `0x61`, such that it won't conflict the the address used by the LCD display (`0x60` by default for both). The jumper can be found near the heat sinks on the board as shown below:
 
-```python
-kit = MotorKit(i2c=board.I2C(),address=0x61)
-```
+![Jumper Photo](resources/jumper.jpg)
+
+Before attempting to solder, first identify the person in your group most comfortable with soldering. A steady hand and a little bit of experience will go a long way. That being said, if no one in your group is exceptionally comfortable/skilled, there's no need to worry, as soldering a jumper is one of the easier things you can do.
+
+Before you begin, make sure you have access to a soldering kit of some kind, all you'll need is a soldering iron, some thin(ish) solder (around .032 diameter is ideal), and a safe place to do it (though, if you have it, solder flux is also recommended).
+
+To solder the jumper, first heat up your soldering iron to around 550-600&deg;F. When it's well heated, make sure to 'tin' the tip by running some solder onto it, letting it melt. Now, bring the tip to one of the pads for the jumper and heat it, slowly adding a little bit of solder when it's up to temperature; do the same for the other pad. When both pads have a little solder on them, reheat one of the and add a little more (enough to cover the gap), and drag the wet solder over the gap to the other pad, creating the bridge. That's it! If you need a visual aid to figure out how to do it, [this YouTube video](https://youtu.be/qIaxTv6jVvc?t=92) illustrates it well.
+
+> Note: Soldering the jumper also means that when you instantiate your `MotorKit` object(s), you need to add the `address` option as below:
+
+>```python
+>kit = MotorKit(i2c=board.I2C(),address=0x61)
+>```
 ## Connecting the Motor Hat and LCD Hat to the Pi
 
 To relieve strain on the board and pins of the Hat's and Pi, we will be using the metal standoffs and nuts that were included in your kit. The spacers are not the exact length but they will do the job for this project. The spacing between the Pi and Motor Hat will use a spacer with a nut. The spacing between the Motor Hat and LCD Hat will use two spacers stacked on each other. See the below image as a reference.
