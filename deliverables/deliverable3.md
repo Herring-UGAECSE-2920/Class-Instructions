@@ -22,7 +22,7 @@ The library should already be included in your group repository, under the `lib`
 
 The Github page gives a through explanation of how to use the library. 
 
-**P**: To demonstrate a basic understanding of how to use the KY40 Rotary Encoder, create a program which increments and prints an integer when you turn the encoder to the right, and decrements and prints the integer when you turn the encoder to the left.
+**P**: To demonstrate a basic understanding of how to use the KY40 Rotary Encoder, create a program which increments and prints an integer on the LCD when you turn the encoder to the right, and decrements and prints the integer on the LCD when you turn the encoder to the left.
 
 > Pitfall: If you install the pigpio encoder library with pip, ie pip install pigpio_encoder, it will install an older version of the library that does not include some of the functions like up_callback()
 and down_callback().
