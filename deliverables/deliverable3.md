@@ -62,7 +62,7 @@ In summary, for this week you need to:
 
 1. Make sure you have returned the unused hardware listed in [Deliverable 2](deliverable2.md) to Dr.Herring or Dr.Trudgen either before or during class on Friday. You can return then to Dr.Herring's (Driftmier 1202) and Dr.Trudgen's (Driftmier 1200) Offices throughout the week or in class on Friday.
 
-2. Submit evidence in the form of pictures/videos for your **P** deliverable items to the Progress Deliverable 3 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the needed scripts.
+2. Submit evidence in the form of pictures/videos for your **P** deliverable items to the Progress Deliverable 3 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the needed scripts.  Make sure videos are short (less than 30 seconds per video), clear, and are narrated so that you communicate what you are showing.  Do not sumbit Apple only playable videos or photos.  They should be playable by standard software readily available. If you submit photos, make sure that they are labeled or identify in some way what you are showing.
 
 3. Submit your completed Circuit Diagram by attaching it to your Weekly Project Management Report.
 
