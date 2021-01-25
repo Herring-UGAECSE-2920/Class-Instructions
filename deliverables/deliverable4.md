@@ -4,7 +4,7 @@ For deliverable 4, you'll be modifying the plotter for use with the new hardware
 
 ## Wiring Safety Checkpoint for Motor Hat (P)
 
-Before demonstrating control over two of the stepper motors on the plotter, you'll need to correctly wire the X and Y axis steppers to the Adafruit Motor Hat. This is a wiring diagram on paper mapping the appropriate motor hat pins to the appropriate X and Y motor stepper wiring.  **Do not wire up the motor hat to the Stepper motors that came with the plotter!** After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 12V 5A power supply and breadboard adapter, as well as the 350mA stepper motors.
+Before demonstrating control over two of the stepper motors on the plotter, you'll need to correctly wire the X and Y axis steppers to the Adafruit Motor Hat. This is a wiring diagram on paper mapping the appropriate motor hat pins to the appropriate X and Y motor stepper wiring.  **Do not wire up the motor hat to the Stepper motors that came with the plotter!  Doing so will burn out the Adafruit Motorhat!** After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 12V 5A power supply and breadboard adapter, as well as the 350mA stepper motors.
 
 TODO: Add details about meeting times/places for wiring checkpoint.
 
