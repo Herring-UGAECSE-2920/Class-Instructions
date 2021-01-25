@@ -8,7 +8,7 @@ Before or during class on Friday, you must return the hardware listed in [Delive
 
 ## Using the DFRobot LCD Interface (P)
 
-First, you'll need to demonstrate that you can take advantage of some of the basic features of the DFRobot LCD necessary for creating a useful user interface. Before attempting to use the LCD, make sure the Adafruit motor hat is either off of the Pi, or its `I2C` address has been changed by creating a solder bridge on the `A0` jumper, otherwise the LCD will not be able to communicate with the Pi.
+First, you'll need to demonstrate that you can take advantage of some of the basic features of the DFRobot LCD necessary for creating a useful user interface. Before attempting to use the LCD, make sure the Adafruit motor hat is either off of the Pi, or its `I2C` address has been changed by creating a solder bridge on the `A0` jumper, otherwise the LCD will not be able to communicate with the Pi.  This is clearly described in Deliverable 4.  For now don't have the Motorhat and the DFRobot LCD both on the PI at the same time.
 
 **P**: To demonstrate grasp of how to set up and use the LCD and its buttons, create a program which displays an integer starting at 0 on the LCD. Whenever the top LCD button is pressed, the number increments by 1 and whenever the bottom LCD button is pressed, the number decrements by 1.
 
