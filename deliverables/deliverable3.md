@@ -54,7 +54,9 @@ Finally, you'll need to create a comprehensive circuit diagram detailing how eve
 
 and any other electrical components needed for the project such as power supplies (12V), resistors, capacitors, or any integrated circuits used.
 
-To create this you can use any tool you wish, however we recommend using the [Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) schematic creator (free for students) or [circuit-diagram.org](https://www.circuit-diagram.org/), as they are both extensible, meaning you can import or create custom blocks such as one for the Raspberry Pi 4 GPIO.
+To create this you can use any tool you wish, however we recommend using the [Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) schematic creator (free for students) or [circuit-diagram.org](https://www.circuit-diagram.org/), as they are both extensible, meaning you can import or create custom blocks such as one for the Raspberry Pi 4 GPIO.  
+At a minimum, the diagram should show that you understand how each component interconnects to the PI and/or appropriate hats.  The circuit diagram should be detailed enough to show pins and additional components.  In other words, it should be adequate for someone to wire up your design.  All designs evolve so this is not meant to be the final circuit diagram.  We want to make sure you understand the interactions enough to proceed to the next steps.
+You may need to read the specifications for the H-Bridge and Linear regulator (and other items, of course).  We've provided many "watch outs" and "make sures"  so make sure you watch out for these as hints, aids, and general guides for your designs.
 
 # Summary
 
