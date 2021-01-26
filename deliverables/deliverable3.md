@@ -43,7 +43,7 @@ While you're creating your GPIO input script, you'll notice that a simple pollin
 
 ## Creating a Circuit Diagram (D)
 
-Finally, you'll need to create a comprehensive circuit diagram detailing how every component of your XY Plotter system will be connected including but not limited to the:
+Finally, you'll need to create a initial circuit diagram detailing how every component of your XY Plotter system will be connected including but not limited to the:
 
 - [LCD Hat](https://wiki.dfrobot.com/I_O_Expansion_HAT_for_Pi_zero_V1_0_SKU_DFR0604IIC_16X2_RGB_LCD_KeyPad_HAT_1_0_SKU_DFR0514_DFR0603)
 - [Motor Hat](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/downloads)
@@ -57,6 +57,13 @@ and any other electrical components needed for the project such as power supplie
 To create this you can use any tool you wish, however we recommend using the [Autodesk EAGLE](https://www.autodesk.com/products/eagle/overview?plc=F360&term=1-YEAR&support=ADVANCED&quantity=1) schematic creator (free for students) or [circuit-diagram.org](https://www.circuit-diagram.org/), as they are both extensible, meaning you can import or create custom blocks such as one for the Raspberry Pi 4 GPIO.  
 At a minimum, the diagram should show that you understand how each component interconnects to the PI and/or appropriate hats.  The circuit diagram should be detailed enough to show pins and additional components.  In other words, it should be adequate for someone to wire up your design.  All designs evolve so this is not meant to be the final circuit diagram.  We want to make sure you understand the interactions enough to proceed to the next steps.
 You may need to read the specifications for the H-Bridge and Linear regulator (and other items, of course).  We've provided many "watch outs" and "make sures"  so make sure you watch out for these as hints, aids, and general guides for your designs.
+
+## Wiring Safety Checkpoint for Motor Hat (P)
+
+Before demonstrating control over two of the stepper motors on the plotter, you'll need to correctly wire the X and Y axis steppers to the Adafruit Motor Hat. This is a wiring diagram on paper mapping the appropriate motor hat pins to the appropriate X and Y motor stepper wiring.  **Do not wire up the motor hat to the Stepper motors that came with the plotter!  Doing so will burn out the Adafruit Motorhat!** After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 12V 5A power supply and breadboard adapter, as well as the 350mA stepper motors.  We will provide you with the new stepper motors and 12V supply upon passing this checkpoint.
+Information about the stepper motor and how it is used/wired can be found here: https://www.adafruit.com/product/324
+
+Thought:  You can see the wire pairing on the stepper motor specs from the link.  However, with just the stepper motor, you can confirm which two wires go together.  Play around with the stepper motor on the plotter and see if you can determine the wire pairing for the stepper on the Plotter.
 
 # Summary
 
