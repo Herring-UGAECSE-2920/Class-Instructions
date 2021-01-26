@@ -73,6 +73,8 @@ In summary, for this week you need to:
 
 2. Submit evidence in the form of pictures/videos for your **P** deliverable items to the Progress Deliverable 3 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the needed scripts.  Make sure videos are short (less than 30 seconds per video), clear, and are narrated so that you communicate what you are showing.  Do not sumbit Apple only playable videos or photos.  They should be playable by standard software readily available. If you submit photos, make sure that they are labeled or identify in some way what you are showing.
 
+2. Bring your wiring diagram from the Adafruit Motor Hat pins to the new stepper motor wiring (Use colors of wires to the pins).  We will check this in class on Friday and provide you your new stepper motors.
+
 3. Submit your completed Circuit Diagram by attaching it to your Weekly Project Management Report.
 
 4. Update your User Manual and Technical Documentation with your findings.
