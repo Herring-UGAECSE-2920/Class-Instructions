@@ -60,10 +60,11 @@ You may need to read the specifications for the H-Bridge and Linear regulator (a
 
 ## Wiring Safety Checkpoint for Motor Hat (P)
 
-Before demonstrating control over two of the stepper motors on the plotter, you'll need to correctly wire the X and Y axis steppers to the Adafruit Motor Hat. This is a wiring diagram on paper mapping the appropriate motor hat pins to the appropriate X and Y motor stepper wiring.  **Do not wire up the motor hat to the Stepper motors that came with the plotter!  Doing so will burn out the Adafruit Motorhat!** After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 12V 5A power supply and breadboard adapter, as well as the 350mA stepper motors.  We will provide you with the new stepper motors and 12V supply upon passing this checkpoint.
-Information about the stepper motor and how it is used/wired can be found here: https://www.adafruit.com/product/324
+Before demonstrating control over two of the stepper motors on the plotter, you'll need to correctly wire the X and Y axis steppers to the Adafruit Motor Hat. This is a wiring diagram on paper mapping the appropriate motor hat pins to the appropriate X and Y motor stepper wiring.  **Do not wire up the motor hat to the Stepper motors that came with the plotter!  Doing so will burn out the Adafruit Motor Hat!** After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs in class on Friday to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 12V 5A power supply as well as the 350mA stepper motors.
 
-Thought:  You can see the wire pairing on the stepper motor specs from the link.  However, with just the stepper motor, you can confirm which two wires go together.  Play around with the stepper motor on the plotter and see if you can determine the wire pairing for the stepper on the Plotter.
+Information about the stepper motor and how it is used/wired can be found [here](https://www.adafruit.com/product/324).
+
+> Note: You can see the wire pairing on the stepper motor specs from the link.  However, with just the stepper motor, you can confirm which two wires go together.  Play around with the stepper motor that came with the plotter and see if you can determine its wire pairing. More information on determining this can be found in the Adafruit Motor Hat page linked [here](https://learn.adafruit.com/adafruit-dc-and-stepper-motor-hat-for-raspberry-pi/using-stepper-motors).
 
 # Summary
 
@@ -73,9 +74,9 @@ In summary, for this week you need to:
 
 2. Submit evidence in the form of pictures/videos for your **P** deliverable items to the Progress Deliverable 3 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the needed scripts.  Make sure videos are short (less than 30 seconds per video), clear, and are narrated so that you communicate what you are showing.  Do not sumbit Apple only playable videos or photos.  They should be playable by standard software readily available. If you submit photos, make sure that they are labeled or identify in some way what you are showing.
 
-2. Bring your wiring diagram from the Adafruit Motor Hat pins to the new stepper motor wiring (Use colors of wires to the pins).  We will check this in class on Friday and provide you your new stepper motors.
+2. Bring your wiring diagram for the Adafruit Motor Hat pins to the new stepper motor wiring (Use colors of wires to the pins).  We will check this in class on Friday and provide you your new stepper motors.
 
-3. Submit your completed Circuit Diagram by attaching it to your Weekly Project Management Report.
+3. Submit your completed Circuit Diagram to the Design Deliverable 3 assignment folder on ELC.
 
 4. Update your User Manual and Technical Documentation with your findings.
 

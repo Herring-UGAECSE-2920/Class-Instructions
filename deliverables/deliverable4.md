@@ -2,8 +2,6 @@
 
 For deliverable 4, you'll be modifying the plotter for use with the new hardware, and wiring up your Adafruit Motor Hat for use with the X and Y axis stepper motors on the Plotter. However, before you test control over the motors using software, you'll need to pass the wiring safety checkpoint and return the modified/disassembled hardware as described below.
 
-
-
 ## Replacing the Steppers (P)
 
 Once you've completed the wiring safety checkpoint, you'll need to go though [this document](setup/plotter_steppers.md) outlining how to replace the X and Y steppers with the new, lower current steppers. When you finish, take pictures of the modified sections as proof of completion. Also, make sure to set aside the following parts to return to Dr.Herring, Dr.Trudgen, or the TAs:
@@ -15,6 +13,8 @@ Once you've completed the wiring safety checkpoint, you'll need to go though [th
 2. Y Axis Stepper Motor
 
     ![Y Axis Stepper](resources/yaxisstepper.jpg)
+
+As proof of completion, take a picture of the new X and Y steppers mounted to the plotter.
 
 ## Using the Adafruit Motor Hat to Control a Stepper (D)
 
@@ -47,18 +47,26 @@ To relieve strain on the board and pins of the Hat's and Pi, we will be using th
 
 ![Standoffs](resources/standoffs.JPG)
 
+## Wiring Safety Checkpoint for H-Bridge IC (P)
+
+Before demonstrating control over the Z axis motor with the [H-Bridge chip](https://www.ti.com/lit/ds/symlink/sn754410.pdf), you'll need to ensure that it, along with the [5V linear regulator](https://www.mouser.com/datasheet/2/308/MC7800_D-1773680.pdf) we'll use to power it, are connected up correctly. This is a wiring diagram on paper mapping the appropriate GPIO, 5V power, and z-axis stepper motor leads to the H-Bridge chip. After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs in class on Friday to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 5V linear regulator for use with H-Bridge Chip.
+
+The Z-axis stepper motor needs around 5V and 800mA of current to be driven, which will be supplied by the 5V linear regular we will give you. It is up to you to determine how to wire and control the Z-axis motor using the H-Bridge chip. 
+
 # Summary
 
 In summary, for this week you need to:
 
-1. Before attempting to start the design deliverable, please complete the wiring safety and plotter modification checkpoints as outlined above. When you have completed the wiring checkpoint, we will give you the 12V 350mA stepper motors needed for the motor hat, and when you have the new motors mounted correctly to the plotter, you can begin the design deliverable.
+1. Before attempting to start the design deliverable, please make sure you have completed the wiring safety and stepper replacement checkpoints as outlined in [deliverable 3](deliverable3.md) and above respectively.
 
-2. Submit evidence in the form of pictures/videos for your plotter modification checkpoint to the Deliverable 4 assignment folder on ELC.  These are **short** videos (no more than 30 seconds).
+2. Submit evidence in the form of pictures/videos for your stepper replacement checkpoint to the Progress Deliverable 4 assignment folder on ELC.  These are **short** videos (no more than 30 seconds).
 
-3. Submit evidence in the form of pictures/videos for your **D** deliverable item to the Deliverable 4 assignment folder on ELC. You do not need to submit code to ELC, simply ensure your group GitHub repository is up to date and contains the needed scripts.
+3. Submit evidence in the form of pictures/videos for your **D** deliverable item to the Design Deliverable 4 assignment folder on ELC. You do not need to submit code to ELC, simply ensure your group GitHub repository is up to date and contains the needed scripts.
 
-4. Update your User Manual and Technical Documentation with your findings.
+4. Turn in the original X and Y stepper motors that came with the plotter in Class on Friday.
 
-5. Submit your Weekly Project Management Report to the Deliverable 4 assignment folder on ELC.
+5. Bring your wiring diagram for the H-Bridge/Z-axis stepper to class on Friday to be checked off.
 
-6. Turn in the original X and Y stepper motors that came with the plotter.
+6. Update your User Manual and Technical Documentation with your findings.
+
+7. Submit your Weekly Project Management Report to the Deliverable 4 assignment folder on ELC.

@@ -1,12 +1,6 @@
 # Deliverable 5
 
-For deliverable 5, you'll be wiring up your H-Bridge chip for use with the Z axis stepper on the Plotter. However, before you test control over the motor using software, you'll need to pass the wiring safety checkpoint as described below.
-
-## Wiring Safety Checkpoint for H-Bridge IC (P)
-
-Before demonstrating control over the Z axis motor with the [H-Bridge chip](https://www.ti.com/lit/ds/symlink/sn754410.pdf), you'll need to ensure that it, along with the [5V linear regulator](https://www.mouser.com/datasheet/2/308/MC7800_D-1773680.pdf) we'll use to power it, are connected up correctly. After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 5V linear regulator for use with H-Bridge Chip.
-
-TODO: Add details about meeting times/places for wiring checkpoint
+For deliverable 5, you'll be wiring up your H-Bridge chip for use with the Z-axis stepper, which you'll then need to control using the GPIO on the Raspberry Pi.
 
 ## Using the Texas Instruments SN754410 H-Bridge and GPIO to Control a Stepper (D)
 
@@ -20,9 +14,7 @@ For this section, you'll need to understand the Texas Instruments SN754410 H-Bri
 
 In summary, for this week you need to:
 
-1. Before attempting to start the design deliverable, please complete the wiring safety checkpoint as outlined above. When you have completed it, we will give you the 5V linear regulator needed to use the H-Bridge chip.
-
-2. Submit evidence in the form of pictures/videos for your **D** deliverable item to the Deliverable 5 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
+1. Submit evidence in the form of pictures/videos for your **D** deliverable item to the Deliverable 5 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
 
 3. Update your User Manual and Technical Documentation with your findings.
 
