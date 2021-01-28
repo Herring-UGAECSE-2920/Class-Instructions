@@ -5,7 +5,7 @@ This is an FAQ for the class. If Dr.Herring, Dr.Trudgen, or the TAs receive the 
 ## 1. Git is rejecting my upload, saying "The remote contains work you do not have locally". What do I do?
   Before trying to push changes to a remote repository, make sure your local copy is up to date by executing `git pull`. If you and other member of your team have made changes to the same file, you'll have to manually decide which changes to keep. This is why [git branching](https://www.atlassian.com/git/tutorials/using-branches) is important for working smoothly on a collaborative software project.
 
-## 2. I'm trying to use the pigpio_encoder library, and I'm getting the Error: cannot import name 'Rotary' from 'pigpio_encoder'
+## 2. I'm trying to use the pigpio_encoder library, and I'm getting the error: cannot import name 'Rotary' from 'pigpio_encoder'
 
   This error is cause by Python's wonderful import system. To solve it, you should use the included `pigpio_encoder.py` file instead of importing it through your virtual environment. To do this set up the `lib` directory (which contains the `pigpio_encoder.py` file) in your group repository as a Python library by creating a empty file named `__init__.py` in the `lib` directory.
 
@@ -36,3 +36,9 @@ This is an FAQ for the class. If Dr.Herring, Dr.Trudgen, or the TAs receive the 
   ```
 
   > Note: the `..` represents a relative file path, which points to the parent directory of the `scripts` directory, in this case `Group_1`. If you needed to go higher up to access your libraries, you would need to add an extra `.` for every directory level.
+
+  ## 3. When trying to run code using the `pigpio_encoder/Rotary` module I get the error: NameError: name 'pigpio' is not defined
+
+  If you're seeing this error, it's our fault! We forgot to have you guys install the `pigpio` library when setting up your Python virtual environment in the [Pi Setup doc](https://github.com/Herring-UGAECSE-2920/Class-Instructions/blob/main/deliverables/setup/pi_setup.md). 
+
+  To fix it, simply run the command: `pip3 install pigpio` while in your `plotter` python virtual environment.

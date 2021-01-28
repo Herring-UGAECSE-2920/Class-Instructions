@@ -241,6 +241,7 @@ pip3 install RPI.GPIO
 pip3 install adafruit-blinka
 pip3 install adafruit-circuitpython-motorkit
 pip3 install wiringpi
+pip3 install pigpio
 pip3 install pigpio_encoder
 ```
 
