@@ -49,9 +49,9 @@ To relieve strain on the board and pins of the Hat's and Pi, we will be using th
 
 ## Wiring Safety Checkpoint for H-Bridge IC (P)
 
-Before demonstrating control over the Z axis motor with the [H-Bridge chip](https://www.ti.com/lit/ds/symlink/sn754410.pdf), you'll need to ensure that it, along with the [5V linear regulator](https://www.mouser.com/datasheet/2/308/MC7800_D-1773680.pdf) we'll use to power it, are connected up correctly. This is a wiring diagram on paper mapping the appropriate GPIO, 5V power, and z-axis stepper motor leads to the H-Bridge chip. After doing so, you'll need to meet with Dr. Herring, Dr. Trudgen, or one of the TAs in class on Friday to verify correct wiring/power delivery. Once you have passed this wiring check, you'll be given the 5V linear regulator for use with H-Bridge Chip.
+Before demonstrating control over the Z axis motor (pen up/down motor) with the [H-Bridge chip](https://www.ti.com/lit/ds/symlink/sn754410.pdf), you'll need to ensure that it, along with the [5V linear regulator](https://www.mouser.com/datasheet/2/308/MC7800_D-1773680.pdf) we'll use to power it, are connected up correctly. This is a wiring diagram on paper mapping the appropriate GPIO, 5V power from the regulator, and z-axis stepper motor leads to the H-Bridge chip. Double check your paper circuit and get with Dr. Herring, Dr. Trudgen, Kevin or Jake with questions you might have.  We strongly suggest that you may also want to verify your regulator circuit by breadboarding the setup in Driftmier 1450 or 1409 and documenting your work.  In fact, this is a great way to show that you prototyped your work in your WPM and your techinal project report for end of semester, hint... hint.
 
-The Z-axis stepper motor needs around 5V and 800mA of current to be driven, which will be supplied by the 5V linear regular we will give you. It is up to you to determine how to wire and control the Z-axis motor using the H-Bridge chip. 
+The Z-axis stepper motor needs around 5V and 800mA of current to be driven, which will be supplied by the 12V to 5V linear regular we will give you. It is up to you to determine how to wire and control the Z-axis motor using the H-Bridge chip. 
 
 # Summary
 
