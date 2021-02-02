@@ -36,8 +36,6 @@ You will be expected to graph the following functions, in units of mm:
 
 ![eq1](https://latex.codecogs.com/png.latex?%5Cbg_white%20y%3D%20mx%20&plus;%20b)
 
-![eq2](https://latex.codecogs.com/png.latex?%5Cbg_white%20y%20%3D%20asin%28%5Comega%20x%29)
-
 ![eq3](https://latex.codecogs.com/png.latex?%5Cbg_white%20y%20%3D%20ax%5E2%20&plus;%20bx%20&plus;%20c)
 
 ![eq4](https://latex.codecogs.com/png.latex?%5Cbg_white%20x%5E2%20&plus;%20y%5E2%20%3D%20r%5E2)
