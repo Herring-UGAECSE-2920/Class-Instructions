@@ -20,7 +20,7 @@ For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionali
 
 - The mode should also include the ability to toggle the Z-axis (the pen holder) in an "up" and "down" position.The digital encoders come with extra GPIO output for a "short" and "long" press that could be used here.
 
-- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
+- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.  Additionally, if the user trys to draw past the paper margins, the pen should go up so that the plotter does not draw past the paper.
 
 ### Math Mode
 
@@ -42,7 +42,7 @@ You will be expected to graph the following functions, in units of mm:
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.
 
-If the function (or one period of the function, in the case of sin(x)) is not able to fit within the standard actual-size bounds of the axes, you are required to implement a scaling algorithm which will scale the axes and the function to be able to fit within the 6 cm x 6 cm bounds.
+If the function is not able to fit within the standard actual-size bounds of the axes, you are required to implement a scaling algorithm which will scale the axes and the function to be able to fit within the 6 cm x 6 cm bounds.
 
 ### G-Code (Images courtesy of howtomechatronics.com)
 
