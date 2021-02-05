@@ -42,5 +42,3 @@ This is an FAQ for the class. If Dr.Herring, Dr.Trudgen, or the TAs receive the 
   If you're seeing this error, it's our fault! We forgot to have you guys install the `pigpio` library when setting up your Python virtual environment in the [Pi Setup doc](https://github.com/Herring-UGAECSE-2920/Class-Instructions/blob/main/deliverables/setup/pi_setup.md). 
 
   To fix it, simply run the command: `pip3 install pigpio` while in your `plotter` python virtual environment.
-
-  ## 4. 
