@@ -18,9 +18,20 @@ In addition to your general outline for the design, your proposal should include
 
 **P**: The design proposal should be relatively short, approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font.
 
+## Eagle CAD Introdution
+
+
+
 ## Begin Designing, Building, Testing, and Documenting (D)
 
-When you have completed your design proposal, you are free to start experimenting with getting the Etch-A-Sketch mode working. As a goal for this deliverable, simply get the encoders to move a motor (X or Y axis) to the right when turned clockwise, and to the left when turned counter-clockwise (up and down for the Y-axis).
+When you have completed your design proposal, you are free to start experimenting with getting the Etch-A-Sketch mode working. While no specific thing is required for this week, you should be making good progress on the Etch-A-Sketch mode. As a goal for this deliverable, simply get the encoders to move a motor (X or Y axis) to the right when turned clockwise, and to the left when turned counter-clockwise (up and down for the Y-axis).
 
 # Summary
 
+In summary, for this week you need to:
+
+1. Submit your **P** deliverables (design proposal and Eagle Primer) to the Progress Deliverables 6 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
+
+3. Update your User Manual and Technical Documentation with your findings.
+
+4. Submit your Weekly Project Management Report to the Deliverable 5 assignment folder on ELC.

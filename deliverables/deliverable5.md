@@ -14,7 +14,7 @@ For this section, you'll need to understand the Texas Instruments SN754410 H-Bri
 
 In summary, for this week you need to:
 
-1. Submit evidence in the form of pictures/videos for your **D** deliverable item to the Deliverable 5 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
+1. Submit evidence in the form of pictures/videos for your **D** deliverable item to the Design Deliverables 5 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
 
 3. Update your User Manual and Technical Documentation with your findings.
 
