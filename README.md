@@ -20,17 +20,25 @@ For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionali
 
 - The mode should also include the ability to toggle the Z-axis (the pen holder) in an "up" and "down" position.The digital encoders come with extra GPIO output for a "short" and "long" press that could be used here.
 
-- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.  Additionally, if the user trys to draw past the paper margins, the pen should go up so that the plotter does not draw past the paper.
+- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
+
+### Calibration
+
+Before beginning the Math Mode, you should implement the auto-calibration feature required for determining the pen's position on the paper. To calibrate your position on the plotter, you'll need to use the X and Y endstop switches attached to the gantry assembly.
+
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-left corner of the page, 25mm from the bottom and left side (the bottom left of the margins). 
+
+During the calibration, your plotter will first use the X and Y endstops to navigate to a known position, and then navigate to the "home" position described above.
+
+The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
+
+![paper placement](resources/paperplacement.jpg)
 
 ### Math Mode
 
-For the Math Mode, you will design an algorithm to plot several given functions. This functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
+For the Math Mode, you will design an algorithm to graph several given functions. These functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. The origin will be roughly the center of the sheet of paper. The axes will extend 6 cm in each direction, both positive and negative.  Simple ‘graph’ paper with this scale is available for download and printing [here](./resources/equation_plotter_graph_paper.pdf).
-
-To calculate the center of the page, you will assume 25mm margins on each side of the page. The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
-
-![paper placement](resources/paperplacement.jpg)
+After doing calibration, your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction, both positive and negative (left, right, up, and down relative to the origin).
 
 You will be expected to graph the following functions, in units of mm:
 
