@@ -20,11 +20,11 @@ In addition to your general outline for the design, your proposal should include
 
 ## Eagle CAD Introdution (P)
 
-
+Purpose is to show minimal familiarity with Eagle.  If your team has already done something with Eagle you can upload it for this deliverable (you must upload applicable files as described below). If you have no prior Eagle work, your team should use the knowledge gained from Lecture 7 and recommended YouTube video(s) to build a simple 12V to 5V voltage divider.  Include both the board and schematic files along with a short pdf showing screen shots of your design.  You must also include a BOM (Bill of Materials) and short explanation of PCB design rules for your design with focus on final wiring.
 
 ## Begin Designing, Building, Testing, and Documenting (D)
 
-When you have completed your design proposal, you are free to start experimenting with getting the Etch-A-Sketch mode working. While no specific thing is required for this week, you should be making good progress on the Etch-A-Sketch mode. As a goal for this deliverable, simply get the encoders to move a motor (X or Y axis) to the right when turned clockwise, and to the left when turned counter-clockwise (up and down for the Y-axis).
+When you have completed your design proposal, you are free to start experimenting with getting the Etch-A-Sketch mode working. While no specific thing is required for this week, you should be making good progress on the Etch-A-Sketch mode. As a goal for this deliverable, simply get the encoders to move a motor (X or Y axis) to the right when turned clockwise, and to the left when turned counter-clockwise (up and down for the Y-axis).  There is not a "D" deliverable to turn in.  You need to be looking forward to the deliverable which is coming up on next week.
 
 # Summary
 
