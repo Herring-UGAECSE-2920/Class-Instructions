@@ -19,7 +19,7 @@ In addition to your general outline for the design, your proposal should include
 **P**: The design proposal should be relatively short, approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font.
 
 ## Eagle CAD Introdution (P)
-Purpose is to show minimal familiarity with Eagle.  If your team has already done something with Eagle you can upload it for this deliverable.  If you have no prior Eagle work, your team should use the knowledge gained from Lecture 7 and recommended YouTube video to build a simple 12V to 5V voltage divider.  Include both the board and schematic files along with a short pdf showing screen shots of your design.  You must also include a BOM (Bill of Materials) and short explanation of PCB design rules for your design with focus on final wiring.
+Purpose is to show minimal familiarity with Eagle.  If your team has already done something with Eagle you can upload it for this deliverable (you must upload applicable files as described below). If you have no prior Eagle work, your team should use the knowledge gained from Lecture 7 and recommended YouTube video(s) to build a simple 12V to 5V voltage divider.  Include both the board and schematic files along with a short pdf showing screen shots of your design.  You must also include a BOM (Bill of Materials) and short explanation of PCB design rules for your design with focus on final wiring.
 
 
 
