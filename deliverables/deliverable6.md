@@ -20,7 +20,9 @@ In addition to your general outline for the design, your proposal should include
 
 ## Eagle CAD Introdution (P)
 
-Purpose is to show minimal familiarity with Eagle.  If your team has already done something with Eagle you can upload it for this deliverable (you must upload applicable files as described below). If you have no prior Eagle work, your team should use the knowledge gained from Lecture 7 and recommended YouTube video(s) to build a simple 12V to 5V voltage divider.  Include both the board and schematic files along with a short pdf showing screen shots of your design.  You must also include a BOM (Bill of Materials) and short explanation of PCB design rules for your design with focus on final wiring.
+The purpose of this introduction is to show minimal familiarity with Eagle. If your team has already done something with Eagle you can upload that work for this deliverable (you must upload applicable files as described below).
+
+**P**: If you have no prior Eagle work, your team should use Lecture 7 and the recommended YouTube video(s) to build a simple 12V to 5V DC voltage divider. Include both the board and schematic files along with a short pdf showing screen shots of your design. You must also include a BOM (Bill of Materials) and short explanation of PCB design rules for your design with focus on final wiring.
 
 ## Begin Designing, Building, Testing, and Documenting (D)
 

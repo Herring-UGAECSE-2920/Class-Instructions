@@ -12,13 +12,13 @@ This week you should be close to finishing your Etch-A-Sketch mode. It's importa
 
 ## Begin Power Supply Design (D)
 
-To suppliment this project with a bit more electrical engineering, we've assigned you a routine design of a power supply for your plotter! Below are some electrical specifications and design requirements for your power supply, as well as the requirements for submission.
+To suppliment this project with a bit more electrical engineering, we've assigned you a routine design of a power supply for your plotter! The final design will be due as part of Deliverable 9. Below are some electrical specifications and design requirements for your power supply, as well as the requirements for submission.
 
 ### Design Specifications
 
-- Your power supply will take in 120 VAC from the wall, and supply 12V 5A DC to your plotter.
+- Your power supply will take in 120 VAC from the wall, and supply 12V 5A DC typical, with 25% peak output and +/- 5% allowable tolerance.
 
-- You will design your power supply using a [safety factor](https://en.wikipedia.org/wiki/Factor_of_safety) of 1.5.
+- 
 
 ### Submission Requirements 
 
@@ -28,11 +28,13 @@ To suppliment this project with a bit more electrical engineering, we've assigne
 
 - In addition to your design and simulation, you'll also need to provide a [Bill of Materials](https://en.wikipedia.org/wiki/Bill_of_materials) which should include DigiKey prices and part numbers for every electrical component.
 
+**D**: With the above information in mind, as part of your deliverables for this week, you should submit an early design for your power supply. It can be anything from just an idea for your design, all the way up to an initial schematic. **Do Not Stress** about this deliverable, it is simply to make sure you have started thinking about your power supply design.
+
 # Summary
 
 In summary, for this week you need to:
 
-1. Submit your **D** deliverable (Etch-A-Sketch video) to the Design Deliverables 7 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
+1. Submit your **D** deliverables (Etch-A-Sketch video, (very) early power supply design) to the Design Deliverables 7 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the needed scripts.
 
 3. Update your User Manual and Technical Documentation with your findings.
 
