@@ -18,7 +18,7 @@ In addition to your general outline for the design, your proposal should include
 
 **P**: The design proposal should be relatively short, approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font.
 
-## Eagle CAD Introdution
+## Eagle CAD Introdution (P)
 
 
 
@@ -30,8 +30,8 @@ When you have completed your design proposal, you are free to start experimentin
 
 In summary, for this week you need to:
 
-1. Submit your **P** deliverables (design proposal and Eagle Primer) to the Progress Deliverables 6 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
+1. Submit your **P** deliverables (design proposal and Eagle Introduction) to the Progress Deliverables 6 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
 
 3. Update your User Manual and Technical Documentation with your findings.
 
-4. Submit your Weekly Project Management Report to the Deliverable 5 assignment folder on ELC.
+4. Submit your Weekly Project Management Report to the Deliverable 6 assignment folder on ELC.

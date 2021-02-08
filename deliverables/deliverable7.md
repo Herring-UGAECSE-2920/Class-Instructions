@@ -10,9 +10,30 @@ This week you should be close to finishing your Etch-A-Sketch mode. It's importa
 
 **D**: In addition to the in-class demo, you'll also need to submit a video of the work you've completed for your Etch-A-Sketch mode. It should be short and to the point, while showing each of the pieces of functionality that you've completed. This is primarily a fallback option for us to grade, in case hardware issues arise in class.
 
-## Begin Power Supply Design (P)
+## Begin Power Supply Design (D)
 
+To suppliment this project with a bit more electrical engineering, we've assigned you a routine design of a power supply for your plotter! Below are some electrical specifications and design requirements for your power supply, as well as the requirements for submission.
 
+### Design Specifications
+
+- Your power supply will take in 120 VAC from the wall, and supply 12V 5A DC to your plotter.
+
+- You will design your power supply using a [safety factor](https://en.wikipedia.org/wiki/Factor_of_safety) of 1.5.
+
+### Submission Requirements 
+
+- You must submit a complete schematic and fabrication-ready board layout made with [Autodesk Eagle](https://www.autodesk.com/products/eagle/free-download).
+
+- You must also submit a MultiSim simulation demonstrating the functionality, stability, and accuracy/quality of your design. Your simulation should measure the output characteristics of your design with and without a load, including measurements such as voltage, current, and [ripple/noise](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YG05CAG&l=en-US).
+
+- In addition to your design and simulation, you'll also need to provide a [Bill of Materials](https://en.wikipedia.org/wiki/Bill_of_materials) which should include DigiKey prices and part numbers for every electrical component.
 
 # Summary
 
+In summary, for this week you need to:
+
+1. Submit your **D** deliverable (Etch-A-Sketch video) to the Design Deliverables 7 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the need scripts.
+
+3. Update your User Manual and Technical Documentation with your findings.
+
+4. Submit your Weekly Project Management Report to the Deliverable 7 assignment folder on ELC.
