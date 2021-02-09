@@ -30,7 +30,7 @@ There are two calibrate mechanisms: Auto Calibrate and Paper Pen Position Calibr
 
 Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.
 
-Paper Pen Position Calibrate determines the fixed paper home position which is used as a reference for valid paper x/y cooridinates.  In general if your plotter attempts to draw past the paper, this calibration is should stop this from happening.
+Paper Pen Position Calibrate determines the fixed paper home position which is used as a reference for valid paper x/y cooridinates.  In general if your plotter attempts to draw past the paper, this calibration must stop this from happening.
 
 Before beginning the Math Mode, you should implement the auto-calibration feature and the Paper Pen Position required for determining the plotter and paper limits. 
 
