@@ -4,6 +4,8 @@ Instructions for each checkpoint/deliverable in this class, as well as helpful s
 
 ## Project Specifications
 
+FIRST: MAKE SURE YOU REFERENCE THE ASSESSMENT DOCUMENT ON ELC WHICH DESCRIBES THE UI FUNCTION OF THE PLOTTER.
+
 Your objective this semester is to take an existing XY Plotter, deconstruct it, and implement it (along with some additional functionality) using a Raspberry Pi 4 and it's necessary accompanying hardware. 
 
 As covered later, you'll be using Python to program, and two Raspberry Pi "Hats" which add Stepper Motor control for the X and Y stepper motors, and an LCD display. In addition to the hats, you'll also be using two digital encoders for input/controls and an H-Bridge chip to drive the Z axis stepper motor.
@@ -24,11 +26,15 @@ For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionali
 
 ### Calibration
 
-Before beginning the Math Mode, you should implement the auto-calibration feature required for determining the pen's position on the paper. To calibrate your position on the plotter, you'll need to use the X and Y endstop switches attached to the gantry assembly.
+There are two calibrate mechanisms: Auto Calibrate and Paper Pen Position Calibrate,
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-left corner of the page, 25mm from the bottom and left side (the bottom left of the margins). 
+Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.
 
-During the calibration, your plotter will first use the X and Y endstops to navigate to a known position, and then navigate to the "home" position described above.
+Paper Pen Position Calibrate determines the fixed paper home position which is used as a reference for valid paper x/y cooridinates.  In general if your plotter attempts to draw past the paper, this calibration is should stop this from happening.
+
+Before beginning the Math Mode, you should implement the auto-calibration feature and the Paper Pen Position required for determining the plotter and paper limits. 
+
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-left corner of the page, 25mm from the bottom and left side (the bottom left of the margins).  Use the Paper Pen Position Calibrate to "set" this position for your code.
 
 The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
 
@@ -48,9 +54,9 @@ You will be expected to graph the following functions, in units of mm:
 
 ![eq4](https://latex.codecogs.com/png.latex?%5Cbg_white%20x%5E2%20&plus;%20y%5E2%20%3D%20r%5E2)
 
-where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.
+where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.  Note: make sure your code handles +/- inputs for the constants.  
 
-If the function is not able to fit within the standard actual-size bounds of the axes, you are required to implement a scaling algorithm which will scale the axes and the function to be able to fit within the 6 cm x 6 cm bounds.
+Your plotter should plot the function to the limits of the paper.  At paper limits, the pen should go up.  If only a small piece of the plot is on the paper, then plot it on the paper.  If none of the function is on the paper, do nothing and alert the user in some way.
 
 ### G-Code (Images courtesy of howtomechatronics.com)
 
