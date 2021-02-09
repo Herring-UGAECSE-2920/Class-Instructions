@@ -44,7 +44,7 @@ The Y-axis endstop should already be very close to the 25mm limit without additi
 
 For the Math Mode, you will design an algorithm to graph several given functions. These functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
 
-After doing calibration, your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction, both positive and negative (left, right, up, and down relative to the origin).
+After doing calibration, your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction, both positive and negative (left, right, up, and down relative to the origin).  This sets the plotting window for the function.
 
 You will be expected to graph the following functions, in units of mm:
 
