@@ -62,7 +62,7 @@ Your plotter should plot the function to the limits of the paper.  At paper limi
 
 The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.
 
-As with the Equation Drawer feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower left hand corner of the page/margins.
+As with the Equation Drawer feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower left hand corner of the page/margins.  The Paper Pen Position Calibration will "set" the (0,0) position.
 
 You will need to implement the following commands:
 
