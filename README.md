@@ -16,25 +16,27 @@ In addition to recreating the functionality of the original XY Plotter (X, Y, Z 
 
 For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionality of the popular kids toy! You'll use the two digital encoders provided to control the X and Y axis to create a "manual" drawing mode.
 
-- When spinning the encoder knobs clockwise, the X-axis should move "right" relative to its home position and the Y-axis should move "up" relative to its home position. Conversely, when spinning the encoder knobs counter-clockwise, the X-axis should move "left" relative to its home, and the Y-axis should move "down" relative to its home.
+- When spinning the encoder knobs clockwise, the X-axis should move "right" relative to its home position and the Y-axis should move "up" relative to its home position. Conversely, when spinning the encoder knobs counter-clockwise, the X-axis should move "left" relative to its home, and the Y-axis should move "down" relative to its home. 
 
-- The mode should include the ability to adjust any necessary parameters such as motor step size, speed, etc. The LCD display has 5 GPIO buttons that can be used for this purpose.
+In this mode, your code does not have to check limits on the paper.  You can do this visually.  However, your code should handle extreme mechanical conditions (see below).
 
-- The mode should also include the ability to toggle the Z-axis (the pen holder) in an "up" and "down" position.The digital encoders come with extra GPIO output for a "short" and "long" press that could be used here.
+Refer to the Assessments document for the UI interface.  The PWM knobs are your control input for the UI interface.  In other words, the only input you have are the control knobs.  Do not use the inputs on the LCD.
+
+As described in the UI writeup in the assessment doc, the PWM for vertical position will control up/down of the pen with a PWM press.  The PWM for horizontal position will toggle speed slow/fast with a press.  You can decide on slow and fast speeds but should be easy to see difference.  When both PWM button are pressed simultaneously, the pen goes up, motors stop, and control goes back to the UI screen where the user can choose a different function/mode (see UI description).
 
 - For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
 
-### Calibration
+### Calibration Mode
 
 There are two calibrate mechanisms: Auto Calibrate and Paper Pen Position Calibrate,
 
-Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.
+Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.  You will use this information to calculate the opposite mechanical endpoints of the plotter.  Make sure to use a safety factor for the mechanical endpoints once found (1/2-1 inch is good).
 
 Paper Pen Position Calibrate determines the fixed paper home position which is used as a reference for valid paper x/y cooridinates.  In general if your plotter attempts to draw past the paper, this calibration must stop this from happening.
 
 Before beginning the Math Mode, you should implement the auto-calibration feature and the Paper Pen Position required for determining the plotter and paper limits. 
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-left corner of the page, 25mm from the bottom and left side (the bottom left of the margins).  Use the Paper Pen Position Calibrate to "set" this position for your code.
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom corner of the page (see photo on readme) with 25mm (1 inch) from either side of the page.  Use the Paper Pen Position Calibrate to "set" this position for your code. Once you have this point, you can calculte the three other edgepoints and the center of the paper for your drawing.
 
 The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
 
@@ -42,7 +44,7 @@ The Y-axis endstop should already be very close to the 25mm limit without additi
 
 ### Math Mode
 
-For the Math Mode, you will design an algorithm to graph several given functions. These functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. 
+For the Math Mode, you will design an algorithm to graph several given functions. These functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. Again, refer to the UI description in the Assessment document.
 
 After doing calibration, your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction, both positive and negative (left, right, up, and down relative to the origin).  This sets the plotting window for the function.
 
@@ -58,11 +60,13 @@ where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your 
 
 Your plotter should plot the function to the limits of the paper.  At paper limits, the pen should go up.  If only a small piece of the plot is on the paper, then plot it on the paper.  If none of the function is on the paper, do nothing and alert the user in some way.
 
+Once again, your PWM knobs are the only input for the user.  The "vertical" will be increments of +/-10 and the "horizontal" increments of +/- one.  Positive is clockwise.  A button press on a PWM enters the value and goes back to the Mathmode selection menu awaiting next command input.
+
 ### G-Code (Images courtesy of howtomechatronics.com)
 
-The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.
+The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document.
 
-As with the Equation Drawer feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower left hand corner of the page/margins.  The Paper Pen Position Calibration will "set" the (0,0) position.
+As with the Equation Drawer feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower corner of the page/margins similar to Mathmode.  The Paper Pen Position Calibration will "set" the (0,0) position.  Notice this means the G-code is not reference (0,0) as center of paper!
 
 You will need to implement the following commands:
 
@@ -115,7 +119,7 @@ Note: These resources may contain different meanings or extra parameters for som
 
 ### LCD/Encoder Interface
 
-Finally, you should create a User Interface using the provided 2x16 LCD display and digital encoders. The interface should provide access to and facilitate the use of each of the operating modes, as well as provide and accept any other configuration information or calibration options/operations.
+Finally, you should create a User Interface using the provided 2x16 LCD display and digital encoders. The interface should provide access to and facilitate the use of each of the operating modes, as well as provide and accept any other configuration information or calibration options/operations.  The PWM digital ecoders (knobs) will be used to provide input to the user with interaction via the LCD display.  We are not using the inputs directly on the LCD display to save available GPIOs for your use in the project if needed.
 
 Use the [interface on the Prusa i3 3D printer](https://help.prusa3d.com/en/article/lcd-menu-original-prusa-i3_142322) as inspiration.
 
