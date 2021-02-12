@@ -4,15 +4,15 @@ Through deliverables 6 and 7, you'll be designing the Etch-A-Sketch mode outline
 
 ## Design Proposal (P)
 
-To start, create a rough design proposal outlining what you and your team think would be the correct way to implement this functionality. It is not necessary to stick completely to the design proposal as you get into the weeds, but you should take it seriously as a planning exercise for this portion of the project. In your proposal, document how you would implement the individual points of functionality outlined below:
+To start, create a rough design proposal outlining what you and your team think would be the correct way to implement this functionality. It is not necessary to stick completely to the design proposal as you get into the weeds, but you should take it seriously as a planning exercise for this portion of the project. In your proposal, document how you would implement the individual points of functionality outlined below:  (For all items, make sure to see the readme and the assessment document for clarifications).
 
 - When spinning the encoder knobs clockwise, the X-axis should move "right" relative to its home position and the Y-axis should move "down" relative to its home position. Conversely, when spinning the encoder knobs counter-clockwise, the X-axis should move "left" relative to its home, and the Y-axis should move "up" relative to its home.
 
-- The mode should include the ability to adjust any necessary parameters such as motor step size.
+- The mode should include the ability to adjust any necessary parameters such as motor step size. 
 
 - The mode should also include the ability to toggle the Z-axis (the pen holder) in an "up" and "down" position by pressing encoder knob "in" (it should click when pressed like a button).
 
-- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
+- For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't. 
 
 In addition to your general outline for the design, your proposal should include a plan for how you are going to divide the labor for this feature among your teammates, a good description of any algorithms or other pieces of information you plan to use, and a complete testing plan to ensure your Etch-A-Sketch mode is as glitch-free as possible!
 
