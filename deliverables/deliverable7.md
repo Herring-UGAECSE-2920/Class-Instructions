@@ -8,7 +8,7 @@ This week you should be close to finishing your Etch-A-Sketch mode. It's importa
 
 **D**: As part of this deliverable we ask you to bring your plotter into class to demostrate the work you've done so far. This is so we can get a feel for how well the functionality has been implemented.
 
-**D**: In addition to the in-class demo, you'll also need to submit a video of the work you've completed for your Etch-A-Sketch mode. It should be short and to the point, while showing each of the pieces of functionality that you've completed. This is primarily a fallback option for us to grade, in case hardware issues arise in class.
+**D**: In addition to the in-class demo, you'll also need to submit a video of the work you've completed for your Etch-A-Sketch mode. It should be short and to the point, while showing each of the pieces of functionality that you've completed. This is primarily a fallback option for us to grade, in case hardware issues arise in class.  Show the following in your video: 1) draw a horizontal line, 2) draw vertical line, 3) draw diagonal line, 4) show pen up/down with button press, 5) show slow/fast speed with button press, 6) With pen up of course, show your pen will not go beyond mechanical limits of plotter, 7) show simultaneous button press puts plotter in a wait mode for further input from user.
 
 ## Begin Power Supply Design (D)
 
