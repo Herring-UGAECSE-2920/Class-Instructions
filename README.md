@@ -28,15 +28,15 @@ As described in the UI writeup in the assessment doc, the PWM for vertical posit
 
 ### Calibration Mode
 
-There are two calibrate mechanisms: Auto Calibrate and Paper Pen Position Calibrate,
+There are two calibrate mechanisms: Auto Calibrate and Pen Position Calibrate,
 
-Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.  You will use this information to calculate the opposite mechanical endpoints of the plotter.  Make sure to use a safety factor for the mechanical endpoints once found (1/2-1 inch is good).
+Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.  You will use this information to calculate the opposite mechanical endpoints of the plotter.  Make sure to use a safety factor for the mechanical endpoints once found (25 mm is good).
 
-Paper Pen Position Calibrate determines the fixed paper home position which is used as a reference for valid paper x/y cooridinates.  In general if your plotter attempts to draw past the paper, this calibration must stop this from happening.
+Pen Position Calibrate determines the fixed paper home position which is used as a reference for the "home" position on the paper, meaning the bottom right corner of the page, as described below. With a fixed paper size, this "home" position will provide you with the information required to calibrate your Math Mode and G-Code mode properly.
 
-Before beginning the Math Mode, you should implement the auto-calibration feature and the Paper Pen Position required for determining the plotter and paper limits. 
+Before beginning the Math Mode, you should implement the auto-calibration feature and the Pen Position required for determining the plotter and paper limits.
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-right corner of the page (see photo below) with 25mm (1 inch) from either side of the page.  Use the Paper Pen Position Calibrate to "set" this position for your code. Once you have this point, you can calculte the three other edgepoints and the center of the paper for your drawing.
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-right corner of the page (see photo below) with 25mm (1 inch) from either side of the page.  Use the Pen Position Calibrate to "set" this position for your code. Once you have this point, you can calculate the three other edge points and the center of the paper for your drawing.
 
 The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
 
@@ -58,15 +58,17 @@ You will be expected to graph the following functions, in units of mm:
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.  Note: make sure your code handles +/- real number inputs for the constants.  
 
-Your plotter should plot the function to the limits of the paper.  At paper limits, the pen should go up.  If only a small piece of the plot is on the paper, then plot it on the paper.  If none of the function is on the paper, do nothing and alert the user in some way.
+Your plotter should plot the function to the margins (25 mm on each side) of the paper. At the margins, the pen should go up. If only a small piece of the plot is on the paper, then plot it on the paper. If none of the function is on the paper, do nothing and alert the user in some way.
 
-Once again, your PWM knobs are the only input for the user.  The "vertical" will be increments of +/-10 and the "horizontal" increments of +/- one.  Positive is clockwise.  A button press on a PWM enters the value and goes back to the Mathmode selection menu awaiting next command input.
+Once again, your rotary encoder knobs are the only input for the user. The "vertical" will be increments of +/-10 and the "horizontal" increments of +/-1. Positive is clockwise. When the right hand encoder is short pressed, the selected value is entered and the cursor is moved to the next value to be set. If the right hand encoder is short pressed on the last value to be entered, the cursor moves back to the first value. When the right hand encoder is long pressed, the Math Mode starts (have an "are you sure?" dialogue). When the left hand encoder is short pressed it goes up one level in the Math Mode menu, and when long pressed, it goes to the top of the Math Mode menu.
 
 ### G-Code (Images courtesy of howtomechatronics.com)
 
 The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document.
 
-As with the Equation Drawer feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower corner of the page/margins similar to Mathmode.  The Paper Pen Position Calibration will "set" the (0,0) position.  Notice this means the G-code is not reference (0,0) as center of paper!
+As with the Math Mode feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower right corner of the page/margins similar to Math Mode.  The Paper Pen Position Calibration will "set" the (0,0) position.  Notice this means the G-code does not reference (0,0) as center of paper! Rather, (0,0) for the G-code interpreter means the lower right corner of the margins (25 mm from the bottom and right sides of the page).
+
+As noted in the commands below, you will need to be able to adjust the speed of your stepper motors in mm/minute. This should relate to the artificial "delay" between step commands, with a larger delay correlating to a slower stepper speed or "feedrate".
 
 You will need to implement the following commands:
 
@@ -78,7 +80,7 @@ You will need to implement the following commands:
 
 - **G01 – Linear Interpolation**
 
-    The G01 instruction moves the pen head linearly from the current position to a target position, utilizing a linear interpolation algorithm. As shown below, a feedrate (mm/minute) is also specified.
+    The G01 instruction moves the pen head linearly from the current position to a target position, utilizing a linear interpolation algorithm. As shown below, a feedrate (in mm/minute) is also specified. Feedrate is stepper speed for our application.
     
     ![G01](./resources/G01.png)
 

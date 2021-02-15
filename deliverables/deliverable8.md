@@ -8,3 +8,6 @@ Through deliverables 8, 9, and 10 you'll be designing the 'Equation Drawer' or '
 
 ## Begin Designing, Testing, and Documenting Your Design (D)
 
+
+
+## Demonstrate Automatic and Manual Calibration Modes (P)
