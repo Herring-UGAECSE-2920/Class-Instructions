@@ -6,11 +6,13 @@ In Deliverable 7, you'll continue working on your Etch-A-Sketch mode with the ai
 
 This week you should be close to finishing your Etch-A-Sketch mode. It's important to remember that these milestones are not strict deadlines, however you should have at least some functionality working for the Etch-A-Sketch mode, and you should not move on to the rest of the project until you've completed the Etch-A-Sketch mode. 
 
-**D**: As part of this deliverable we ask you to bring your plotter into class to demostrate the work you've done so far. This is so we can get a feel for how well the functionality has been implemented.
+**D**: As part of this deliverable we ask you to bring your plotter into class to demonstrate the work you've done so far. This is so we can get a feel for how well the functionality has been implemented.
 
 **D**: In addition to the in-class demo, you'll also need to submit a video of the work you've completed for your Etch-A-Sketch mode. It should be short and to the point, while showing each of the pieces of functionality that you've completed. This is primarily a fallback option for us to grade, in case hardware issues arise in class.  Show the following in your video: 1) draw a horizontal line, 2) draw vertical line, 3) draw diagonal line, 4) show pen up/down with button press, 5) show slow/fast speed with button press, 6) With pen up of course, show your pen will not go beyond mechanical limits of plotter, 7) show simultaneous button press puts plotter in a wait mode for further input from user.
 
-## Begin Power Supply Design (D)
+> Note: This deliverable grade is NOT the grade for etch-a-sketch mode. It is simply a checkpoint grade to encourage you and your team to stay on track for this project. It will be a factor of your final grade, but your "minimum to be considered for" is evaluated at the END of the semester, based on the modes your team was able to implement. With that in mind, if you have not completed etch-a-sketch mode to this point, showcase the work you have done, and aim to complete it as soon as possible so you can move on to Math Mode.
+
+## Begin Power Supply Design (P)
 
 To supplement this project with a bit more electrical engineering, we've assigned you a routine design of a power supply for your plotter! The final design will be due as part of Deliverable 9. Below are some electrical specifications and design requirements for your power supply, as well as the requirements for submission.
 
@@ -20,7 +22,7 @@ To supplement this project with a bit more electrical engineering, we've assigne
 
 - less than or equal to 10% peak-to-peak ripple/noise on input (at full load)
 
-- You must use [active components](https://en.wikipedia.org/wiki/Electronic_component#Active_components) (i.e. not just transformers, capacitors, inductors, resistors, etc.)
+- You must use [active components](https://en.wikipedia.org/wiki/Electronic_component#Active_components) (i.e. not just transformers, capacitors, inductors, resistors, diodes, etc.)
 
 - Your design should optimize for efficiency and cost
 
@@ -32,14 +34,18 @@ To supplement this project with a bit more electrical engineering, we've assigne
 
 - In addition to your design and simulation, you'll also need to provide a [Bill of Materials](https://en.wikipedia.org/wiki/Bill_of_materials) which should include DigiKey prices and part numbers for every electrical component.
 
-**D**: With the above information in mind, as part of your deliverables for this week, you should submit an early design for your power supply. It can be anything from just an idea for your design, all the way up to an initial schematic. **Do Not Stress** about this deliverable, it is simply to make sure you have started thinking about your power supply design.
+**P**: With the above information in mind, as part of your deliverables for this week, you should submit an early design for your power supply. It can be anything from just an idea for your design, all the way up to an initial schematic. **Do Not Stress** about this deliverable, it is simply to make sure you have started thinking about your power supply design. Design files can include a description (with pictures) of the design, schematics, breadboard pictures, etc.
 
 # Summary
 
 In summary, for this week you need to:
 
-1. Submit your **D** deliverables (Etch-A-Sketch video, (very) early power supply design) to the Design Deliverables 7 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the needed scripts.
+1. Submit your **D** deliverables (Etch-A-Sketch video) to the Design Deliverables 7 assignment folder on ELC. You do not need to submit code on ELC, just make sure your GitHub repository is up to date and contains the needed scripts.
 
-3. Update your User Manual and Technical Documentation with your findings.
+2. Prepare for your in-person demonstration.
 
-4. Submit your Weekly Project Management Report to the Deliverable 7 assignment folder on ELC.
+3. Submit your **P** deliverable (early power supply design) to the Progress Deliverables 7 assignment folder on ELC.
+
+4. Update your User Manual and Technical Documentation with your findings.
+
+5. Submit your Weekly Project Management Report to the Deliverable 7 assignment folder on ELC.

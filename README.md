@@ -18,11 +18,11 @@ For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionali
 
 - When spinning the encoder knobs clockwise, the X-axis should move "right" relative to its home position and the Y-axis should move "up" relative to its home position. Conversely, when spinning the encoder knobs counter-clockwise, the X-axis should move "left" relative to its home, and the Y-axis should move "down" relative to its home. 
 
-In this mode, your code does not have to check limits on the paper.  You can do this visually.  However, your code should handle extreme mechanical conditions (see below).
+In this mode, your code does not have to check limits on the paper. You can do this visually. However, your code should handle extreme mechanical conditions (see below).
 
-Refer to the Assessments document for the UI interface.  The PWM knobs are your control input for the UI interface.  In other words, the only input you have are the control knobs.  Do not use the inputs on the LCD.
+Refer to the Assessments document for the UI interface. The encoders are your control input for the UI interface.  In other words, the only input you have are the control knobs. Do not use the inputs on the LCD.
 
-As described in the UI writeup in the assessment doc, the PWM for vertical position will control up/down of the pen with a PWM press.  The PWM for horizontal position will toggle speed slow/fast with a press.  You can decide on slow and fast speeds but should be easy to see difference.  When both PWM button are pressed simultaneously, the pen goes up, motors stop, and control goes back to the UI screen where the user can choose a different function/mode (see UI description).
+As described in the UI writeup in the assessment doc, the encoder for vertical position will control up/down of the pen with a encoder press. The encoder for horizontal position will toggle speed slow/fast with a press. You can decide on slow and fast speeds but should be easy to see difference. When both encoder buttons are pressed simultaneously, the pen goes up, motors stop, and control goes back to the UI screen where the user can choose a different function/mode (see UI description).
 
 - For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
 
@@ -46,7 +46,7 @@ The Y-axis endstop should already be very close to the 25mm limit without additi
 
 For the Math Mode, you will design an algorithm to graph several given functions. These functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. Again, refer to the UI description in the Assessment document.
 
-After doing calibration, your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction, both positive and negative (left, right, up, and down relative to the origin).  This sets the plotting window for the function.
+After doing calibration (Auto and Manual), your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction (12 cm total length), both positive and negative (left, right, up, and down relative to the origin).  This sets the plotting window for the function.
 
 You will be expected to graph the following functions, in units of mm:
 

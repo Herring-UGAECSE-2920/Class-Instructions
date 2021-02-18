@@ -24,9 +24,9 @@ The purpose of this introduction is to show minimal familiarity with Eagle. If y
 
 **P**: If you have no prior Eagle work, your team should use Lecture 7 and the recommended YouTube video(s) to build a simple 12V to 5V DC voltage divider. Include both the board and schematic files along with a short pdf showing screen shots of your design. You must also include a BOM (Bill of Materials) and short explanation of PCB design rules for your design with focus on final wiring.
 
-## Begin Designing, Building, Testing, and Documenting (D)
+## Begin Designing, Building, Testing, and Documenting (P)
 
-When you have completed your design proposal, you are free to start experimenting with getting the Etch-A-Sketch mode working. While no specific thing is required for this week, you should be making good progress on the Etch-A-Sketch mode. As a goal for this deliverable, simply get the encoders to move a motor (X or Y axis) to the right when turned clockwise, and to the left when turned counter-clockwise (up and down for the Y-axis).  There is not a "D" deliverable to turn in.  You need to be looking forward to the deliverable which is coming up on next week.
+When you have completed your design proposal, you are free to start experimenting with getting the Etch-A-Sketch mode working. While no specific thing is required for this week, you should be making good progress on the Etch-A-Sketch mode. As a goal for this deliverable, simply get the encoders to move a motor (X or Y axis) to the right when turned clockwise, and to the left when turned counter-clockwise (up and down for the Y-axis).  There is not a "P" deliverable to turn in.  You need to be looking forward to the accompanying design deliverable which is due next Friday.
 
 # Summary
 
