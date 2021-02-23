@@ -34,6 +34,8 @@ Auto Calibrate determines the mechanical limits of the plotter using X and Y end
 
 Pen Position Calibrate determines the fixed paper home position which is used as a reference for the "home" position on the paper, meaning the bottom right corner of the page, as described below. With a fixed paper size, this "home" position will provide you with the information required to calibrate your Math Mode and G-Code mode properly.
 
+Make sure you implement this mode and all others through the LCD panel and user input with PWM.  See the Assessment document for UI menu information.
+
 Before beginning the Math Mode, you should implement the auto-calibration feature and the Pen Position required for determining the plotter and paper limits.
 
 A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-right corner of the page (see photo below) with 25mm (1 inch) from either side of the page.  Use the Pen Position Calibrate to "set" this position for your code. Once you have this point, you can calculate the three other edge points and the center of the paper for your drawing.
