@@ -1,0 +1,3 @@
+# Launching Python Scripts When Raspberry Pi Boots
+
+An important aspect for making sure your in-person demos go smoothly is to limit the setup required to perform the demo. Instead of running your script through an SSH terminal or, even worse, bringing in a keyboard/mouse/monitor just to run a script, you should follow the guides given below to configure your Etch-A-Sketch, Math Mode, GCode Mode, or "main" scripts to run on startup. Whenever you complete your demo and need to start work on the next portion of the project, you should undo/disable the automatic startup to ensure your 

@@ -22,9 +22,9 @@ To supplement this project with a bit more electrical engineering, we've assigne
 
 ### Design Specifications
 
-- Your power supply will take in 120 VAC from the wall, and supply 12V 5A DC typical, with 25% peak output and +/- 5% allowable tolerance.
+- Your power supply will take in 120 VAC from the wall, and supply 12V 5A DC typical, with +25% peak output capability (should be able to output up to (12V\*5A) + (12V\*5A)\*0.25 = 60W + 15W = 75W Maximum Output) and +/- 5% allowable tolerance.
 
-- less than or equal to 10% peak-to-peak ripple/noise on input (at full load)
+- less than or equal to 10% peak-to-peak ripple/noise on output (at full load)
 
 - You must use [active components](https://en.wikipedia.org/wiki/Electronic_component#Active_components) (i.e. not just transformers, capacitors, inductors, resistors, diodes, etc.)
 
