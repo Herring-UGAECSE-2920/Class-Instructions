@@ -36,7 +36,7 @@ This week, as a prerequisite to developing your Math Mode, we ask you to design 
 
 Your calibration mode and all other modes from this point on should be accessed from the UI on the LCD panel with input from the PWMs.  See the assessment document for more description on the UI modes.
 
-**D**: As part of this deliverable we ask you to bring your plotter into class to demonstrate the work you've done so far. This is so we can get a feel for how well the functionality has been implemented.
+**D**: As part of this deliverable we ask you to bring your plotter into class to demonstrate the work you've done so far. This is so we can get a feel for how well the functionality has been implemented. As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](setup/launch-on-startup.md) (when you power on the Pi) to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
 **D**: In addition to the in-class demo, you'll also need to submit a video of the work you've completed for your calibration modes. It should be short and to the point, while showing each of the pieces of functionality that you've completed. This is primarily a fallback option for us to grade, in case hardware issues arise in class. Show the following in your video: 1) Auto-calibrate mode in operation 2) manual calibrate mode in operation.  Show your UI is working with the mode.
 
