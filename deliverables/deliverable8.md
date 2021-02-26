@@ -34,7 +34,7 @@ When you have completed your design proposal, you are free to start experimentin
 
 This week, as a prerequisite to developing your Math Mode, we ask you to design and implement the automatic and manual calibration mode as outlined in the [README](../README.md). It's important to remember that these milestones are not strict deadlines, however you should have at least some functionality working for the automatic and manual calibration modes, and you should not move on to the rest of the project until you've completed the calibration modes.
 
-Your calibration mode and all other modes from this point on should be accessed from the UI on the LCD panel with input from the PWMs.  See the assessment document for more description on the UI modes.
+Your calibration mode and all other modes from this point on should be accessed from the UI on the LCD panel with input from the rotary encoders.  See the assessment document for more description on the UI modes.
 
 **D**: You will need to submit a video of the work you've completed for your calibration modes. It should be short and to the point, while showing each of the pieces of functionality that you've completed. This is primarily a fallback option for us to grade, in case hardware issues arise in class. Show the following in your video: 1) Auto-calibrate mode in operation 2) manual calibrate mode in operation.  Show your UI is working with the mode.
 
