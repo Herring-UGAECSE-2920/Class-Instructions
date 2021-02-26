@@ -66,9 +66,11 @@ Your plotter should plot the function to the margins (25 mm on each side) of the
 
 Once again, your rotary encoder knobs are the only input for the user. The "vertical" will be increments of +/-10 and the "horizontal" increments of +/-1. Positive is clockwise. When the right hand encoder is short pressed, the selected value is entered and the cursor is moved to the next value to be set. If the right hand encoder is short pressed on the last value to be entered, the cursor moves back to the first value. When the right hand encoder is long pressed, the Math Mode starts (have an "are you sure?" dialogue). When the left hand encoder is short pressed it goes up one level in the Math Mode menu, and when long pressed, it goes to the top of the Math Mode menu.
 
+As part of the Mathmode checkpoint, you should also implement stand alone mode on the PI.  The PI will no longer need to have a computer tethered to it to work!  
+
 ### G-Code (Images courtesy of howtomechatronics.com)
 
-The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document.
+The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document. As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](setup/launch-on-startup.md) (when you power on the Pi) to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
 As with the Math Mode feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower right corner of the page/margins similar to Math Mode.  The Paper Pen Position Calibration will "set" the (0,0) position.  Notice this means the G-code does not reference (0,0) as center of paper! Rather, (0,0) for the G-code interpreter means the lower right corner of the margins (25 mm from the bottom and right sides of the page).
 
