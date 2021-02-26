@@ -67,6 +67,8 @@ Your plotter should plot the function to the margins (25 mm on each side) of the
 Once again, your rotary encoder knobs are the only input for the user. The "vertical" will be increments of +/-10 and the "horizontal" increments of +/-1. Positive is clockwise. When the right hand encoder is short pressed, the selected value is entered and the cursor is moved to the next value to be set. If the right hand encoder is short pressed on the last value to be entered, the cursor moves back to the first value. When the right hand encoder is long pressed, the Math Mode starts (have an "are you sure?" dialogue). When the left hand encoder is short pressed it goes up one level in the Math Mode menu, and when long pressed, it goes to the top of the Math Mode menu.
 
 As part of the Mathmode checkpoint, you should also implement stand alone mode on the PI.  The PI will no longer need to have a computer tethered to it to work!  
+As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](setup/launch-on-startup.md) (when you power on the Pi)
+to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
 ### G-Code (Images courtesy of howtomechatronics.com)
 
