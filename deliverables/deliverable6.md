@@ -18,7 +18,7 @@ In addition to your general outline for the design, your proposal should include
 
 **P**: The design proposal should be relatively short, approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font.
 
-## Eagle CAD Introdution (P)
+## Eagle CAD Introduction (P)
 
 The purpose of this introduction is to show minimal familiarity with Eagle. If your team has already done something with Eagle you can upload that work for this deliverable (you must upload applicable files as described below).
 
