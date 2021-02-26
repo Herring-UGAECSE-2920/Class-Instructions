@@ -14,7 +14,7 @@ In addition to recreating the functionality of the original XY Plotter (X, Y, Z 
 
 You should strive to make this work as closely to a finished product as possible, meaning doing sufficient bug testing, and making the product "plug and play" or easy to setup/use. A part of this process is making sure your code runs on startup for the Raspberry Pi. A small writeup for how to do this can be [found here](deliverables/setup/launch-on-startup.md).
 
-### Etch-A-Sketch
+### Etch-A-Sketch (Deliverable 7)
 
 For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionality of the popular kids toy! You'll use the two digital encoders provided to control the X and Y axis to create a "manual" drawing mode.
 
@@ -28,7 +28,7 @@ As described in the UI writeup in the assessment doc, the encoder for vertical p
 
 - For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
 
-### Calibration Mode
+### Calibration Mode (Deliberable 8)
 
 There are two calibrate mechanisms: Auto Calibrate and Pen Position Calibrate,
 
@@ -46,7 +46,7 @@ The Y-axis endstop should already be very close to the 25mm limit without additi
 
 ![paper placement](resources/calibrate.jpg)
 
-### Math Mode
+### Math Mode (Deliverable 10)
 
 For the Math Mode, you will design an algorithm to graph several given functions. These functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. Again, refer to the UI description in the Assessment document.
 
@@ -70,7 +70,7 @@ As part of the Mathmode checkpoint, you should also implement stand alone mode o
 As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](setup/launch-on-startup.md) (when you power on the Pi)
 to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
-### G-Code (Images courtesy of howtomechatronics.com)
+### G-Code (Images courtesy of howtomechatronics.com) (Deliverable 13)
 
 The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document. As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](setup/launch-on-startup.md) (when you power on the Pi) to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
