@@ -24,7 +24,7 @@ A final Eagle schematic and fab-ready board layout, Multisim/other simulation, a
 
 - You must submit a complete schematic and fabrication-ready board layout made with [Autodesk Eagle](https://www.autodesk.com/products/eagle/free-download).
 
-- You must also submit a MultiSim simulation demonstrating the functionality, stability, and accuracy/quality of your design. Your simulation should measure the output characteristics of your design with and without a load, including measurements such as voltage, current, and [ripple/noise](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YG05CAG&l=en-US). The submission for this item can be a quick video or a series of screenshots of your simulation schematic/measurements.
+- You must also submit a MultiSim simulation demonstrating the functionality, stability, and accuracy/quality of your design. Your simulation should measure the output characteristics of your design with and without a load, including measurements such as voltage, current, and [ripple/noise](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YG05CAG&l=en-US). The submission for this item can be a quick video or a series of screenshots of your simulation schematic/measurements.  Make sure you include a written document detailing your simulation results and your design choices with respect to meeting each of the design specification requirements.
 
 - In addition to your design and simulation, you'll also need to provide a [Bill of Materials](https://en.wikipedia.org/wiki/Bill_of_materials) which should include DigiKey prices and part numbers for every electrical component.
 
