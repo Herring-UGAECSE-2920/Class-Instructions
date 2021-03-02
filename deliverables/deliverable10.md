@@ -14,7 +14,7 @@ Be prepared to show the following in your demonstration and and include it as pa
 1. Launch on Startup (plug in the plotter and the program should come up) 
 2. Automatic and manual calibration.
 3. Navigate to origin and draw axes (6 cm from origin in each direction), 
-4. Demonstrate entering the constants/coefficients (`m`, `b`, `a`, `c`, and `r`)
+4. Demonstrate entering the constants/coefficients (`m`, `b`, `a`, `c`, and `r`).  Please note, negative values are fair game.
 5. Show each of the given equations being drawn correctly and to scale (mm) 
 6. Show the plotter giving feedback when the given equation can't be plotted/isn't on the page 
 7. Show an edge case of the plotter partially plotting an equation (not completely on the page). Refer to rubric on ELC for more details.
