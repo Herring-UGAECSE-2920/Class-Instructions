@@ -14,7 +14,7 @@ Be prepared to show the following in your demonstration and and include it as pa
 
 For the in class checkpoint, we will go through each of the 7 "video" steps.
 
-> Note: This deliverable grade is NOT the grade for Math Mode. It is simply a checkpoint grade to encourage you and your team to stay on track for this project. It will be a factor of your final grade, but your "minimum to be considered for" is evaluated at the END of the semester, based on the modes your team was able to implement. With that in mind, if you have not completed Math Mode to this point, showcase the work you have done, and aim to complete it as soon as possible so you can move on to GCode Mode.
+> Note: This deliverable grade is NOT the final opportunity to clear the checkpoint for Math Mode. It is simply a checkpoint grade to encourage you and your team to stay on track for this project. It will be a factor of your final grade, but your "minimum to be considered for" is evaluated at the END of the semester, based on the modes your team was able to implement. With that in mind, if you have not completed Math Mode to this point, showcase the work you have done, and aim to complete it as soon as possible so you can move on to GCode Mode.
 
 # Summary
 
