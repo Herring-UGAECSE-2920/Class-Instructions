@@ -1,6 +1,6 @@
 # Deliverable 13
 
-
+In deiverable 13, you'll continue working on your GCode mode, with the aim of having it (along with the rest of your plotter) completed, meaning it achieves all of the required functionality outlined in the [README](../README.md) and [Deliverable 11](deliverable11.md). In additon to having the GCode mode ready for demonstration, you'll also need to have the rest of your plotter finalized and polished (other modes, UI, wiring, cases, startup, etc.).
 
 ## Finish Designing, Building, Testing, and Documenting GCode Mode And Demostrate your Completed Plotter (D)
 
@@ -16,3 +16,12 @@ For the in class checkpoint, we will go through each of the 7 "video" steps from
 
 > Note: This deliverable grade is what we will use to determine your "minimum to be considered for" grade for this class. It will be based on the modes you and your team were able to complete during the semester, and how well those modes were implemented as well as the quality of your user manual and techincal documentation.
 
+# Summary
+
+In summary, for this week you need to:
+
+1. Submit your **D** deliverable (Final Demonstration Video) to the Design Deliverables 13 assignment folder on ELC. You should also make sure your Github is up-to-date with the code running on your Pi, as we'll be looking at your code during the grading process (leave plenty of comments!).
+
+4. Update your User Manual and Technical Documentation. This should be getting close to final, your User Manual is due on April 26th, and your Techincal Manual/Report is due on April 30th.
+
+5. Submit your Weekly Project Management Report to the Deliverable 13 assignment folder on ELC.

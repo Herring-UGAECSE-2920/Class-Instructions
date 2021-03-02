@@ -61,6 +61,8 @@ You can assume absolute positioning and units of mm for all commands. For more r
 
 Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
 
+In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with two test files and create an additional `.gcode` file to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
+
 **P**: The design proposal should be relatively short, approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font.
 
 ## Begin Designing, Testing, and Documenting Your Design (P)
@@ -69,7 +71,35 @@ When you have completed your design proposal, you are free to start experimentin
 
 ## Compare Your Power Supply with an "Off The Shelf" Design (P)
 
+As a conclusion to the Power Supply Design portion of this course, you all will compare your power supply design to that of a standard 60W laptop charger (the one we gave you for your plotter). The consumer power supply we gave you has the common [Flyback Converter](https://en.wikipedia.org/wiki/Flyback_converter) design, which you can read about in a little bit of detail from [this textbook clipping](resources/flyback-power-supply.pdf).
 
+The purpose of this assignment is to take what you've learned from designing your own power supply and determine what you did right or wrong, and what features (which we didn't ask you to implement) make the commercial power supply safer, more reliable, and generally better.
+
+Below we have provided a series of pictures of the given power supply taken apart so you can see its components/design. Your objective is to identify key differences in components and layout, and describe/illustrate these in a short (~2 pages) writeup.
+
+![back0](resources/back0.jpg)
+
+![back1](resources/back1.jpg)
+
+![back2](resources/back2.jpg)
+
+![back3](resources/back3.jpg)
+
+![back5](resources/back5.jpg)
+
+![back6](resources/back6.jpg)
+
+![front0](resources/front0.jpg)
+
+![front1](resources/front1.jpg)
+
+![front2](resources/front2.jpg)
+
+![front3](resources/front3.jpg)
+
+![front4](resources/front4.jpg)
+
+**P**: The writeup should be approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font. You may include pictures of your power supply design for illustration.
 
 # Summary
 

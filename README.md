@@ -127,6 +127,8 @@ You can assume absolute positioning and units of mm for all commands. For more r
 
 Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
 
+In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with two test files and create an additional `.gcode` file to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
+
 ### LCD/Encoder Interface
 
 Finally, you should create a User Interface using the provided 2x16 LCD display and digital encoders. The interface should provide access to and facilitate the use of each of the operating modes, as well as provide and accept any other configuration information or calibration options/operations.  The PWM digital ecoders (knobs) will be used to provide input to the user with interaction via the LCD display.  We are not using the inputs directly on the LCD display to save available GPIOs for your use in the project if needed.
