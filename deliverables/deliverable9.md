@@ -16,7 +16,7 @@ A final Eagle schematic and fab-ready board layout, Multisim/other simulation, a
 
 - less than or equal to 10% peak-to-peak ripple/noise on output (at full load)
 
-- You must use [active components](https://en.wikipedia.org/wiki/Electronic_component#Active_components) (i.e. not just transformers, capacitors, inductors, resistors, diodes, etc.)
+- You must use at least one [active component](https://en.wikipedia.org/wiki/Electronic_component#Active_components) (i.e. not just transformers, capacitors, inductors, resistors, diodes, etc.)
 
 - Your design should optimize for efficiency and cost
 
