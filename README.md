@@ -60,7 +60,7 @@ You will be expected to graph the following functions, in units of mm:
 
 ![eq4](https://latex.codecogs.com/png.latex?%5Cbg_white%20x%5E2%20&plus;%20y%5E2%20%3D%20r%5E2)
 
-where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.  Note: make sure your code handles +/- real number inputs for the constants.  
+where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.  Note: make sure your code handles +/- integer number inputs for the constants.  
 
 Your plotter should plot the function to the margins (25 mm on each side) of the paper. At the margins, the pen should go up. If only a small piece of the plot is on the paper, then plot it on the paper. If none of the function is on the paper, do nothing and alert the user in some way.
 
