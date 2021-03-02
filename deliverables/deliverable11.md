@@ -71,7 +71,7 @@ When you have completed your design proposal, you are free to start experimentin
 
 ## Compare Your Power Supply with an "Off The Shelf" Design (P)
 
-As a conclusion to the Power Supply Design portion of this course, you all will compare your power supply design to that of a standard 60W laptop charger (the one we gave you for your plotter). The consumer power supply we gave you has the common [Flyback Converter](https://en.wikipedia.org/wiki/Flyback_converter) design, which you can read about in a little bit of detail from [this textbook clipping](resources/flyback-power-supply.pdf).
+As a conclusion to the Power Supply Design portion of this course, you all will compare your power supply design to that of a standard 60W laptop charger (the one we gave you for your plotter). The consumer power supply we gave you has the common [Flyback Converter](https://en.wikipedia.org/wiki/Flyback_converter) design, which you can read about in a little bit of detail from [this textbook clipping](resources/flyback-power-supply.pdf).  Note the pages on the scan are out of order. 
 
 The purpose of this assignment is to take what you've learned from designing your own power supply and determine what you did right or wrong, and what features (which we didn't ask you to implement) make the commercial power supply safer, more reliable, and generally better.
 
