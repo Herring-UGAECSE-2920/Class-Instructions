@@ -44,7 +44,7 @@ A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted line
 
 The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
 
-![paper placement](resources/calibrate.jpg)
+![paper placement](resources/calibrate_2.jpg)
 
 ### Math Mode (Deliverable 10)
 
