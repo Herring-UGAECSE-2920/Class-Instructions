@@ -28,7 +28,7 @@ A final Eagle schematic and fab-ready board layout, Multisim/other simulation, a
 
 - In addition to your design and simulation, you'll also need to provide a [Bill of Materials](https://en.wikipedia.org/wiki/Bill_of_materials) which should include DigiKey prices and part numbers for every electrical component.
 
-**D**: Submit all of the items listed as screenshots/elements of **ONE** document. The Eagle Schematic/Board files should also be uploaded separately.
+**D**: Submit all of the items listed as screenshots/elements as **ONE** document. The Eagle Schematic/Board files should also be uploaded separately.
 
 # Summary
 
