@@ -34,4 +34,6 @@ In summary, for this week you need to:
 3. Update your User Manual and Technical Documentation with your findings.
 
 4. Submit your Weekly Project Management Report to the Deliverable 8 assignment folder on ELC.
+5. 
+6. Note: This is an opportunity for your group to validate Etch-a-Sketch mode if you have not already done so.
 
