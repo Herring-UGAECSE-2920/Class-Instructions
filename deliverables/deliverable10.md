@@ -1,8 +1,14 @@
 # Deliverable 10
 
-In deliverable 10, you'll continue to work on your Math Mode, with the aim of having it completed, meaning it achieves all of the required functionality outlined in the [README](../README.md) and [Deliverable 8](deliverable8.md) adequately. In additon to having the functionality implemented, you'll also need to have your plotter program launching on startup, as described below.
+In deliverable 10, you'll continue to work on your Math Mode, with the aim of having it completed, meaning it achieves all of the required functionality outlined in the [README](../README.md) and [Deliverable 8](deliverable8.md) adequately. In addition to having the functionality implemented, you'll also need to have your plotter program launching on startup, as described below.
 
-## Finish Designing, Building, Testing, and Documenting Math Mode and Demonstrate Launch on Startup (D)
+## Demonstrate Launch on Startup (P)
+
+As part of your demonstration described below, your plotter program needs to launch on startup, meaning when we plug in your Raspberry Pi, your Math Mode Python script starts up automatically, ready for testing. To accomplish this, you should follow the [short guide](setup/launch-on-startup.md) we put together. If you have any questions or problems, please start an issue on this repository.
+
+**P**: There is no additional deliverable to turn in for this assignment, as the launch on startup will be checked off as part of your demonstration.
+
+## Finish Designing, Building, Testing, and Documenting Math Mode (D)
 
 This week you should be close to finishing your Math Mode. It's important to remember that these milestones are not strict deadlines, however you should have at least some functionality working for the Math Mode, and you should not move on to the rest of the project until you've completed the Math Mode. 
 

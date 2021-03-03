@@ -14,6 +14,18 @@ In addition to recreating the functionality of the original XY Plotter (X, Y, Z 
 
 You should strive to make this work as closely to a finished product as possible, meaning doing sufficient bug testing, and making the product "plug and play" or easy to setup/use. A part of this process is making sure your code runs on startup for the Raspberry Pi. A small writeup for how to do this can be [found here](deliverables/setup/launch-on-startup.md).
 
+### Rotary Encoder Setup/Terminology
+
+To limit confusion during demonstrations and videos, we've decided to standardize the position/function of the rotary encoders on your plotter. Below is a table with the terminology we have used in the documentation to distinguish the rotary encoders and specify their function. 
+
+| Left-Hand Encoder | Right-Hand Encoder |
+| ----------------- | ------------------ |
+| Left Encoder      | Right Encoder      |
+| X axis Encoder    | Y axis Encoder     |
+| Horizontal Encoder| Vertical Encoder   |
+
+With "Left-Hand Encoder" meaning the encoder normally controlled by the left hand, and the same for the "Right-Hand Encoder". 
+
 ### Etch-A-Sketch (Deliverable 7)
 
 For the Etch-A-Sketch mode, your goal is fairly simple: recreate the functionality of the popular kids toy! You'll use the two digital encoders provided to control the X and Y axis to create a "manual" drawing mode.
@@ -28,7 +40,7 @@ As described in the UI writeup in the assessment doc, the encoder for vertical p
 
 - For your safety as well as the safety of the equipment, you should make sure the motors stop when encountering the X and Y endstop switches and when it has reached the opposite end of its gantry. In essence, make sure the motors do not attempt to go where they can't.
 
-### Calibration Mode (Deliberable 8)
+### Calibration Mode (Deliverable 8)
 
 There are two calibrate mechanisms: Auto Calibrate and Pen Position Calibrate,
 
@@ -64,10 +76,10 @@ where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your 
 
 Your plotter should plot the function to the margins (25 mm on each side) of the paper. At the margins, the pen should go up. If only a small piece of the plot is on the paper, then plot it on the paper. If none of the function is on the paper, do nothing and alert the user in some way.
 
-Once again, your rotary encoder knobs are the only input for the user. The "vertical" will be increments of +/-10mm and the "horizontal" increments of +/-1mm. Positive is clockwise. When the "verical" encoder is short pressed, the selected value is entered and the cursor is moved to the next value to be set. If the "vertical" encoder is short pressed on the last value to be entered, the cursor moves back to the first value. When the "vertical" encoder is long pressed, the Math Mode starts (have an "are you sure?" dialogue). When the "horizontal" encoder is short pressed it goes up one level in the Math Mode menu, and when long pressed, it goes to the top of the Math Mode menu.
+Once again, your rotary encoder knobs are the only input for the user. The "vertical" will be increments of +/-10mm and the "horizontal" increments of +/-1mm. Positive is clockwise. When the "vertical" encoder is short pressed, the selected value is entered and the cursor is moved to the next value to be set. If the "vertical" encoder is short pressed on the last value to be entered, the cursor moves back to the first value. When the "vertical" encoder is long pressed, the Math Mode starts (have an "are you sure?" dialogue). When the "horizontal" encoder is short pressed it goes up one level in the Math Mode menu, and when long pressed, it goes to the top of the Math Mode menu. As specified in the UI section of the Assessments document, your Math Mode should also halt, raise the pen, and go back to the menu/UI when both of the Encoders are long-pressed.
 
-As part of the Mathmode checkpoint, you should also implement stand alone mode on the PI.  The PI will no longer need to have a computer tethered to it to work!  
-As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](deliverables/setup/launch-on-startup.md) (when you power on the Pi)
+As part of the Math Mode checkpoint, you should also implement stand alone mode on the Pi. The Pi will no longer need to have a computer tethered to it to work!  
+As mentioned in the Project Specifications section of the README, you should have your code [launch on startup](deliverables/setup/launch-on-startup.md) (when you power on the Pi)
 to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
 ### G-Code (Images courtesy of howtomechatronics.com) (Deliverable 13)
@@ -128,6 +140,8 @@ You can assume absolute positioning and units of mm for all commands. For more r
 Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
 
 In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with two test files and create an additional `.gcode` file to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
+
+As specified in the UI section of the Assessments document, your GCode Mode should also halt, raise the pen, and go back to the menu/UI when both of the Encoders are long-pressed.
 
 ### LCD/Encoder Interface
 

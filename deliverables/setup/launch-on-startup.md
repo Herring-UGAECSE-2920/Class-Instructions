@@ -6,7 +6,7 @@ An important aspect for making sure your in-person demos go smoothly is to limit
 
 Since linux (the operating system that Raspberry Pi OS is based on) is used a ton in the datacenter/server world, it comes with a lot of handy features built right in. One of these features/programs is called [`cron` or `cron job`](https://en.wikipedia.org/wiki/Cron), which lets you schedule when to run a program/script on your Raspberry Pi.
 
-you can follow [this instructables guide](https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/) to get a general idea of how `cron` works, and how you can use it to launch the Python scripts for your various demos. As a side note, if you're using the `plotter` Python Virtual Environment we setup way back at the beginning of the semester, you'll need to include a line in your launcher script to get into that Virtual Environment (`workon plotter`).
+you can follow [this guide](https://www.instructables.com/Raspberry-Pi-Launch-Python-script-on-startup/) to get a general idea of how `cron` works, and how you can use it to launch the Python scripts for your various demos. Remember to navigate to the correct directory As a side note, if you're using the `plotter` Python Virtual Environment we setup way back at the beginning of the semester, you'll need to include a line in your launcher script to get into that Virtual Environment (`workon plotter`).
 
 ## Disabling the launch on boot
 
