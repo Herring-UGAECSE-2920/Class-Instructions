@@ -46,7 +46,7 @@ There are two calibrate mechanisms: Auto Calibrate and Pen Position Calibrate,
 
 Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.  You will use this information to calculate the opposite mechanical endpoints of the plotter.  Make sure to use a safety factor for the mechanical endpoints once found (25 mm is good).
 
-Pen Position Calibrate determines the fixed paper home position which is used as a reference for the "home" position on the paper, meaning the bottom right corner of the page, as described below. With a fixed paper size, this "home" position will provide you with the information required to calibrate your Math Mode and G-Code mode properly.
+Pen Position Calibrate determines the fixed paper home position which is used as a reference for the "home" position on the paper, meaning the bottom right corner of the page, as described below. With a fixed paper size, this "home" position will provide you with the information required to calibrate your Math Mode and G-Code mode properly.  The main point of the manual calibration mode is to set the reference "X" position for your paper.  Once the reference "X" is known, you will be able to find the center point of the paper and limits of the paper.
 
 Make sure you implement this mode and all others through the LCD panel and user input with PWM.  See the Assessment document for UI menu information.
 
