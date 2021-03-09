@@ -12,7 +12,8 @@ A final Eagle schematic and fab-ready board layout, Multisim/other simulation, a
 
 ### Design Specifications
 
-- Your power supply will take in 120 VAC from the wall, and supply 12V 5A DC typical, with +25% peak output capability (should be able to output up to (12V\*5A) + (12V\*5A)\*0.25 = 60W + 15W = 75W Maximum Output) and +/- 5% allowable tolerance.
+- Your power supply will take in 120 VAC from the wall, and supply 12V 5A DC typical, with +25% peak output capability (should be able to output up to (12V\*5A) + (12V\*5A)\*0.25 = 60W + 15W = 75W Maximum Output).  
+- Note: your design must show that it works within the tolerance ranges of your components (key word is SHOW).  For example, if you design a circuit with 1 resistor that has a +/- 10% tolerance, then your calculations must show the boundaries for min/max due to this resistor.  
 
 - less than or equal to 10% peak-to-peak ripple/noise on output (at full load)
 
