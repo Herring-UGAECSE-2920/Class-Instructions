@@ -25,13 +25,13 @@ A final Eagle schematic and fab-ready board layout, Multisim/other simulation, a
 
 - You must submit a complete schematic and fabrication-ready board layout made with [Autodesk Eagle](https://www.autodesk.com/products/eagle/free-download).
 
-- You must also submit a MultiSim simulation or hardware implementation (breadboard, perfboard, etc.) demonstrating the functionality, stability, and accuracy/quality of your design. Your simulation should measure the output characteristics of your design with and without a load, including measurements such as voltage, current, and [ripple/noise](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YG05CAG&l=en-US). The submission for this item can be a series of screenshots of your simulation schematic/measurements.  Make sure you include a written section of the document detailing your simulation/implementation results and your design choices with respect to meeting each of the design specification requirements.
+- You must also submit a MultiSim simulation or hardware implementation (breadboard, perf board, etc.) demonstrating the functionality, stability, and accuracy/quality of your design. Your simulation should measure the output characteristics of your design with and without a load, including measurements such as voltage, current, and [ripple/noise](https://knowledge.ni.com/KnowledgeArticleDetails?id=kA03q000000YG05CAG&l=en-US). The submission for this item can be a series of screenshots of your simulation schematic/measurements.  Make sure you include a written section of the document detailing your simulation/implementation results and your design choices with respect to meeting each of the design specification requirements.
 
 - In addition to your design and simulation, you'll also need to provide a [Bill of Materials](https://en.wikipedia.org/wiki/Bill_of_materials) which should include DigiKey prices and part numbers for every electrical component.
 
-- For grading information please see the ruberic posted on ELC.
+- For grading information please see the rubric posted on ELC.
 
-**D**: Submit all of the items listed as screenshots/elements of **ONE** document, preferrable in `.pdf` or `.docx` formats. The Eagle Schematic/Board files should also be uploaded separately, but they should also be included as screenshots (large, clear) in your document.
+**D**: Submit all of the items listed as screenshots/elements of **ONE** document, preferably in `.pdf` or `.docx` formats. The Eagle Schematic/Board files should also be uploaded separately, but they should also be included as screenshots (large, clear) in your document.
 
 # Summary
 

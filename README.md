@@ -46,13 +46,15 @@ There are two calibrate mechanisms: Auto Calibrate and Pen Position Calibrate,
 
 Auto Calibrate determines the mechanical limits of the plotter using X and Y endstop limit switch inputs.  You will use this information to calculate the opposite mechanical endpoints of the plotter.  Make sure to use a safety factor for the mechanical endpoints once found (25 mm is good).
 
-Pen Position Calibrate determines the fixed paper home position which is used as a reference for the "home" position on the paper, meaning the bottom right corner of the page, as described below. With a fixed paper size, this "home" position will provide you with the information required to calibrate your Math Mode and G-Code mode properly.  The main point of the manual calibration mode is to set the reference "X" position for your paper.  Once the reference "X" is known, you will be able to find the center point of the paper and limits of the paper.
+Pen Position Calibrate (manual calibration) determines the fixed paper home position which is used as a reference for the "home" position on the paper, meaning the bottom right corner of the page, as described below. With a fixed paper size, this "home" position will provide you with the information required to calibrate your Math Mode and G-Code mode properly. The main point of the manual calibration mode is to set the reference "X" position for your paper. Once the reference "X" is known, you will be able to find the center point of the paper and limits of the paper. TO implement the manual calibration, use the encoders to move the X/Y axis as in the Etch-A-Sketch mode, and make sure you can change the speed of the steppers from slow (for accurate movement when dialing on the position) to fast (when moving across axes).
 
-Make sure you implement this mode and all others through the LCD panel and user input with PWM.  See the Assessment document for UI menu information.
+Using both the auto calibration and manual calibration procedures, you'll be able to accommodate for different position for the paper, to maximize the amount of reachable area by your plotter. Because of the tolerances on the plotters (Hint: not good) different groups may have different gantry lengths, meaning setting a hard home position for the plotter would create problems should these tolerance issues show up. 
 
-Before beginning the Math Mode, you should implement the auto-calibration feature and the Pen Position required for determining the plotter and paper limits.
+Make sure you implement this mode and all others through the LCD panel and user input with the encoders. See the Assessment document for UI menu information.
 
-A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-right corner of the page (see photo below) with 25mm (1 inch) from either side of the page.  Use the Pen Position Calibrate to "set" this position for your code. Once you have this point, you can calculate the three other edge points and the center of the paper for your drawing.
+Before beginning the Math Mode, you should implement these calibration modes, which are required for determining the plotter and paper limits.
+
+A letter sized sheet of paper (8.5” x 11”) will be placed on the dotted lines on the plotter platform. You will assume 25mm margins on each side of the page. The origin or "home" position for your Math Mode and G-Code Mode will be the bottom-right corner of the page (see photo below) with 25mm (1 inch) from either side of the page. Use the manual calibration to "set" this position for your code. Once you have this point, you can calculate the three other edge points and the center of the paper for your drawing.
 
 The Y-axis endstop should already be very close to the 25mm limit without additional adjustment. The 8.5" x 11" paper will be lined up with the upper left hand side of the silk screening on the base of the plotter, as seen below:
 
@@ -118,7 +120,7 @@ You will need to implement the following commands:
 
 - **G28 – Return Home**
 
-    The G28 command tells the machine to move the tool to its reference point or home position. Since we have convenient X and Y axis endstops already on the plotter, we can use these to establish a good home position, given we know where the endstops put us on the paper and where our desired home position is.
+    The G28 command tells the machine to move the tool to its reference point or home position. Since we have convenient X and Y axis endstops already on the plotter, we can use these to establish a good home position, given we know where the endstops put us on the paper and where our desired home position is. Essentially, this command moves the plotter head to the home position specified by your manual calibration feature.
 
 - **M02 - End of Program**
 
@@ -142,6 +144,17 @@ Note: These resources may contain different meanings or extra parameters for som
 In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with two test files and create an additional `.gcode` file to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
 
 As specified in the UI section of the Assessments document, your GCode Mode should also halt, raise the pen, and go back to the menu/UI when both of the Encoders are long-pressed.
+
+Below is a sample GCode program which simply moves the plotter head to the home position and draws a diagonal line to the center of the page with a feedrate (speed) of 1000 mm/minute. It's important to note that since the home position is the bottom-right corner of the margins, the positive X direction will be to the left, with its limit on the left margins, and the positive Y direction is up, with its limit on the top margins:
+
+```gcode
+G28
+M03
+G01 X78 Y107.5 F1000
+M04
+G28
+M02
+```
 
 ### LCD/Encoder Interface
 
