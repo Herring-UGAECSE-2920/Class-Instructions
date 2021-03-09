@@ -62,7 +62,7 @@ The Y-axis endstop should already be very close to the 25mm limit without additi
 
 For the Math Mode, you will design an algorithm to graph several given functions. These functions will be provided ahead of time and can be ‘hard-coded’ into a Python script to be run. Again, refer to the UI description in the Assessment document.
 
-After doing calibration (Auto and Manual), your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction (12 cm total length), both positive and negative (left, right, up, and down relative to the origin).  This sets the plotting window for the function.
+After doing calibration (Auto and Manual), your plotter should navigate to the middle of the page, which will act as the origin of the graph. From the origin, you will need to draw very basic axes which extend 6 cm in each direction (12 cm total length), both positive and negative (left, right, up, and down relative to the origin). This sets a reference axis for the plot.
 
 You will be expected to graph the following functions, in units of mm:
 
@@ -74,7 +74,7 @@ You will be expected to graph the following functions, in units of mm:
 
 where the constants: `m`, `b`, `a`, `c`, and `r` will be given as input to your program.  Note: make sure your code handles +/- integer number inputs for the constants.  
 
-Your plotter should plot the function to the margins (25 mm on each side) of the paper. At the margins, the pen should go up. If only a small piece of the plot is on the paper, then plot it on the paper. If none of the function is on the paper, do nothing and alert the user in some way.
+**Your plotter should plot the function to the margins (25 mm on each side) of the paper. At the margins, the pen should go up. If only a small piece of the plot is on the paper, then plot it on the paper. If none of the function is on the paper, do nothing and alert the user in some way.**
 
 Once again, your rotary encoder knobs are the only input for the user. The "vertical" will be increments of +/-10mm and the "horizontal" increments of +/-1mm. Positive is clockwise. When the "vertical" encoder is short pressed, the selected value is entered and the cursor is moved to the next value to be set. If the "vertical" encoder is short pressed on the last value to be entered, the cursor moves back to the first value. When the "vertical" encoder is long pressed, the Math Mode starts (have an "are you sure?" dialogue). When the "horizontal" encoder is short pressed it goes up one level in the Math Mode menu, and when long pressed, it goes to the top of the Math Mode menu. As specified in the UI section of the Assessments document, your Math Mode should also halt, raise the pen, and go back to the menu/UI when both of the Encoders are long-pressed.
 
