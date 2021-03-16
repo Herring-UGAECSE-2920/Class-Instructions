@@ -1,6 +1,6 @@
 # Deliverable 10
 
-In deliverable 10, you'll continue to work on your Math Mode, with the aim of having it completed, meaning it achieves all of the required functionality outlined in the [README](../README.md) and [Deliverable 8](deliverable8.md) adequately. In addition to having the functionality implemented, you'll also need to have your plotter program launching on startup, as described below.
+In deliverable 10, you'll continue to work on your Math Mode, with the aim of having it completed, meaning it achieves all of the required functionality outlined in the [README](../README.md) and [Deliverable 8](deliverable8.md) adequately. In addition to having the functionality implemented, you'll also need to have your plotter program launching on startup, as described below.  Note: There is a rubric for the Mathmode checkpoint on ELC.
 
 ## Demonstrate Launch on Startup (P)
 
