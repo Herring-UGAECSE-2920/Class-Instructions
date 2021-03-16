@@ -166,7 +166,7 @@ Use the [interface on the Prusa i3 3D printer](https://help.prusa3d.com/en/artic
 
 Your project will have three required documents: 
 
-For both documents, go to ELC and refer to the ECSE 2920 Spring 2021 Assessments for specific requirements and for the rubric(scoring) metrics for each of the two documents.
+For both documents, go to ELC and refer to the ECSE 2920 Spring 2021 Assessments for specific requirements and for the rubric(scoring) metrics for each of the User Manual and the Technical Description of the Design..
 
 1. A User’s Manual
     
