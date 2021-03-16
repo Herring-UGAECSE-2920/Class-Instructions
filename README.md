@@ -166,6 +166,8 @@ Use the [interface on the Prusa i3 3D printer](https://help.prusa3d.com/en/artic
 
 Your project will have three required documents: 
 
+For both documents, go to ELC and refer to the ECSE 2920 Spring 2021 Assessments for specific requirements and for the rubric(scoring) metrics for each of the two documents.
+
 1. A User’s Manual
     
     - Write a complete step-by-step document instructing a novice user how to use your plotter. Think about your plotter as a product bought by the user. The manual will instruct the user on all of the functions of your plotter. 
