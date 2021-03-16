@@ -4,7 +4,7 @@ For Deliverable 14, you'll be turning in all of your plotter hardware, with a **
 
 ## Return All Hardware (P)
 
-**P**: Turn in **Every** piece of hardware you received for this class, including those items which you damaged/replaced throughout the course of the project. This includes **every** component listed on the hardware checkoff list, and the boxes/containers we gave you to hold everything.
+**P**: Turn in **Every** piece of hardware you received for this class, including those items which you damaged/replaced throughout the course of the project. This includes **every** component listed on the hardware checkoff list, and the boxes/containers we gave you to hold everything.  As a reminder, a grade of incomplete will be given until all items are returned in working condition.
 
 ## Begin Finalizing User and Technical Manuals and Start your Final Presentation (P)
 
