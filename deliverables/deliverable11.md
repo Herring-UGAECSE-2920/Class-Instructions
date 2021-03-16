@@ -1,6 +1,6 @@
 # Deliverable 11
 
-Through deliverables 11, 12, and 13 you'll be designing the 'GCode Mode' outlined in the [README](../README.md) of this repository. In addition to beginning your GCode Mode design, you'll also be comparing your team's power supply design with the one we gave to you for your plotter.
+Through deliverables 11, 12, and 13 you'll be designing the 'GCode Mode' outlined in the [README](../README.md) of this repository. In addition to beginning your GCode Mode design, you'll also be comparing your team's power supply design with the one we gave to you for your plotter.  (See an example of Gcode syntax in the README).
 
 ## Design Proposal (P)
 
