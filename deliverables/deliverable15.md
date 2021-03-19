@@ -1,6 +1,6 @@
 # Deliverable 15
 
-Presentation week! This week you'll be doing your final presentation and making sure you have all of your hardware turned in. Good luck this week and have a great summer!
+Presentation week! This week you'll be doing your final presentation. Good luck this week and have a great summer!
 
 ## Return all Hardware (P)
 
@@ -28,14 +28,22 @@ As a reminder, you have your final presentations this week. It should be similar
     - What worked well about the class/structure and what didn't. What can we do to improve it.
     - What worked well about the plotter project, and how we can improve it.
 
+Your presentation should be as close to 15 minutes as possible, trying not to go over. 
+
 ## Final Presentation Schedule
 
-| Monday Groups | Friday Groups |
-| ------------- | ------------- |
-|               |               |
-|               |               |
-|               |               |
-|               |               |
-|               |               |
-|               |               |
-|               |               |
+Please only come to the section that you've been assigned, Sections 2 and 4 should wait outside of the auditorium should Sections 1 and 3 go over time. For groups in Sections 2 and 4, please be prepared to stay until 6:15 PM + as we'll amlost certainly go over our allotted time (we apologize for such a late window).
+
+| Monday - Section 1 (4:10 PM - 5:10 PM) | Monday - Section 2 (5:10 PM - 6:00 PM) |
+| -------------------------------------- | -------------------------------------- |
+| Team 14                                | Team 10                                |
+| Team 13                                | Team 09                                |
+| Team 12                                | Team 08                                |
+| Team 11                                |                                        |
+
+| Friday - Section 3 (4:10 PM - 5:10 PM) | Friday - Section 4 (5:10 PM - 6:00 PM) |
+| -------------------------------------- | -------------------------------------- |
+| Team 07                                | Team 03                                |
+| Team 06                                | Team 02                                |
+| Team 05                                | Team 01                                |
+| Team 04                                |                                        |
