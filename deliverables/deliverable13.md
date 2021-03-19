@@ -32,6 +32,22 @@ When we complete the assessment for GCode mode, we'll move on to judging the res
 4. Testing individual modes (this is where you will be checked off for Etch-A-Sketch, Calibration mode, and Math Mode if you had not been previously)
 5. Evaluating overall quality, look, and feel of your plotter.
 
+## Demonstration Schedule
+
+For this set of deliverables, because of the time we estimate it will take to grade each of your plotters, we're splitting up the class into a Monday group and a Friday group. Groups demoing on Monday will be required to show their GCode mode working, but can come in during the week or on Friday to have their other modes checked off and have their fit/finish reevaluated. Groups demoing on Friday are required to have everything ready by then. 
+
+TODO: Schedule
+
+| Monday Groups | Friday Groups |
+| ------------- | ------------- |
+|               |               |
+|               |               |
+|               |               |
+|               |               |
+|               |               |
+|               |               |
+|               |               |
+
 # Summary
 
 In summary, for this week you need to:
