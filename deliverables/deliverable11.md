@@ -77,6 +77,8 @@ As a conclusion to the Power Supply Design portion of this course, you all will 
 
 The purpose of this assignment is to take what you've learned from designing your own power supply and determine what you did right or wrong, and what features (which we didn't ask you to implement) make the commercial power supply safer, more reliable, and generally better.
 
+P: The writeup should be approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font. You may include pictures of your power supply design for illustration.
+
 Below we have provided a series of pictures of the given power supply taken apart so you can see its components/design. Your objective is to identify key differences in components and layout, and describe/illustrate these in a short (~2 pages) writeup.
 
 ![back0](resources/back0.jpg)
