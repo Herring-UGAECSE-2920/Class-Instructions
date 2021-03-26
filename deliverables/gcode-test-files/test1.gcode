@@ -1,3 +1,4 @@
+M04; Pen Up
 G28; Home
 G00 X0 Y31.75; Move to Square Start
 M03; Pen Down
