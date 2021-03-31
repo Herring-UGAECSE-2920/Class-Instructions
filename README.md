@@ -88,7 +88,9 @@ to reduce the setup time/equipment needed for your demo. This is a requirement f
 
 The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document. As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](deliverables/setup/launch-on-startup.md) (when you power on the Pi) to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
-As with the Math Mode feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower right corner of the page/margins similar to Math Mode.  The Paper Pen Position Calibration will "set" the (0,0) position.  Notice this means the G-code does not reference (0,0) as center of paper! Rather, (0,0) for the G-code interpreter means the lower right corner of the margins (25 mm from the bottom and right sides of the page).
+As with the Math Mode feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower right corner of the page/margins similar to Math Mode.  The Paper Pen Position Calibration (Manual Calibration) will "set" the (0,0) position.  Notice this means the G-code does not reference (0,0) as center of paper! Rather, (0,0) for the G-code interpreter means the lower right corner of the margins (25 mm from the bottom and right sides of the page).
+
+From the "home position" defined above, all GCode X and Y values will be positive, meaning as you move to the left on the page, the X value is increasing (to a maximum of X = 190.9 mm) and as you move up the page from the home position, the Y value is increasing (to a maximum of Y = 254.4).
 
 As noted in the commands below, you will need to be able to adjust the speed of your stepper motors in mm/minute. This should relate to the artificial "delay" between step commands, with a larger delay correlating to a slower stepper speed or "feedrate".
 
@@ -141,7 +143,11 @@ You can assume absolute positioning and units of mm for all commands. For more r
 
 Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
 
-In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with two test files and create an additional `.gcode` file to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
+In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with test files for each command and create additional, more complex `.gcode` files to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
+
+On the morning of the Deliverable 13 demonstrations (Monday and Friday), we'll release a set of two `.gcode` files to be used in your demonstration. You and your team will need load these files onto your Pi in a place of your choosing before your demonstration so that you can parse them.
+
+It's important that your program be able to read the `.gcode` files arbitrarily, meaning that it should be able to parse and correctly perform any given file made with our subset of the GCode specification.
 
 As specified in the UI section of the Assessments document, your GCode Mode should also halt, raise the pen, and go back to the menu/UI when both of the Encoders are long-pressed.
 
@@ -155,6 +161,8 @@ M04
 G28
 M02
 ```
+
+The test `.gcode` files for each command can be found in the [deliverables/gcode-test-files](deliverables/gcode-test-files/) directory under their respective command names (`G28.gcode`, `M04.gcode`, etc.)
 
 ### LCD/Encoder Interface
 

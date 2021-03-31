@@ -6,6 +6,8 @@ In deliverable 13, you'll continue working on your GCode mode, with the aim of h
 
 This week you should be close to finishing your GCode Mode. It's important to remember that these milestones are not strict deadlines, however you should have at least some functionality working for the GCode Mode, and you should not move on to focus on your documentation and report until you've completed the GCode Mode.
 
+On your scheduled Demonstration day (Monday and Friday), we will release the additional `.gcode` files to be used during your demonstration. Make sure you get these files loaded onto the Pi, in the place you intend to parse them from, or you will not be able to demonstrate your GCode mode.
+
 **D**: As part of this deliverable we ask you to bring your plotter into class to demonstrate the work you've done on GCode mode. This is so we can get a feel for how well the functionality has been implemented. As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](setup/launch-on-startup.md) (when you power on the Pi) to reduce the setup time/equipment needed for your demo. This is required functionality for your demonstration. If your Pi does not launch your program on startup, you will receive a `0` for this checkpoint.
 
 **D**: In addition to the in-class demo, you'll also need to submit a video of the work you've completed for GCode mode. It should be short and to the point, while showing each of the pieces of functionality that you've completed. This is primarily a fallback option for us to grade, in case hardware issues arise in class. This video should be no more than 90 seconds. Make sure you given commentary during the video so we know what you are doing.  Follow the order below in your video.
@@ -14,7 +16,7 @@ Be prepared to show the following in your demonstration and and include it as pa
 
 1. Launch on startup (Pi boots right into your program)
 2. File selection for GCode mode
-3. Demonstration of GCode mode with the supplied sample files and one new file.
+3. Demonstration of GCode mode with the supplied sample files (in the /deliverables/gcode-test-files/ directory) and the two new files released on your demo day.
 
 For the in class checkpoint, we will go through each of the 3 "video" steps listed above.
 
@@ -36,7 +38,7 @@ When we complete the assessment for GCode mode, we'll move on to judging the res
 
 For this set of deliverables, because of the time we estimate it will take to grade each of your plotters, we're splitting up the class into a Monday group and a Friday group. Groups demoing on Monday will be required to show their GCode mode working, but can come in during the week or on Friday to have their other modes checked off and have their fit/finish reevaluated. Groups demoing on Friday are required to have everything ready by then. 
 
-You and your group will sign up in class before your presentation, when groups are decided for each day, we'll update the schedule below accordingly.
+You and your group will sign up in class before your demostration, when groups are decided for each day, we'll update the schedule below accordingly.
 
 | Monday Groups | Friday Groups |
 | ------------- | ------------- |

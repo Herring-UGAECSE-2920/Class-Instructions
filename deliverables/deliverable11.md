@@ -6,9 +6,11 @@ Through deliverables 11, 12, and 13 you'll be designing the 'GCode Mode' outline
 
 To start, create a rough design proposal outlining what you and your team think would be the correct way to implement this functionality. It is not necessary to stick completely to the design proposal as you get into the weeds, but you should take it seriously as a planning exercise for this portion of the project. In your proposal, document how you would implement the individual points of functionality outlined below:  (For all items, make sure to see the readme and the assessment document for clarifications).
 
-The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document. As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](setup/launch-on-startup.md) (when you power on the Pi) to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
+The final mode to implement is a very simple [G-Code](https://en.wikipedia.org/wiki/G-code) interpreter. Two sample G-Code files will be provided to you that can be saved onto the Pi. Your control interface should have a menu item to select either of these files and the plotter will run through the written G-Code commands.  Refer to the UI description in the assessment document. As mentioned in the Project Specifications section of the readme, you should have your code [launch on startup](deliverables/setup/launch-on-startup.md) (when you power on the Pi) to reduce the setup time/equipment needed for your demo. This is a requirement for this demonstration and all future demonstrations.
 
-As with the Math Mode feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower right corner of the page/margins similar to Math Mode.  The Paper Pen Position Calibration (Manual Calibration) will "set" the (0,0) position.  Notice this means the G-code does not reference (0,0) as center of paper! Rather, (0,0) for the G-code interpreter means the lower right corner of the margins (25 mm from the bottom and right sides of the page). This home position is different than the "start" position for each GCode instruction. 
+As with the Math Mode feature, the G-Code interpreter will assume 25mm margins on the paper, with the "home position" or (0,0) of the plotter being in the lower right corner of the page/margins similar to Math Mode.  The Paper Pen Position Calibration (Manual Calibration) will "set" the (0,0) position.  Notice this means the G-code does not reference (0,0) as center of paper! Rather, (0,0) for the G-code interpreter means the lower right corner of the margins (25 mm from the bottom and right sides of the page).
+
+From the "home position" defined above, all GCode X and Y values will be positive, meaning as you move to the left on the page, the X value is increasing (to a maximum of X = 190.9 mm) and as you move up the page from the home position, the Y value is increasing (to a maximum of Y = 254.4).
 
 As noted in the commands below, you will need to be able to adjust the speed of your stepper motors in mm/minute. This should relate to the artificial "delay" between step commands, with a larger delay correlating to a slower stepper speed or "feedrate".
 
@@ -18,7 +20,7 @@ You will need to implement the following commands:
 
     The G00 instruction rapidly moves the pen head linearly from the current position to the end position provided, inherently using the maximum "feedrate" (mm/minute) or stepper speed.
 
-    ![G00](./resources/G00.png)
+    ![G01](./resources/G00.png)
 
 - **G01 – Linear Interpolation**
 
@@ -28,7 +30,7 @@ You will need to implement the following commands:
 
 - **G02 – Circular Interpolation Clockwise**
 
-    The G02 instruction moves the pen head in a clockwise circular direction from the current position to a target position along a circle whose center point is specific as an offset of the current position as shown and explained below. Please note that the center point of the circle is specified as an offset of the starting point for the command (I and J):
+    The G02 instruction moves the pen head in a clockwise circular direction from the current position to a target position along a circle whose center point is specific as an offset of the current position as shown and explained below:
 
     ![G02](./resources/G02.png)
 
@@ -40,7 +42,7 @@ You will need to implement the following commands:
 
 - **G28 – Return Home**
 
-    The G28 command tells the machine to move the tool to its reference point or home position. Since we have convenient X and Y axis endstops already on the plotter, we can use these to establish a good home position, given we know where the endstops put us on the paper and where our desired home position is.
+    The G28 command tells the machine to move the tool to its reference point or home position. Since we have convenient X and Y axis endstops already on the plotter, we can use these to establish a good home position, given we know where the endstops put us on the paper and where our desired home position is. Essentially, this command moves the plotter head to the home position specified by your manual calibration feature.
 
 - **M02 - End of Program**
 
@@ -61,9 +63,26 @@ You can assume absolute positioning and units of mm for all commands. For more r
 
 Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
 
-In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with two test files and create an additional `.gcode` file to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
+In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with test files for each command and create additional, more complex `.gcode` files to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
+
+On the morning of the Deliverable 13 demonstrations (Monday and Friday), we'll release a set of two `.gcode` files to be used in your demonstration. You and your team will need load these files onto your Pi in a place of your choosing before your demonstration so that you can parse them.
+
+It's important that your program be able to read the `.gcode` files arbitrarily, meaning that it should be able to parse and correctly perform any given file made with our subset of the GCode specification.
 
 As specified in the UI section of the Assessments document, your GCode Mode should also halt, raise the pen, and go back to the menu/UI when both of the Encoders are long-pressed.
+
+Below is a sample GCode program which simply moves the plotter head to the home position and draws a diagonal line to the center of the page with a feedrate (speed) of 1000 mm/minute. It's important to note that since the home position is the bottom-right corner of the margins, the positive X direction will be to the left, with its limit on the left margins, and the positive Y direction is up, with its limit on the top margins:
+
+```gcode
+G28
+M03
+G01 X78 Y107.5 F1000
+M04
+G28
+M02
+```
+
+The test `.gcode` files for each command can be found in the [deliverables/gcode-test-files](deliverables/gcode-test-files/) directory under their respective command names (`G28.gcode`, `M04.gcode`, etc.)
 
 **P**: The design proposal should be relatively short, approximately 2 pages with 1.15 line spacing, Times New Roman, 12 pt font.
 
