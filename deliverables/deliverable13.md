@@ -38,7 +38,7 @@ When we complete the assessment for GCode mode, we'll move on to judging the res
 
 For this set of deliverables, because of the time we estimate it will take to grade each of your plotters, we're splitting up the class into a Monday group and a Friday group. Groups demoing on Monday will be required to show their GCode mode working, but can come in during the week or on Friday to have their other modes checked off and have their fit/finish reevaluated. Groups demoing on Friday are required to have everything ready by then. 
 
-You and your group will sign up in class before your demostration, when groups are decided for each day, we'll update the schedule below accordingly.
+You and your group will sign up in class before your demonstration, when groups are decided for each day, we'll update the schedule below accordingly.
 
 | Monday Groups | Friday Groups |
 | ------------- | ------------- |

@@ -30,7 +30,7 @@ You will need to implement the following commands:
 
 - **G02 – Circular Interpolation Clockwise**
 
-    The G02 instruction moves the pen head in a clockwise circular direction from the current position to a target position along a circle whose center point is specific as an offset of the current position as shown and explained below:
+    The G02 instruction moves the pen head in a clockwise circular direction from the current position to a target position along a circle whose center point is specific as an offset of the current position. It's important to note that this offset is used to determine the radius of the circle and verify the provided start (current) and end positions form a valid arc along the circle. G02 is shown and explained below:
 
     ![G02](./resources/G02.png)
 
@@ -62,6 +62,8 @@ You can assume absolute positioning and units of mm for all commands. For more r
 - [The RepRap Project](https://reprap.org/wiki/G-code#G0_.26_G1:_Move)
 
 Note: These resources may contain different meanings or extra parameters for some G-Code commands. Be mindful of this and only implement what has been laid out above.
+
+For the minimum and maximum feedrate (mm/minute), the minimum feedrate can theoretically be as slow as you want, since you must only increase the delay between steps. For the maximum feedrate, we will not require a faster speed than 400 mm/minute (please let us know if you plotter physically cannot achieve this speed), but when designing your GCode mode, the G00 instruction should move the steppers at the maximum feedrate **YOU** have determined for your plotter (i.e. the fastest you can get your steppers to move).
 
 In addition to implementing the above commands, you'll need to be able to parse a `.gcode` file given to read and execute the commands in the order that they appear. You don't have to create your own files or create a GCode slicer for this project, we will provide you with test files for each command and create additional, more complex `.gcode` files to use in your demo. To go along with this, with the `.gcode` files placed in a pre-determined directory, you'll need to be able to select the `.gcode` file to parse from the UI menu.
 
