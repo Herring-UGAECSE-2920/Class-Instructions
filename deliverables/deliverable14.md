@@ -42,3 +42,13 @@ You should also begin thinking about your final presentation. This presentation 
     - What worked well about the plotter project, and how we can improve it.
 
 **P**: There is no 'P' deliverable item for this section, just make sure to start work on the User/Technical Manuals and your final presentation
+
+# Summary
+
+In summary, for this week you need to:
+
+1. Return all of your hardware, in working order, on Friday, April 23rd. There will **NOT** be any extension on this date, as we need time for grading your presentations/reports and time to make sure everything is in working order and organized.
+
+2. Begin finalizing your user and Technical manuals and start your final presentation.
+
+3. Submit your Weekly Project Management Report to the Deliverable 14 assignment folder on ELC. You shouldn't have much left to put on here about your work on the plotter, but you will stil have plenty to write about. Talk about your progress on the manuals, the presentation, and possibly include a reflection on the work you've done this semester.
