@@ -25,13 +25,13 @@ M04; Pen Up
 G00 X80 Y75; Move to Start Position for Ring 3
 M03; Pen Down
 G01 X85.9 Y75 F350; Bottom Line 3
-G02 X90.9 Y80 I0 J10; Bottom Left Clockwise Arc 3
+G02 X90.9 Y80 I0 K5; Bottom Left Clockwise Arc 3
 G01 X90.9 Y149.4 F350; Left Line 3
-G02 X85.9 Y154.4 I-10 J0 ; Top Left Clockwise Arc 3
+G02 X85.9 Y154.4 I-5 J0 ; Top Left Clockwise Arc 3
 G01 X80 Y154.4 F350; Top Line 3
-G02 X75 Y149.4 I0 J-10; Top Right Clockwise Arc 3
+G02 X75 Y149.4 I0 J-5; Top Right Clockwise Arc 3
 G01 X75 Y80 F350; Right Line 3
-G02 X80 Y75 I10 J0 ; Bottom Right Clockwise Arc 3
+G02 X80 Y75 I5 J0 ; Bottom Right Clockwise Arc 3
 M04; Pen Up
 G28; Home
 M02; End Of Program
